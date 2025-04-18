@@ -20,7 +20,7 @@ El To-Be Scenario Mapping representa la experiencia mejorada que ofrecerá nuest
 
 | **Phases** | **Registro y Publicación** | **Gestión de Interesados** | **Evaluación de Candidatos** | **Entrega** | **Cierre** |
 |------------|----------------------------|----------------------------|------------------------------|-------------|-----------|
-| **Doing** | • Se registra en la plataforma<br>• Crea perfil detallado de su mascota<br>• Establece criterios para nuevos hogares | • Recibe notificaciones de interesados<br>• Filtra candidatos por compatibilidad<br>• Responde consultas a través de la app<br>• Agenda entrevistas/visitas | • Revisa perfiles de interesados<br>• Realiza videollamadas preliminares<br>• Coordina visitas presenciales<br>• Evalúa la interacción mascota-adoptante | • Acuerda la entrega<br>• Comparte recomendaciones de cuidado<br>• Entrega pertenencias y documentos<br>• Realiza la despedida | • Marca la mascota como reubicada<br>• Revisa la información del nuevo hogar<br>• Califica su experiencia<br>• Cierra el proceso |
+| **Doing** | • Se registra en la plataforma<br>• Crea perfil detallado de su mascota<br>• Establece criterios para nuevos hogares | • Recibe notificaciones de interesados<br>• Responde consultas a través de la app<br>• Agenda visitas | • Revisa perfiles de interesados<br>• Realiza videollamadas preliminares<br>• Coordina visitas presenciales<br>• Evalúa la interacción mascota-adoptante | • Acuerda la entrega<br>• Comparte recomendaciones de cuidado<br>• Entrega pertenencias y documentos<br>• Realiza la despedida | • Marca la mascota como reubicada<br>• Cierra el proceso |
 | **Thinking** | "Este sistema me permite presentar bien a mi mascota"<br>"Puedo especificar qué tipo de hogar busco"<br>"Me siento más tranquilo con esta estructura" | "Puedo evaluar candidatos fácilmente"<br>"La plataforma filtra personas no adecuadas"<br>"La comunicación es ordenada y clara" | "Puedo conocer mejor a los interesados"<br>"La plataforma facilita las coordinaciones"<br>"Me siento más seguro en el proceso" | "La entrega es más organizada"<br>"Puedo explicar todo lo importante"<br>"Estoy haciendo lo correcto" | "El proceso fue más sencillo"<br>"Siento que cumplí con mi responsabilidad"<br>"La plataforma me dio estructura" |
 | **Feeling** | **Aliviado** 😌<br>**Responsable** 📝<br>**Organizado** 📋 | **Confiado** 👍<br>**En control** 🎮<br>**Apoyado** 🤝 | **Analítico** 🧐<br>**Protector** 🛡️<br>**Optimista** 🌟 | **Sereno** 😌<br>**Considerado** 💭<br>**Formal** 📜 | **Tranquilo** 😌<br>**Satisfecho** 😊<br>**Aliviado** 😌 |
 
@@ -47,21 +47,18 @@ A continuación, presentamos el conjunto de User Stories organizadas en Epics, q
 | US04 | Gestión de perfil | Como usuario, deseo poder editar mi perfil para mantener mi información actualizada. | **Given** que estoy autenticado en la plataforma<br>**When** accedo a la sección "Mi Perfil" y modifico mis datos<br>**Then** mis cambios se guardan correctamente y se reflejan en mi perfil. | EP01 |
 | US05 | Recuperación de contraseña | Como usuario, deseo poder recuperar mi contraseña en caso de olvidarla. | **Given** que olvidé mi contraseña<br>**When** selecciono "Olvidé mi contraseña" e ingreso mi correo<br>**Then** recibo un enlace para crear una nueva contraseña. | EP01 |
 | **EP02** | **Gestión de Mascotas** | **Como plataforma, necesito gestionar la información de mascotas para facilitar el proceso de adopción.** | | |
-| US06 | Creación de perfil de mascota | Como dueño/ONG, deseo crear un perfil detallado para mi mascota en adopción. | **Given** que soy un usuario autenticado como dueño u ONG<br>**When** completo el formulario de creación de perfil de mascota<br>**Then** la mascota aparece listada como disponible para adopción.<br><br>**Given** que estoy creando un perfil de mascota<br>**When** subo fotos, videos y detalles de comportamiento<br>**Then** esta información se muestra en el perfil público de la mascota. | EP02 |
+| US06 | Creación de perfil de mascota | Como dueño/ONG, deseo crear un perfil detallado para mi mascota en adopción. | **Given** que soy un usuario autenticado como dueño u ONG<br>**When** completo el formulario de creación de perfil de mascota<br>**Then** la mascota aparece listada como disponible para adopción.<br><br>**Given** que estoy creando un perfil de mascota<br>**When** subo fotos y detalles de comportamiento<br>**Then** esta información se muestra en el perfil público de la mascota. | EP02 |
 | US07 | Edición de perfil de mascota | Como dueño/ONG, deseo poder editar la información de mi mascota para mantenerla actualizada. | **Given** que tengo una mascota publicada<br>**When** accedo a su perfil y modifico información<br>**Then** los cambios se reflejan inmediatamente en la visualización pública. | EP02 |
 | US08 | Eliminación de perfil de mascota | Como dueño/ONG, deseo poder eliminar un perfil de mascota cuando ya no esté disponible. | **Given** que tengo una mascota publicada<br>**When** selecciono "Eliminar perfil" y confirmo la acción<br>**Then** la mascota ya no aparece en los listados de adopción. | EP02 |
 | US09 | Marcado de mascota como adoptada | Como dueño/ONG, deseo poder marcar una mascota como adoptada para completar el proceso. | **Given** que he completado el proceso de adopción<br>**When** marco la mascota como "Adoptada"<br>**Then** la mascota muestra un estado "Adoptada" y no aparece en búsquedas activas. | EP02 |
 | **EP03** | **Búsqueda y Adopción** | **Como plataforma, necesito proporcionar funcionalidades para la búsqueda y solicitud de adopción de mascotas.** | | |
 | US10 | Búsqueda avanzada de mascotas | Como adoptante, deseo poder buscar mascotas utilizando filtros avanzados para encontrar la más compatible. | **Given** que estoy en la sección de búsqueda<br>**When** aplico filtros por especie, tamaño, edad, comportamiento, ubicación<br>**Then** recibo resultados que coinciden con mis criterios.<br><br>**Given** que he realizado una búsqueda<br>**When** guardo mis criterios<br>**Then** puedo recibir notificaciones cuando haya nuevas mascotas que coincidan. | EP03 |
 | US11 | Visualización detallada | Como adoptante, deseo ver información detallada de una mascota para evaluar su compatibilidad. | **Given** que estoy navegando por mascotas<br>**When** selecciono una mascota específica<br>**Then** puedo ver fotos, videos, historial médico, comportamiento y requisitos de adopción. | EP03 |
-| US12 | Solicitud de información adicional | Como adoptante, deseo poder solicitar información adicional sobre una mascota. | **Given** que estoy viendo el perfil de una mascota<br>**When** selecciono "Solicitar más información" y envío mis preguntas<br>**Then** el dueño/ONG recibe mi solicitud y puede responderme. | EP03 |
 | US13 | Solicitud de adopción | Como adoptante, deseo poder enviar una solicitud formal de adopción. | **Given** que estoy interesado en adoptar una mascota<br>**When** completo el formulario de solicitud de adopción<br>**Then** el dueño/ONG recibe mi solicitud para evaluación.<br><br>**Given** que he enviado una solicitud<br>**When** el dueño/ONG responde<br>**Then** recibo una notificación con su respuesta. | EP03 |
 | US14 | Programación de visita | Como adoptante/dueño/ONG, deseo poder programar una visita para conocer a la mascota/adoptante. | **Given** que hay interés en una adopción<br>**When** propongo fechas y horarios para una visita<br>**Then** la otra parte recibe la propuesta y puede confirmar o proponer alternativas.<br><br>**Given** que se ha acordado una fecha<br>**When** se acerca la fecha programada<br>**Then** ambas partes reciben recordatorios. | EP03 |
 | **EP04** | **Gestión de Adopciones** | **Como plataforma, necesito facilitar el proceso de adopción desde la solicitud hasta la finalización.** | | |
 | US15 | Evaluación de solicitudes | Como dueño/ONG, deseo poder evaluar solicitudes de adopción para seleccionar al mejor adoptante. | **Given** que he recibido solicitudes de adopción<br>**When** reviso cada solicitud con la información del adoptante<br>**Then** puedo aprobar, rechazar o solicitar más información. | EP04 |
-| US18 | Evaluación de la experiencia | Como dueño/ONG/adoptante, deseo poder evaluar mi experiencia en el proceso de adopción. | **Given** que he completado un proceso de adopción<br>**When** recibo una solicitud para evaluar la experiencia<br>**Then** puedo calificar y comentar sobre el proceso y la otra parte. | EP04 |
 | **EP05** | **Donaciones y Eventos** | **Como plataforma, necesito facilitar donaciones y la gestión de eventos para ONGs.** | | |
-| US19 | Publicación de necesidades | Como ONG, deseo publicar las necesidades actuales de donaciones. | **Given** que soy una ONG verificada<br>**When** publico una lista de necesidades (alimentos, medicinas, etc.)<br>**Then** esta lista es visible para todos los usuarios. | EP05 |
 | US20 | Registro de donación | Como usuario, deseo poder registrar mi intención de donación a una ONG. | **Given** que veo las necesidades de una ONG<br>**When** selecciono los items que deseo donar<br>**Then** la ONG recibe una notificación con mi compromiso. | EP05 |
 | US21 | Confirmación de donación | Como ONG, deseo poder confirmar la recepción de donaciones. | **Given** que un usuario ha registrado una donación<br>**When** recibo los items y confirmo la recepción<br>**Then** el usuario recibe una notificación de agradecimiento. | EP05 |
 | US22 | Publicación de eventos | Como ONG, deseo publicar eventos o campañas para promover la participación. | **Given** que soy una ONG verificada<br>**When** creo un evento con fecha, ubicación y detalles<br>**Then** el evento se publica y usuarios pueden registrarse para participar. | EP05 |
@@ -74,9 +71,6 @@ El Product Backlog representa la lista priorizada de funcionalidades a desarroll
 | # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
 |---------|---------------|--------|-------------|--------------------------|
 | 1 | US24 | Vista principal landing page | Como visitante, deseo ver información general sobre la plataforma para entender su propósito. | 3 |
-| 2 | US25 | Sección para adoptantes en landing | Como visitante interesado en adoptar, deseo ver información específica sobre el proceso de adopción. | 2 |
-| 3 | US26 | Sección para dueños en landing | Como visitante interesado en reubicar una mascota, deseo información sobre cómo hacerlo responsablemente. | 2 |
-| 4 | US27 | Sección para ONGs en landing | Como representante de ONG, deseo información sobre cómo unirme a la plataforma y sus beneficios. | 2 |
 | 5 | US28 | Historias de éxito en landing | Como visitante, deseo ver historias de adopciones exitosas para inspirarme. | 3 |
 | 6 | US29 | Llamado a la acción en landing | Como visitante, deseo poder registrarme fácilmente desde la landing page. | 1 |
 | 7 | US01 | Registro de usuario | Como visitante, deseo poder registrarme en la plataforma para acceder a las funcionalidades según mi rol (adoptante, dueño, ONG). | 5 |
@@ -86,18 +80,14 @@ El Product Backlog representa la lista priorizada de funcionalidades a desarroll
 | 11 | US06 | Creación de perfil de mascota | Como dueño/ONG, deseo crear un perfil detallado para mi mascota en adopción. | 5 |
 | 12 | US11 | Visualización detallada | Como adoptante, deseo ver información detallada de una mascota para evaluar su compatibilidad. | 3 |
 | 13 | US07 | Edición de perfil de mascota | Como dueño/ONG, deseo poder editar la información de mi mascota para mantenerla actualizada. | 3 |
-| 14 | US12 | Solicitud de información adicional | Como adoptante, deseo poder solicitar información adicional sobre una mascota. | 3 |
 | 15 | US13 | Solicitud de adopción | Como adoptante, deseo poder enviar una solicitud formal de adopción. | 5 |
-| 16 | US15 | Evaluación de solicitudes | Como dueño/ONG, deseo poder evaluar solicitudes de adopción para seleccionar al mejor adoptante. | 5 |
 | 17 | US14 | Programación de visita | Como adoptante/dueño/ONG, deseo poder programar una visita para conocer a la mascota/adoptante. | 5 |
 | 18 | US03 | Verificación de identidad | Como usuario, deseo poder verificar mi identidad para aumentar la confianza en mi perfil. | 8 |
 | 19 | US09 | Marcado de mascota como adoptada | Como dueño/ONG, deseo poder marcar una mascota como adoptada para completar el proceso. | 2 |
-| 20 | US19 | Publicación de necesidades | Como ONG, deseo publicar las necesidades actuales de donaciones. | 3 |
 | 21 | US20 | Registro de donación | Como usuario, deseo poder registrar mi intención de donación a una ONG. | 3 |
 | 22 | US21 | Confirmación de donación | Como ONG, deseo poder confirmar la recepción de donaciones. | 3 |
 | 23 | US22 | Publicación de eventos | Como ONG, deseo publicar eventos o campañas para promover la participación. | 5 |
 | 24 | US23 | Registro en eventos | Como usuario, deseo poder registrarme para participar en eventos de ONGs. | 3 |
-| 25 | US18 | Evaluación de la experiencia | Como dueño/ONG/adoptante, deseo poder evaluar mi experiencia en el proceso de adopción. | 3 |
 | 26 | US08 | Eliminación de perfil de mascota | Como dueño/ONG, deseo poder eliminar un perfil de mascota cuando ya no esté disponible. | 2 |
 | 27 | US05 | Recuperación de contraseña | Como usuario, deseo poder recuperar mi contraseña en caso de olvidarla. | 3 |
 | 28 | US30 | Autenticación API | Como desarrollador, deseo poder autenticarme en el API para realizar operaciones seguras. | 5 |
@@ -140,15 +130,13 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 
 | **Business Goal** | **Actors (Quiénes)** | **Impacts (Cómo)** | **Deliverables (Qué)** | **User Stories** |
 |-------------------|----------------------|---------------------|------------------------|------------------|
-| **BG1**: 5,000 usuarios registrados | Ana Martínez (Adoptante) | Registrarse y crear perfil completo | Landing Page atractiva | US24, US25, US29 |
+| **BG1**: 5,000 usuarios registrados | Ana Martínez (Adoptante) | Registrarse y crear perfil completo | Landing Page atractiva | US24, US29 |
 |  |  | Recomendar la plataforma a otros potenciales adoptantes | Sistema de referidos | US04 |
 |  |  | Mantener su cuenta activa y actualizada | Experiencia de usuario intuitiva | US01, US02, US04 |
-|  | Gabriel Ruiz (Dueño) | Registrarse para reubicar mascota | Landing Page para dueños | US26, US29 |
+|  | Gabriel Ruiz (Dueño) | Registrarse para reubicar mascota | Landing Page atractiva | US24, US29 |
 |  |  | Completar todo el proceso de reubicación | Proceso de reubicación sencillo | US06, US15, US09 |
-|  |  | Compartir experiencia positiva | Sistema de testimonios | US18 |
-|  | Valeria Torres (ONG) | Registrar su organización | Sección específica para ONGs | US27, US29 |
+|  | Valeria Torres (ONG) | Registrar su organización | Sección específica para ONGs | US29 |
 |  |  | Invitar a voluntarios y colaboradores | Sistema de invitación | US22, US23 |
-|  |  | Mantener presencia activa | Dashboard intuitivo | US01, US03, US04 |
 | **BG2**: 500 adopciones completadas | Ana Martínez (Adoptante) | Encontrar mascotas compatibles | Búsqueda avanzada con filtros | US10, US11 |
 |  |  | Completar el proceso de adopción | Proceso simplificado | US13, US14 |
 |  |  | Evaluar su experiencia | Sistema de evaluación | US18 |
@@ -160,7 +148,6 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 |  |  | Mantener información actualizada | Sistema de gestión de perfiles | US07, US09 |
 | **BG3**: 50 ONGs verificadas | Valeria Torres (ONG) | Completar proceso de verificación | Sistema de verificación | US03 |
 |  |  | Invitar a otras ONGs al ecosistema | Programa de referidos para ONGs | US04 |
-|  |  | Ver beneficios tangibles | Dashboard de estadísticas | US19, US21, US22 |
 |  | Ana Martínez (Adoptante) | Preferir ONGs verificadas | Insignias de verificación | US03, US11 |
 |  |  | Compartir experiencias positivas con ONGs | Sistema de evaluaciones | US18 |
 |  | Gabriel Ruiz (Dueño) | Colaborar con ONGs verificadas | Funcionalidad de contacto | US06, US15 |
@@ -177,7 +164,6 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 |  |  | Proporcionar feedback constructivo | Sistema de evaluación | US18 |
 |  | Gabriel Ruiz (Dueño) | Sentir tranquilidad durante el proceso | Verificación de adoptantes | US15 |
 |  |  | Completar el proceso eficientemente | Flujo de proceso optimizado | US09, US15 |
-|  |  | Evaluar la experiencia | Sistema de evaluación | US18 |
 |  | Valeria Torres (ONG) | Optimizar procesos internos | Herramientas de gestión | US06, US15, US19 |
 |  |  | Mejorar relación con adoptantes | Comunicación integrada | US12, US15 |
 |  |  | Incrementar transparencia | Confirmación de donaciones | US21 |

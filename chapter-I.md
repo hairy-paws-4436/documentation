@@ -15,6 +15,25 @@ Nuestra visión es convertirnos en la plataforma líder en Perú y eventualmente
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+**_Aldo Alberto Baldeon Fabian_**
+- **Código de estudiante:** U202122633
+- **Carrera:** Ingeniería de Software 
+- 
+
+**_Max Anthony Paitan Pumacahua_**
+- **Código de estudiante:** U201314454
+- **Carrera:** Ingeniería de Software 
+- 
+
+**_Randy Becker Rengifo Mirabal_**
+- **Código de estudiante:** U20211D683
+- **Carrera:** Ingeniería de Software 
+- Tengo 21 años y soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), actualmente cursando el octavo ciclo. Me considero una persona proactiva, responsable y comprometida con mis deberes. Siempre busco nuevas oportunidades para aprender, crecer profesionalmente y fortalecer mis habilidades tanto técnicas como personales. Tengo gran interés por la tecnología, el desarrollo de software y la innovación. Me adapto con facilidad a distintos entornos de trabajo, disfruto trabajar en equipo y estoy enfocado en encontrar soluciones eficientes a los problemas que se presentan. Además, me apasiona estar en constante aprendizaje, ya sea a través de proyectos académicos, personales o colaborativos.
+
+**_Fiorella Angela Vilca Valverde_**
+- **Código de estudiante:** U20211E417
+- **Carrera:** Ingeniería de Software 
+- 
 
 
 
@@ -43,7 +62,6 @@ La situación actual se mantiene a través de:
 
 - Procesos manuales y desarticulados
 - Uso inadecuado de redes sociales como principal canal de adopción
-- Falta de seguimiento post-adopción
 - Ausencia de registros centralizados sobre mascotas disponibles
 - Escasa transparencia en el manejo de donaciones a organizaciones de protección animal
 
@@ -156,6 +174,7 @@ Sabremos que esto es verdad cuando veamos que el 80% de los adoptantes reportan 
 ### 1.2.2.4. Lean UX Canvas.
 
 [![Lean-UX-Canvas-Hairy-Paws.jpg](https://i.postimg.cc/qMhtsHnb/Lean-UX-Canvas-Hairy-Paws.jpg)](https://postimg.cc/MvwKw49V)
+
 
 ## 1.3. Segmentos objetivo.
 

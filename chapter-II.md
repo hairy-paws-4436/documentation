@@ -247,7 +247,7 @@ _**Tácticas:**_
 
 **Ecosistema integral**
 
-_**Estrategia:**_ Crear un ecosistema que integre todos los actores del proceso (adoptantes, dueños, ONGs y donantes) a diferencia de los competidores que se enfocan en segmentos específicos.
+_**Estrategia:**_ Crear un ecosistema que integre todos los actores del proceso (adoptantes, dueños, ONGs) a diferencia de los competidores que se enfocan en segmentos específicos.
 
 _**Tácticas:**_
 
@@ -486,8 +486,6 @@ Escala de Importancia:
 | Organizar donaciones de productos/insumos | 1 | 2 | 1 | 2 | 4 | 5 |
 | Confirmar recepción de donaciones | 1 | 2 | 1 | 2 | 4 | 5 |
 | Publicar eventos o campañas | 1 | 1 | 1 | 1 | 4 | 5 |
-| Realizar seguimiento post-adopción | 2 | 4 | 2 | 5 | 3 | 5 |
-| Coordinar con voluntarios | 1 | 1 | 1 | 1 | 5 | 5 |
 | Gestionar horarios de visitas | 2 | 4 | 2 | 4 | 5 | 4 |
 
 **Análisis de la User Task Matrix:**
@@ -511,7 +509,6 @@ La mayoría de las tareas tienen alta frecuencia e importancia, destacando:
 - Contactar a adoptantes y dueños (F:5, I:5)
 - Verificar condiciones de posibles adoptantes/hogares (F:5, I:5)
 - Publicar mascotas para adopción/reubicación (F:5, I:5)
-- Coordinar con voluntarios (F:5, I:5)
 
 **Coincidencias y diferencias:**
 
@@ -750,62 +747,6 @@ Gestionar eficientemente los procesos de adopción, donación y voluntariado con
 - Herramientas para verificación efectiva de adoptantes
 - Reportes y métricas para mostrar transparencia y resultados
 
-#### Empathy Map: Martín Suárez (Donante y Voluntario)
-
-**¿Con quién estamos empatizando?**
-Martín Suárez, 30 años, analista de sistemas, donante y voluntario recurrente.
-
-**¿Qué necesita hacer?**
-Contribuir efectivamente a causas de protección animal y verificar el impacto de sus aportes.
-
-**¿Qué está diciendo?**
-- "Quiero saber exactamente cómo se utilizan mis donaciones"
-- "Me gustaría participar en voluntariados que se ajusten a mi horario"
-- "Prefiero apoyar organizaciones transparentes y bien gestionadas"
-- "Busco formas de generar mayor impacto con mis aportes"
-- "Me interesa ser parte de una comunidad comprometida"
-
-**¿Qué está pensando?**
-- ¿Realmente está llegando mi ayuda a donde debe?
-- ¿Hay formas más eficientes de contribuir?
-- ¿Cómo puedo saber si una organización es confiable?
-- ¿Mi tiempo como voluntario está siendo bien utilizado?
-- ¿Debería diversificar mis donaciones o concentrarlas?
-
-**¿Qué está haciendo?**
-- Investigando diferentes ONGs y sus reputaciones
-- Donando mensualmente a organizaciones seleccionadas
-- Participando en voluntariados cuando su tiempo lo permite
-- Compartiendo en redes sociales causas que le parecen válidas
-- Evaluando el impacto de sus contribuciones
-
-**¿Qué está escuchando?**
-- Solicitudes constantes de donaciones de diversas organizaciones
-- Experiencias variadas de otros voluntarios
-- Noticias sobre mal manejo de fondos en algunas organizaciones
-- Historias de éxito y rescates emotivos
-- Diferentes opiniones sobre qué ONGs son más efectivas
-
-**¿Qué está sintiendo?**
-- Satisfacción al contribuir a una causa importante
-- Frustración ante la falta de transparencia
-- Confusión sobre dónde puede generar mayor impacto
-- Orgullo cuando ve resultados tangibles
-- Escepticismo ante solicitudes constantes sin rendición de cuentas
-
-**Pains (Dolores)**
-- Falta de transparencia en el uso de donaciones
-- Dificultad para encontrar oportunidades de voluntariado compatibles
-- Incertidumbre sobre el impacto real de sus aportes
-- Procesos complicados o poco eficientes para donar
-- Comunicación inconsistente de las organizaciones
-
-**Gains (Beneficios)**
-- Transparencia total sobre el uso de recursos
-- Flexibilidad para participar según su disponibilidad
-- Evidencia tangible del impacto de sus contribuciones
-- Proceso sencillo y seguro para donaciones
-- Reconocimiento y sentido de comunidad
 
 ### 2.3.5. As-is Scenario Mapping
 
