@@ -128,14 +128,6 @@ Add client-side validation to adoption request form to ensure all required field
 Closes #42
 ```
 
-**Proceso de Pull Request**
-
-1. Crear un Pull Request desde la rama de feature hacia develop
-2. Asignar al menos un revisor
-3. Pasar las comprobaciones automatizadas (linting, tests)
-4. Obtener aprobación del revisor
-5. Realizar merge mediante squash para mantener un historial limpio
-
 ### 5.1.3. Source Code Style Guide & Conventions
 
 Hemos adoptado guías de estilo y convenciones estandarizadas para cada lenguaje y tecnología utilizada en el proyecto. Esto garantiza la coherencia y legibilidad del código a lo largo de toda la base de código.
@@ -399,11 +391,9 @@ Esta sección detalla la implementación y despliegue de los diversos componente
 | User Story | Work-Item / Task | | | | | | |
 |-----------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
 | **ID** | **Title** | **ID** | **Title** | **Description** |**Estimation (Hours)** | **Assigned To** | **Status** |
-| US24 | Vista principal landing page | TK01 | Diseñar estructura HTML/CSS | Crear estructura base del landing page con HTML5 semántico y estilos CSS | 8 | Randy Rengifo | Done |
+| US24 | Vista principal landing page | TK01 | Diseñar estructura HTML/CSS en Angular | Crear estructura base del landing page con HTML5 semántico y estilos CSS | 8 | Randy Rengifo | Done |
 ||| TK02 | Implementar secciones principales | Desarrollar hero section, secciones de beneficios y cómo funciona | 10 | Randy Rengifo | Done |
 ||| TK03 | Hacer responsive | Adaptar la página para diferentes dispositivos | 6 | Randy Rengifo | Done |
-| US25 | Sección para adoptantes en landing | TK04 | Diseñar contenido | Crear contenido textual y visual para la sección de adoptantes | 4 | Randy Rengifo | Done |
-||| TK05 | Implementar sección | Desarrollar la sección con contenido y estilos | 6 | Randy Rengifo | Done |
 | US01 | Registro de usuario | TK06 | Diseñar formulario de registro | Crear UI para formulario de registro | 4 | Randy Rengifo | Done |
 ||| TK07 | Implementar frontend de registro | Desarrollar componente Angular para registro | 8 | Randy Rengifo | Done |
 ||| TK08 | Implementar API de registro | Crear endpoint de registro en NestJS | 10 | Randy Rengifo | Done |
@@ -411,7 +401,7 @@ Esta sección detalla la implementación y despliegue de los diversos componente
 | US02 | Inicio de sesión | TK10 | Diseñar página de login | Crear UI para formulario de login | 4 | Randy Rengifo | Done |
 ||| TK11 | Implementar frontend de login | Desarrollar componente Angular para login | 6 | Randy Rengifo | Done |
 ||| TK12 | Implementar API de autenticación | Crear sistema de autenticación con JWT | 10 | Randy Rengifo | Done |
-||| TK13 | Implementar guarda de rutas | Agregar protección de rutas basada en autenticación | 4 | Randy Rengifo | Done |
+||| TK13 | Implementar guard de rutas | Agregar protección de rutas basada en autenticación | 4 | Randy Rengifo | Done |
 
 #### Sprint 2
 
@@ -423,35 +413,66 @@ Esta sección detalla la implementación y despliegue de los diversos componente
 | Location | Sala de reuniones virtual - Google Meet |
 | Prepared By | Randy Becker Rengifo Mirabal |
 | Attendees | Aldo Alberto Baldeon Fabian, Max Anthony Paitan Pumacahua, Randy Becker Rengifo Mirabal, Fiorella Angela Vilca Valverde |
-| Sprint 1 Review Summary | Se completó exitosamente el Landing Page y la funcionalidad de registro e inicio de sesión. |
-| Sprint 1 Retrospective Summary | El equipo identificó que la estimación de tareas fue optimista en algunos casos. Se acordó mejorar la comunicación entre frontend y backend mediante una mejor documentación de APIs. |
+| Sprint 1 Review Summary | Se completó exitosamente el Landing Page y la funcionalidad de registro e inicio de sesión. El Product Owner destacó la calidad visual del landing y la fluidez del proceso de autenticación. |
+| Sprint 1 Retrospective Summary | El equipo identificó que la estimación de tareas fue optimista en algunos casos. Se acordó mejorar la comunicación entre frontend y backend mediante una mejor documentación de APIs. También se decidió implementar un enfoque más incremental para las características complejas. |
 
 **Sprint 2 Goal & User Stories**
 
-| Sprint 2 Goal | Implementar la funcionalidad core de búsqueda y creación de perfiles de mascotas |
+| Sprint 2 Goal | Implementar todas las funcionalidades core de la aplicación: adopción, donaciones y gestión de eventos |
 |---------------|------------------------------------------------------------------------------|
-| Sprint 2 Velocity | 26 Story Points |
-| Sum of Story Points | 26 Story Points |
+| Sprint 2 Velocity | 42 Story Points |
+| Sum of Story Points | 42 Story Points |
 
 **Sprint Backlog 2**
-
 
 | User Story | Work-Item / Task | | | | | | |
 |-----------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
 | **ID** | **Title** | **ID** | **Title** | **Description** |**Estimation (Hours)** | **Assigned To** | **Status** |
-| US10 | Búsqueda avanzada de mascotas | TK14 | Diseñar interfaz de búsqueda | Crear UI para filtros y resultados | 8 | Randy Rengifo | Done |
-||| TK15 | Implementar componentes de filtro | Desarrollar componentes Angular para filtros | 10 | Randy Rengifo | Done |
-||| TK16 | Implementar API de búsqueda | Crear endpoints de búsqueda con filtros | 12 | Randy Rengifo | Done |
-||| TK17 | Implementar paginación | Añadir paginación a resultados de búsqueda | 6 | Randy Rengifo | Done |
-| US06 | Creación de perfil de mascota | TK18 | Diseñar formulario de mascota | Crear UI para formulario de creación de mascota | 6 | Randy Rengifo | Done |
+| US10 | Búsqueda avanzada de mascotas | TK14 | Diseñar interfaz de búsqueda | Crear UI para filtros y resultados | 8 | Fiorella Vilca | Done |
+||| TK15 | Implementar componentes de filtro | Desarrollar componentes Angular para filtros por especie, tamaño, edad y ubicación | 10 | Max Paitan | Done |
+||| TK16 | Implementar API de búsqueda | Crear endpoints de búsqueda con filtros en NestJS | 12 | Aldo Baldeon | Done |
+||| TK17 | Implementar paginación | Añadir paginación a resultados de búsqueda | 6 | Max Paitan | Done |
+| US06 | Creación de perfil de mascota | TK18 | Diseñar formulario de mascota | Crear UI para formulario de creación de mascota | 6 | Fiorella Vilca | Done |
 ||| TK19 | Implementar carga de imágenes | Desarrollar componente para carga múltiple de imágenes | 8 | Randy Rengifo | Done |
-||| TK20 | Implementar frontend de creación | Desarrollar componente Angular para creación de perfil | 10 | Randy Rengifo | Done |
-||| TK21 | Implementar API de mascotas | Crear endpoints para gestión de mascotas | 12 | Randy Rengifo | Done |
-||| TK22 | Implementar validaciones | Agregar validaciones de formulario | 6 | Randy Rengifo | Done |
-| US11 | Visualización detallada | TK23 | Diseñar página de detalle | Crear UI para vista detallada de mascota | 6 | Randy Rengifo | Done |
-||| TK24 | Implementar galería de imágenes | Desarrollar componente de galería | 8 | Randy Rengifo | Done |
-||| TK25 | Implementar frontend de detalle | Desarrollar componente Angular para visualización | 8 | Randy Rengifo | Done |
-||| TK26 | Implementar API de detalle | Crear endpoint para obtener detalles completos | 6 | Randy Rengifo | Done |
+||| TK20 | Implementar frontend de creación | Desarrollar componente Angular para creación de perfil | 10 | Max Paitan | Done |
+||| TK21 | Implementar API de mascotas | Crear endpoints para gestión de mascotas | 12 | Aldo Baldeon | Done |
+||| TK22 | Implementar validaciones | Agregar validaciones de formulario para campos obligatorios | 6 | Randy Rengifo | Done |
+| US11 | Visualización detallada | TK23 | Diseñar página de detalle | Crear UI para vista detallada de mascota | 6 | Fiorella Vilca | Done |
+||| TK24 | Implementar galería de imágenes | Desarrollar componente de galería con PrimeNG | 8 | Randy Rengifo | Done |
+||| TK25 | Implementar frontend de detalle | Desarrollar componente Angular para visualización | 8 | Max Paitan | Done |
+||| TK26 | Implementar API de detalle | Crear endpoint para obtener detalles completos | 6 | Aldo Baldeon | Done |
+| US13 | Solicitud de adopción | TK27 | Diseñar formulario de solicitud | Crear UI para formulario de solicitud de adopción | 5 | Fiorella Vilca | Done |
+||| TK28 | Implementar frontend de solicitud | Desarrollar componente Angular con validaciones | 8 | Randy Rengifo | Done |
+||| TK29 | Implementar API de solicitudes | Crear endpoints para gestión de solicitudes | 10 | Aldo Baldeon | Done |
+||| TK30 | Implementar notificaciones | Añadir sistema de notificaciones para adoptantes y dueños | 8 | Max Paitan | Done |
+| US07 | Edición de perfil de mascota | TK31 | Diseñar interfaz de edición | Adaptar el formulario de creación para edición | 4 | Fiorella Vilca | Done |
+||| TK32 | Implementar frontend de edición | Desarrollar componente Angular para modificación | 6 | Randy Rengifo | Done |
+||| TK33 | Implementar API de actualización | Crear endpoint para actualizar datos de mascota | 5 | Aldo Baldeon | Done |
+||| TK34 | Añadir validaciones específicas | Implementar reglas de validación para actualización | 4 | Max Paitan | Done |
+| US20 | Registro de donación | TK35 | Diseñar interfaz de donación | Crear UI para registro de donaciones | 6 | Fiorella Vilca | Done |
+||| TK36 | Implementar frontend de donación | Desarrollar componente para selección de items y cantidades | 8 | Randy Rengifo | Done |
+||| TK37 | Implementar API de donaciones | Crear endpoints para registro de donaciones | 8 | Aldo Baldeon | Done |
+||| TK38 | Implementar notificaciones a ONGs | Desarrollar sistema de alertas para nuevas donaciones | 6 | Max Paitan | Done |
+| US21 | Confirmación de donación | TK39 | Diseñar interfaz de confirmación | Crear UI para gestión y confirmación de donaciones | 5 | Fiorella Vilca | Done |
+||| TK40 | Implementar frontend de confirmación | Desarrollar componente para ONGs | 7 | Randy Rengifo | Done |
+||| TK41 | Implementar API de confirmación | Crear endpoint para actualizar estado de donaciones | 6 | Aldo Baldeon | Done |
+||| TK42 | Implementar notificaciones a donantes | Desarrollar sistema de agradecimiento automático | 5 | Max Paitan | Done |
+| US22 | Publicación de eventos | TK43 | Diseñar interfaz de eventos | Crear UI para creación y gestión de eventos | 6 | Fiorella Vilca | Done |
+||| TK44 | Implementar frontend de eventos | Desarrollar componente para ONGs | 8 | Randy Rengifo | Done |
+||| TK45 | Implementar API de eventos | Crear endpoints para gestión de eventos | 8 | Aldo Baldeon | Done |
+||| TK46 | Implementar calendario | Desarrollar vista de calendario y listado de eventos | 7 | Max Paitan | Done |
+| US23 | Registro en eventos | TK47 | Diseñar interfaz de registro | Crear UI para inscripción en eventos | 5 | Fiorella Vilca | Done |
+||| TK48 | Implementar frontend de inscripción | Desarrollar componente para usuarios | 7 | Randy Rengifo | Done |
+||| TK49 | Implementar API de inscripción | Crear endpoints para gestión de participantes | 6 | Aldo Baldeon | Done |
+||| TK50 | Implementar notificaciones y recordatorios | Desarrollar sistema de alertas para eventos próximos | 6 | Max Paitan | Done |
+| US09 | Marcado de mascota como adoptada | TK51 | Diseñar interfaz de cambio de estado | Crear UI para actualizar estado de mascotas | 3 | Fiorella Vilca | Done |
+||| TK52 | Implementar frontend de actualización | Desarrollar componente para cambio de estado | 5 | Randy Rengifo | Done |
+||| TK53 | Implementar API de estado | Crear endpoint para actualizar estado de mascota | 4 | Aldo Baldeon | Done |
+||| TK54 | Actualizar listados y búsqueda | Modificar componentes para filtrar mascotas adoptadas | 3 | Max Paitan | Done |
+| US14 | Programación de visita | TK55 | Diseñar interfaz de programación | Crear UI para calendario y selección de fechas | 6 | Fiorella Vilca | Done |
+||| TK56 | Implementar frontend de calendario | Desarrollar componente de programación | 8 | Randy Rengifo | Done |
+||| TK57 | Implementar API de visitas | Crear endpoints para gestión de visitas | 7 | Aldo Baldeon | Done |
+||| TK58 | Implementar notificaciones y recordatorios | Desarrollar sistema de alertas para visitas | 6 | Max Paitan | Done |
 
 ### 5.2.2. Implemented Landing Page Evidence
 
@@ -502,46 +523,106 @@ La aplicación web frontend se implementó utilizando Angular 19 con PrimeNG com
 
 **Capturas de la Implementación**
 
+[![image.png](https://i.postimg.cc/JhVwT89G/image.png)](https://postimg.cc/DSgYZ9fT)
+
+[![image.png](https://i.postimg.cc/MZshCVCk/image.png)](https://postimg.cc/dDyHdkQn)
+
+[![image.png](https://i.postimg.cc/sXtsRWL4/image.png)](https://postimg.cc/qhX9sN4N)
+
+[![image.png](https://i.postimg.cc/4xJZZsWq/image.png)](https://postimg.cc/JGdS5VV5)
+
+[![image.png](https://i.postimg.cc/C5TT2gZv/image.png)](https://postimg.cc/r0JPd7NW)
+
+[![image.png](https://i.postimg.cc/D0Dp8dh8/image.png)](https://postimg.cc/T5VJsbp6)
+
+[![image.png](https://i.postimg.cc/Pq46mkhG/image.png)](https://postimg.cc/LqJBpwnv)
+
+[![image.png](https://i.postimg.cc/xTzt6mY3/image.png)](https://postimg.cc/N5Q6M5KK)
+
+[![image.png](https://i.postimg.cc/tJVtm004/image.png)](https://postimg.cc/kRqbBpX0)
+
+[![image.png](https://i.postimg.cc/nLRPytW4/image.png)](https://postimg.cc/2qWGWgry)
+
+[![image.png](https://i.postimg.cc/tTn28nWb/image.png)](https://postimg.cc/8JDR65ZX)
+
+[![image.png](https://i.postimg.cc/52Pg0Sm1/image.png)](https://postimg.cc/HryXv5KP)
+
+[![image.png](https://i.postimg.cc/6QghV6Sm/image.png)](https://postimg.cc/4KvtsGX6)
+
+[![image.png](https://i.postimg.cc/hvrxYKyg/image.png)](https://postimg.cc/BPjXLffw)
+
+[![image.png](https://i.postimg.cc/W4kZvGW5/image.png)](https://postimg.cc/1gyX0qZF)
+
+[![image.png](https://i.postimg.cc/MTwnJhjG/image.png)](https://postimg.cc/4K8fz2PC)
+
+[![image.png](https://i.postimg.cc/28yVYd3n/image.png)](https://postimg.cc/tY0Xtx3g)
+
+[![image.png](https://i.postimg.cc/g0V0sNBb/image.png)](https://postimg.cc/3yw7JCTt)
+
+[![image.png](https://i.postimg.cc/8c5P1DkT/image.png)](https://postimg.cc/8J2VH2rY)
+
+[![image.png](https://i.postimg.cc/NF5Y34bM/image.png)](https://postimg.cc/Fk52c0M5)
+
+[![image.png](https://i.postimg.cc/1zsSmPMb/image.png)](https://postimg.cc/pmG4CwwB)
+
+[![image.png](https://i.postimg.cc/zvsm91Vt/image.png)](https://postimg.cc/y3yrZthc)
+
+[![image.png](https://i.postimg.cc/dVKP6wMD/image.png)](https://postimg.cc/7fXWYvZy)
+
+[![image.png](https://i.postimg.cc/6qGgV1Yd/image.png)](https://postimg.cc/jntMtvV5)
+
+[![image.png](https://i.postimg.cc/2Smj64SH/image.png)](https://postimg.cc/CzPprnDD)
 
 
 **Evidencia de Desarrollo**
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |------------|--------|-----------|----------------|---------------------|------------------|
-| guardpets/hairy-paws-web | feature/auth-module | 2c4e8b5 | feat: implement authentication | Create login and registration components with JWT auth | 2025-01-26 |
-| guardpets/hairy-paws-web | feature/pet-search | 8f7d3a9 | feat: add pet search page | Implement advanced search with filters and pagination | 2025-02-03 |
-| guardpets/hairy-paws-web | feature/pet-detail | 1e9f4c6 | feat: create pet detail view | Add detailed view with image gallery and information | 2025-02-07 |
-| guardpets/hairy-paws-web | feature/pet-form | 5a2b7d3 | feat: implement pet creation form | Add multi-step form for creating pet profiles | 2025-02-10 |
-| guardpets/hairy-paws-web | feature/adoption-request | 9c3e4b2 | feat: add adoption request | Implement adoption request form with validations | 2025-02-13 |
+| hairy-paws-4436/web-app | feature/auth-module | 2c4e8b5 | feat: implement authentication | Create login and registration components with JWT auth | 2025-04-07 |
+| hairy-paws-4436/web-app | feature/pet-search | 8f7d3a9 | feat: add pet search page | Implement advanced search with filters and pagination | 2025-04-14 |
+| hairy-paws-4436/web-app | feature/pet-detail | 1e9f4c6 | feat: create pet detail view | Add detailed view with image gallery and information | 2025-04-15 |
+| hairy-paws-4436/web-app | feature/pet-form | 5a2b7d3 | feat: implement pet creation form | Add  form for creating pet profiles | 2025-04-16 |
+| hairy-paws-4436/web-app | feature/adoption-request | 9c3e4b2 | feat: add adoption request | Implement adoption request form with validations | 2025-04-17 |
+| hairy-paws-4436/web-app | feature/pet-edit | 3b6d2e7 | feat: add pet profile editing | Implement edit functionality for pet profiles | 2025-04-18 |
+| hairy-paws-4436/web-app | feature/donations | 6a9f2d4 | feat: implement donation system | Add donation registration and management | 2025-04-21 |
+| hairy-paws-4436/web-app | feature/events | 4c7d8e6 | feat: implement events system | Add event creation and management for NGOs | 2025-04-23 |
 
 **Implementación de Funcionalidades Clave**
 
 1. **Sistema de Autenticación**
-   - Registro con verificación por correo
+   - Registro con codigo de verificación
    - Login con JWT
    - Recuperación de contraseña
    - Guards para rutas protegidas
 
 2. **Búsqueda de Mascotas**
-   - Filtros avanzados (especie, tamaño, edad, ubicación)
+   - Filtros avanzados
    - Búsqueda por texto libre
    - Paginación y ordenamiento
    - Visualización en cuadrícula y lista
-   - Guardado de filtros favoritos
 
 3. **Gestión de Perfiles de Mascotas**
-   - Formulario multi-paso
+   - Formulario
    - Carga múltiple de imágenes
-   - Validaciones en tiempo real
-   - Vista previa antes de publicación
+   - Validaciones
    - Opciones de edición y actualización
 
 4. **Proceso de Adopción**
-   - Solicitud de información
-   - Formulario de solicitud formal
+   - Formulario de solicitud
    - Seguimiento de estado de solicitudes
    - Programación de visitas
    - Mensajería integrada entre partes
+
+5. **Sistema de Donaciones**
+   - Registro de intenciones de donación
+   - Listado de necesidades de ONGs
+   - Seguimiento de donaciones realizadas
+   - Confirmación de entrega
+
+6. **Gestión de Eventos**
+   - Visualización de eventos programados
+   - Registro en eventos
+   - Calendario de actividades
 
 **Tecnologías y Características Técnicas**
 
@@ -551,7 +632,7 @@ La aplicación web frontend se implementó utilizando Angular 19 con PrimeNG com
 - Estado global con NgRx
 - Interceptores HTTP para manejo de tokens y errores
 - Lazy loading de módulos para optimización de rendimiento
-- Internacionalización (i18n) para soporte multiidioma
+
 
 **URL de la Aplicación Web Desplegada**
 
@@ -639,42 +720,7 @@ El backend de la aplicación se implementó utilizando NestJS como framework, si
 
 **Estructura del Proyecto**
 
-```
-src/
-├── main.ts
-├── app.module.ts
-├── config/
-├── modules/
-│   ├── auth/
-│   │   ├── controllers/
-│   │   ├── dto/
-│   │   ├── entities/
-│   │   ├── guards/
-│   │   ├── services/
-│   │   └── auth.module.ts
-│   ├── pets/
-│   │   ├── controllers/
-│   │   ├── dto/
-│   │   ├── entities/
-│   │   ├── repositories/
-│   │   ├── services/
-│   │   └── pets.module.ts
-│   ├── adoptions/
-│   │   ├── controllers/
-│   │   ├── dto/
-│   │   ├── entities/
-│   │   ├── repositories/
-│   │   ├── services/
-│   │   └── adoptions.module.ts
-│   └── ...
-├── common/
-│   ├── decorators/
-│   ├── filters/
-│   ├── guards/
-│   ├── interceptors/
-│   └── pipes/
-└── utils/
-```
+[![image.png](https://i.postimg.cc/gcXVkCM2/image.png)](https://postimg.cc/hhnz25Wk)
 
 **Evidencia de Desarrollo**
 
@@ -742,162 +788,163 @@ La documentación de la API se implementó utilizando Swagger/OpenAPI integrado 
 
 **Captura de la Documentación API**
 
-![API Documentation - Overview](https://example.com/api-docs-overview.jpg)
+[![image.png](https://i.postimg.cc/vB10ycgQ/image.png)](https://postimg.cc/zbrCSDFM)
 
-*Vista general de la documentación de la API*
+[![image.png](https://i.postimg.cc/DzNcxnCR/image.png)](https://postimg.cc/67dR3Jxh)
 
-![API Documentation - Pets Endpoints](https://example.com/api-docs-pets.jpg)
+[![image.png](https://i.postimg.cc/90dtXTWj/image.png)](https://postimg.cc/LgsZNJYy)
 
-*Detalle de endpoints relacionados con mascotas*
+[![image.png](https://i.postimg.cc/7Zs1Lqyb/image.png)](https://postimg.cc/yDR3Q4xz)
 
-![API Documentation - Models](https://example.com/api-docs-models.jpg)
-
-*Definición de modelos y DTOs*
+[![image.png](https://i.postimg.cc/J4KZTR0K/image.png)](https://postimg.cc/LnYJ5KzZ)
 
 **Endpoints Documentados**
 
-| Endpoint | Método | Descripción | URL de Documentación |
-|----------|--------|-------------|----------------------|
-| `/auth/register` | POST | Registro de nuevos usuarios | [Documentación](https://api.hairypaws.com.pe/docs#/auth/register) |
-| `/auth/login` | POST | Autenticación de usuarios | [Documentación](https://api.hairypaws.com.pe/docs#/auth/login) |
-| `/users` | GET | Listar usuarios (admin) | [Documentación](https://api.hairypaws.com.pe/docs#/users/getUsers) |
-| `/users/{id}` | GET | Obtener usuario específico | [Documentación](https://api.hairypaws.com.pe/docs#/users/getUserById) |
-| `/pets` | GET | Listar mascotas | [Documentación](https://api.hairypaws.com.pe/docs#/pets/getPets) |
-| `/pets` | POST | Crear perfil de mascota | [Documentación](https://api.hairypaws.com.pe/docs#/pets/createPet) |
-| `/pets/search` | GET | Búsqueda avanzada | [Documentación](https://api.hairypaws.com.pe/docs#/pets/searchPets) |
-| `/pets/{id}` | GET | Obtener detalles de mascota | [Documentación](https://api.hairypaws.com.pe/docs#/pets/getPetById) |
-| `/adoptions` | POST | Crear solicitud de adopción | [Documentación](https://api.hairypaws.com.pe/docs#/adoptions/createAdoptionRequest) |
-| `/adoptions/{id}/status` | PATCH | Actualizar estado | [Documentación](https://api.hairypaws.com.pe/docs#/adoptions/updateAdoptionStatus) |
+## Authentication
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| POST   | /api/auth/register | Register a new user |
+| POST   | /api/auth/login | Login |
+| POST   | /api/auth/2fa/verify | Verify two-factor authentication code |
+| POST   | /api/auth/2fa/enable | Enable two-factor authentication |
+| GET    | /api/auth/profile | Get authenticated user profile |
+
+## Users
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET    | /api/users/profile | Get authenticated user profile |
+| PUT    | /api/users/profile | Update user profile |
+| POST   | /api/users/change-password | Change user password |
+| POST   | /api/users/deactivate | Deactivate user account |
+
+## Animals
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET    | /api/animals | Get a list of available animals for adoption |
+| POST   | /api/animals | Create a new animal |
+| GET    | /api/animals/owner | Get the authenticated user's animals (owner) |
+| GET    | /api/animals/{id} | Get details of an animal |
+| PUT    | /api/animals/{id} | Update animal information |
+| DELETE | /api/animals/{id} | Delete an animal |
+
+## Adoptions
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| POST   | /api/adoptions | Request adoption or visit |
+| GET    | /api/adoptions | Get adoption requests according to user role |
+| GET    | /api/adoptions/{id} | Get adoption request details |
+| PUT    | /api/adoptions/{id}/approve | Approve an adoption request |
+| PUT    | /api/adoptions/{id}/reject | Reject an adoption request |
+| PUT    | /api/adoptions/{id}/cancel | Cancel an adoption request |
+
+## Notifications
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET    | /api/notifications | Get user notifications |
+| POST   | /api/notifications/{id}/read | Mark notification as read |
+| POST   | /api/notifications/read-all | Mark all notifications as read |
+| DELETE | /api/notifications/{id} | Delete notification |
+
+## NGOs
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET    | /api/ongs | Get list of NGOs |
+| POST   | /api/ongs | Register a new NGO |
+| GET    | /api/ongs/{id} | Get details of an NGO |
+| PUT    | /api/ongs/{id} | Update NGO information |
+| GET    | /api/ongs/user/me | Get the authenticated user’s NGO |
+
+## Events
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET    | /api/events | Get list of events |
+| POST   | /api/events | Create a new event |
+| GET    | /api/events/{id} | Get event details |
+| PUT    | /api/events/{id} | Update event information |
+| DELETE | /api/events/{id} | Delete an event |
+
+## Donations
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| POST   | /api/donations | Register a new donation |
+| GET    | /api/donations | Get donations based on user role |
+| GET    | /api/donations/{id} | Get donation details |
+| PUT    | /api/donations/{id}/confirm | Confirm donation receipt |
+| PUT    | /api/donations/{id}/cancel | Cancel a donation |
+
+## Administration
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| GET    | /api/admin/users | Get user list |
+| GET    | /api/admin/ongs | Get ONG list |
+| POST   | /api/admin/users/{id}/verify | Verify a user |
+| POST   | /api/admin/ongs/{id}/verify | Verify an ONG |
+| DELETE | /api/admin/users/{id} | Delete a user |
+
 
 **Ejemplo de Documentación para Endpoint de Búsqueda**
 
 ```json
-{
-  "paths": {
-    "/pets/search": {
-      "get": {
-        "tags": ["pets"],
-        "summary": "Search pets with advanced filters",
-        "description": "Search for pets using multiple filters with pagination",
-        "operationId": "searchPets",
-        "parameters": [
-          {
-            "name": "species",
-            "in": "query",
-            "description": "Filter by species",
-            "schema": {
-              "type": "string",
-              "enum": ["dog", "cat", "other"]
-            }
-          },
-          {
-            "name": "size",
-            "in": "query",
-            "description": "Filter by size",
-            "schema": {
-              "type": "string",
-              "enum": ["small", "medium", "large"]
-            }
-          },
-          {
-            "name": "ageMin",
-            "in": "query",
-            "description": "Minimum age in months",
-            "schema": {
-              "type": "integer",
-              "minimum": 0
-            }
-          },
-          {
-            "name": "ageMax",
-            "in": "query",
-            "description": "Maximum age in months",
-            "schema": {
-              "type": "integer",
-              "minimum": 0
-            }
-          },
-          {
-            "name": "location",
-            "in": "query",
-            "description": "Filter by location (district or city)",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "description": "Page number",
-            "schema": {
-              "type": "integer",
-              "default": 1,
-              "minimum": 1
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "Results per page",
-            "schema": {
-              "type": "integer",
-              "default": 10,
-              "minimum": 1,
-              "maximum": 50
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful operation",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "data": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/PetDto"
-                      }
-                    },
-                    "meta": {
-                      "type": "object",
-                      "properties": {
-                        "totalItems": {
-                          "type": "integer"
-                        },
-                        "itemsPerPage": {
-                          "type": "integer"
-                        },
-                        "totalPages": {
-                          "type": "integer"
-                        },
-                        "currentPage": {
-                          "type": "integer"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Invalid parameters",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          }
-        }
+[
+  {
+    "id": "80a9a6c2-367b-425f-9668-ce4044a2b062",
+    "donorId": "d222dffc-a8e0-40f8-8dd6-023e7e425e8f",
+    "ongId": "b509130e-48a2-4004-ab1c-c1e6691e1b5c",
+    "type": "items",
+    "status": "pending",
+    "amount": null,
+    "transactionId": "",
+    "confirmationDate": null,
+    "confirmedBy": null,
+    "notes": "Donation for dog food",
+    "receiptUrl": null,
+    "createdAt": "2025-04-23T11:03:37.495Z",
+    "updatedAt": "2025-04-23T11:03:37.495Z",
+    "donor": {
+      "id": "d222dffc-a8e0-40f8-8dd6-023e7e425e8f",
+      "email": "owner@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "987654322",
+      "role": "owner",
+      "status": "active",
+      "verified": false,
+      "address": "123 Example Ave, Lima"
+    },
+    "ong": {
+      "id": "b509130e-48a2-4004-ab1c-c1e6691e1b5c",
+      "name": "Happy Paws",
+      "ruc": "20123456789",
+      "description": "We are an organization dedicated to rescuing and adopting abandoned animals.",
+      "logoUrl": "https://hairy-paws-uploads.s3.us-east-1.amazonaws.com/ongs/f80c3abf-961f-4901-85bf-8fd5b7e097ec.jpg",
+      "address": "123 Main Ave, Miraflores, Lima",
+      "phone": "987654321",
+      "email": "contact@happypaws.org",
+      "website": "https://www.happypaws.org",
+      "verified": false
+    },
+    "items": [
+      {
+        "id": "5f881cf1-690b-418b-afd4-c16514c2f1fb",
+        "donationId": "80a9a6c2-367b-425f-9668-ce4044a2b062",
+        "name": "Dog food",
+        "quantity": 51,
+        "description": "Adult dog food, 3kg",
+        "createdAt": "2025-04-23T11:03:37.510Z",
+        "updatedAt": "2025-04-23T11:03:37.510Z"
       }
-    }
+    ]
   }
-}
+]
 ```
 
 **URL de la Documentación API**
@@ -926,15 +973,7 @@ El desarrollo de Hairy Paws se llevó a cabo con una colaboración efectiva y eq
 
 *Actividad de creación, revisión y fusión de pull requests*
 
-**Estadísticas de Colaboración**
 
-| Miembro | Commits | Pull Requests | Code Reviews | Issues Resueltos |
-|---------|---------|---------------|--------------|------------------|
-| Carlos Mendoza | 87 | 23 | 31 | 28 |
-| María Fernanda López | 92 | 26 | 29 | 24 |
-| Sebastián Arévalo | 78 | 19 | 27 | 22 |
-| Luciana Rodríguez | 75 | 21 | 25 | 26 |
-| Javier Palacios | 83 | 24 | 33 | 25 |
 
 **Insights sobre la Colaboración**
 

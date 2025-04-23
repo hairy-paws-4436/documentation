@@ -120,7 +120,7 @@ _Estados:_
 
 _Consistencia terminológica:_
 
-- Use of "pet" (not "animal")
+- Use of "pet"
 - "Owner" (not "proprietor" or "caregiver")
 - "Adopter" (not "interested" or "new owner")
 - "NGO" (not "association" or "foundation")
@@ -142,37 +142,30 @@ Nuestro sistema de búsqueda está diseñado para ayudar a los usuarios a encont
 
 **Búsqueda principal de mascotas:**
 
-**_Filtros básicos:_**
+**_Filtros:_**
 
-- Especie (perro, gato, otros)
-- Tamaño (pequeño, mediano, grande)
-- Edad (cachorro, joven, adulto, senior)
-- Raza (Labrador, Salchicha, etc)
-
-**_Filtros avanzados:_**
-
-- Sexo
-- Estatus
 - Name
+- Age
+- Type
+- Breed
+
 
 **_Presentación de resultados:_**
 
-- Vista de cuadrícula con fotos prominentes
-- Información básica visible (nombre, edad, ubicación)
-- Opción de cambiar a vista de lista con más detalles
-
+- Vista de cuadrícula con foto prominente
+- Información básica visible (Type, Breed, Age)
 
 **_Búsqueda de ONGs:_**
 
-- Filtro por nombre
-- Filtro por descripción
+- Filtro por "name"
+- Filtro por "description"
 
 
 **_Búsqueda de eventos:_**
 
-- Filtro por fecha
-- Filtro por nombre
-- Filtro por tipo
+- Filtro por "date
+- Filtro por "name"
+- Filtro por "volunteer"
 
 ### 4.2.5. Navigation Systems.
 
