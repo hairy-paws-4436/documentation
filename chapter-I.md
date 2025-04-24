@@ -1,6 +1,7 @@
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
+
 ### 1.1.1. Descripción de la Startup
 GuardPets es una startup peruana enfocada en revolucionar el proceso de adopción y cuidado de mascotas a través de su plataforma digital "Hairy Paws". Fundada en 2025, nuestra misión es crear un ecosistema digital que conecte de manera efectiva a adoptantes potenciales, dueños de mascotas que necesitan reubicar a sus animales, y organizaciones sin fines de lucro dedicadas al bienestar animal.
 En GuardPets creemos que cada mascota merece un hogar amoroso y que la tecnología puede ser el puente para facilitar este encuentro. Nuestra plataforma no solo facilita el proceso de adopción, sino que también promueve la transparencia, seguridad y responsabilidad en todo el proceso.
@@ -16,14 +17,16 @@ Nuestra visión es convertirnos en la plataforma líder en Perú y eventualmente
 ### 1.1.2. Perfiles de integrantes del equipo
 
 **_Aldo Alberto Baldeon Fabian_**
+- <a href='https://postimg.cc/jLNyFF9Y' target='_blank'><img src='https://i.postimg.cc/jLNyFF9Y/image.png' border='0' alt='image'/></a>
 - **Código de estudiante:** U202122633
 - **Carrera:** Ingeniería de Software 
-- 
+- Mi nombre es Aldo Alberto Baldeon Fabian y actualmente estoy estudiando Ingeniería de Software en la UPC. Decidí embarcarme en esta carrera debido a mi profundo interés en el desarrollo de aplicaciones y software. Soy conocido por ser una persona responsable y comprometida, cualidades que encuentro fundamentales para trabajar en equipo de manera efectiva.
 
 **_Max Anthony Paitan Pumacahua_**
+- <a href='https://postimg.cc/GB4nxG7t' target='_blank'><img src='https://i.postimg.cc/GB4nxG7t/image.png' border='0' alt='image'/></a>
 - **Código de estudiante:** U201314454
 - **Carrera:** Ingeniería de Software 
-- 
+- Soy Max Anthony y tengo 27 años. Estoy retomando Ingeniería de Software como segunda carrera, ya que siempre tuvo ello como objetivo; en la actualidad. Entre mis habilidades están: Ágil capacidad de análisis -tanto individual como también en colectivo-, empático en un contexto determinado -tomando decisiones de manera sensata-, y puedo ser tanto gestor como un participante activo dentro de un grupo de trabajo.
 
 **_Randy Becker Rengifo Mirabal_**
 - <img src="https://i.postimg.cc/sfpMdF94/Randy.jpg"/>
@@ -31,17 +34,14 @@ Nuestra visión es convertirnos en la plataforma líder en Perú y eventualmente
 - **Carrera:** Ingeniería de Software 
 - Tengo 21 años y soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), actualmente cursando el octavo ciclo. Me considero una persona proactiva, responsable y comprometida con mis deberes. Siempre busco nuevas oportunidades para aprender, crecer profesionalmente y fortalecer mis habilidades tanto técnicas como personales. Tengo gran interés por la tecnología, el desarrollo de software y la innovación. Me adapto con facilidad a distintos entornos de trabajo, disfruto trabajar en equipo y estoy enfocado en encontrar soluciones eficientes a los problemas que se presentan. Además, me apasiona estar en constante aprendizaje, ya sea a través de proyectos académicos, personales o colaborativos.
 
-
-
 **_Fiorella Angela Vilca Valverde_**
 - <a href='https://postimg.cc/t1yrZF2x' target='_blank'><img src='https://i.postimg.cc/t1yrZF2x/image.png' border='0' alt='image'/></a>
 - **Código de estudiante:** U20211E417
 - **Carrera:** Ingeniería de Software 
 - Mi nombre es Fiorella Angela Vilca Valverde, tengo 23 años y actualmente estoy cursando 7mo ciclo de la carrera Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (U.P.C). Elegí esta carrera porque siempre quería saber de las funcionalidades de la computadora y aprender cada día más sobre los lenguajes de programación. Me considero una persona muy sociable, perseverante, responsable, trabajar en equipo y sobre todo leal. Tengo conocimientos en lenguaje de programación C++, Python y Matlab Básico.
 
-
-
 ## 1.2. Solution Profile
+
 ### 1.2.1. Antecedentes y problemática
 
 **¿Quién? (Who)**
@@ -95,8 +95,8 @@ Las ONGs reciben solo el 30% de las donaciones necesarias para su operación óp
 5. El alcance inicial incluirá perros y gatos, con posibilidad de expansión a otras especies en versiones posteriores.
 
 ### 1.2.2. Lean UX Process.
-#### 1.2.2.1. Lean UX Problem Statements.
 
+#### 1.2.2.1. Lean UX Problem Statements.
 
 **Dominio:** Adopción de mascotas y apoyo a organizaciones de protección animal en Perú.
 
@@ -218,7 +218,6 @@ _Datos estadísticos:_
 - El 68% busca garantías de que su mascota irá a un buen hogar
 - El 74% preferiría un proceso que les permita conocer a los nuevos dueños
 - Solo el 22% confía en los métodos actuales de reubicación
-
 
 **ONGs de protección animal**
 

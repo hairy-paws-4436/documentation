@@ -530,9 +530,117 @@ Carlos dirige una ONG con 7 años de operación en Lima Sur, enfocada en rescate
 *Resumen:*
 Ray Alessandro del Carmen Zorrilla, coordinadora operativa de “Patitas Libres”, organización con 6 años rescatando, rehabilitando y buscando hogar para animales maltratados en Lima Metropolitana. Cuentan con 10 personas fijas y más de 40 voluntarios. Ofrecen rescates, atención veterinaria básica, campañas de esterilización, adopciones responsables y charlas educativas. Gestionan adopciones con formularios online, entrevistas, visitas domiciliarias y seguimiento. Sus mayores retos son el financiamiento y la falta de una plataforma digital eficiente. Usan Google Forms, WhatsApp, Canva y redes como Facebook y TikTok. Buscan implementar una plataforma que centralice adopciones, donaciones y seguimiento, con seguridad, facilidad de uso y métricas. A mediano plazo quieren tener un albergue propio y expandirse a provincias. Observan mayor conciencia sobre adopción, pero también más abandono tras la pandemia.
 
+### 2.2.3. Análisis de entrevistas
 
+Tras realizar y analizar las entrevistas a representantes de cada segmento objetivo, se identificaron patrones y características comunes que nos permiten comprender mejor las necesidades, comportamientos y expectativas de cada grupo. A continuación, presentamos el análisis estadístico por segmento:
 
-### 2.2.3. Análisis de entrevistas.
+#### Análisis del Segmento: Adoptantes Potenciales
+
+**Características demográficas:**
+- Rango de edad: 21-23 años (100% de entrevistados)
+- Residencia: Diversos distritos de Lima Metropolitana (San Miguel, Miraflores, Pueblo Libre)
+- Estado civil: 100% solteros
+- Ocupación: 67% estudiantes universitarios, 33% profesionales
+- Situación de vivienda: 67% viven con padres, 33% viven solos
+
+**Preferencias de mascotas:**
+- 67% prefieren perros, 33% prefieren gatos
+- 67% buscan mascotas jóvenes, 33% prefieren adultas
+- 100% mencionaron el temperamento como factor decisivo
+- 67% consideran el tamaño como criterio importante
+
+**Comportamiento digital:**
+- 100% usuarios activos de redes sociales
+- 100% utilizan Instagram como plataforma principal
+- 67% utilizan Facebook para búsqueda de mascotas
+- 100% utilizan WhatsApp para comunicación
+- 67% prefieren interfaces móviles, 33% utilizan tanto móvil como desktop
+
+**Necesidades y preocupaciones:**
+- 100% mencionaron la falta de información confiable sobre las mascotas
+- 100% expresaron preocupación por la salud de la mascota
+- 67% destacaron la importancia de conocer el historial completo
+- 100% valorarían conocer a la mascota antes de la adopción definitiva
+- 67% manifestaron preocupaciones sobre la compatibilidad con su estilo de vida
+
+**Expectativas de una plataforma de adopción:**
+- 100% esperan información detallada y verificada sobre las mascotas
+- 100% valoran la posibilidad de filtrar según características específicas
+- 100% consideran importante la verificación de la información
+- 67% mencionaron interés en un sistema de chat directo
+- 67% desean un proceso de adopción claro y transparente
+
+#### Análisis del Segmento: Dueños que Necesitan Reubicar Mascotas
+
+**Características demográficas:**
+- Rango de edad: 20-53 años (amplio espectro)
+- Residencia: Diversos distritos de Lima (Lima Cercado, San Isidro, Carabayllo)
+- Estado civil: 67% con familia (casados/con hijos), 33% solteros
+- Situación de vivienda: 100% enfrentando cambios de vivienda que afectan a sus mascotas
+
+**Motivaciones para reubicación:**
+- 67% por mudanza a lugares con restricciones para mascotas
+- 33% por problemas de salud (alergias) de miembros de la familia
+- 100% expresaron que es una decisión difícil y no deseada
+
+**Canales utilizados actualmente:**
+- 100% han intentado usar redes sociales para reubicación
+- 67% también han consultado con amigos y familiares
+- 100% reportan dificultades con los métodos actuales
+- 67% mencionaron problemas con personas poco serias o comprometidas
+
+**Necesidades y preocupaciones:**
+- 100% expresaron como principal preocupación el bienestar futuro de su mascota
+- 100% desean verificar que los adoptantes sean responsables
+- 67% mencionaron la importancia de que los adoptantes tengan experiencia previa
+- 100% valorarían poder realizar seguimiento después de la reubicación
+- 67% consideran importantes las condiciones del hogar (espacio, tiempo disponible)
+
+**Expectativas de una plataforma de reubicación:**
+- 100% desean verificación de los posibles adoptantes
+- 67% esperan poder compartir fotos y videos de sus mascotas
+- 100% consideran fundamental la transparencia del proceso
+- 67% valorarían un sistema de mensajería segura
+- 100% desearían alguna forma de seguimiento posterior a la reubicación
+- 33% mencionaron interés en acuerdos formales o contratos
+
+#### Análisis del Segmento: ONGs de Protección Animal
+
+**Características organizacionales:**
+- Tiempo de operación: 2-7 años (promedio: 5 años)
+- Tamaño: 10-15 personas permanentes/activas (promedio)
+- Alcance: 100% operan en Lima Metropolitana, con énfasis en zonas específicas
+- Servicios: 100% realizan rescate, rehabilitación y adopción
+
+**Gestión actual:**
+- 100% utilizan formularios digitales básicos para adopciones
+- 100% realizan entrevistas presenciales
+- 67% implementan visitas domiciliarias
+- 100% intentan realizar seguimiento post-adopción
+- 100% gestionan comunicación interna principalmente por WhatsApp
+- 100% utilizan redes sociales (Facebook, Instagram) para promoción
+
+**Necesidades y desafíos:**
+- 100% mencionaron limitaciones financieras como principal desafío
+- 100% destacaron la desorganización en la gestión de información
+- 67% indicaron problemas para el seguimiento efectivo de adopciones
+- 100% señalaron la necesidad de más voluntarios y recursos
+- 67% mencionaron dificultades con la gestión transparente de donaciones
+
+**Expectativas de una plataforma digital:**
+- 100% valorarían un sistema centralizado para gestión de adopciones
+- 100% necesitan mejorar la transparencia en la gestión de donaciones
+- 67% desean herramientas para coordinación de voluntarios
+- 100% esperan reducir el tiempo dedicado a tareas administrativas
+- 100% consideran importante la facilidad de uso y baja curva de aprendizaje
+- 67% desearían reportes y métricas sobre su operación
+
+Este análisis revela importantes puntos en común entre los tres segmentos, particularmente en lo referente a la necesidad de transparencia, verificación y seguimiento en los procesos de adopción. Los adoptantes buscan información confiable y completa, los dueños que reubicarán desean garantías sobre el bienestar futuro de sus mascotas, y las ONGs necesitan herramientas que simplifiquen sus procesos mientras aseguran adopciones responsables.
+
+Las diferencias más significativas se encuentran en las necesidades específicas de cada segmento:
+- Los adoptantes priorizan la facilidad para encontrar mascotas compatibles
+- Los dueños que reubicarán buscan garantías sobre los nuevos hogares
+- Las ONGs necesitan optimizar sus procesos para manejar volúmenes mayores con recursos limitados
 
 ## 2.3. Needfinding.
 El proceso de needfinding nos ha permitido profundizar en las necesidades reales de nuestros segmentos objetivo, utilizando la información recopilada a través de las entrevistas y el análisis de la competencia. A continuación, presentamos los artefactos desarrollados que nos ayudarán a comprender mejor a nuestros usuarios y diseñar una solución que responda efectivamente a sus necesidades.
