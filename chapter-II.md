@@ -433,7 +433,33 @@ Tecnología y comunicación:
 26. ¿Qué consideraría un éxito al implementar una nueva plataforma digital?
 
 
-### 2.2.2. Registro de entrevistas.
+### 2.2.2. Registro de entrevistas
+
+#### Entrevistas a Adoptantes Potenciales
+
+| Entrevistado | Información básica | Screenshot | Video (URL) | Resumen |
+|--------------|-------------------|--------|------------------------------|---------------------------|
+| **[Melanie Luciana Medina Caverero]** | 21 años y residente de San Miguel | [![image.png](https://i.postimg.cc/7LGGSY9R/image.png)](https://postimg.cc/8FGzSGqd) | https://drive.google.com/file/d/1pQJpUtnnju8vcVCvJaEovCwhez0GanyP/view?usp=sharing | Melanie Luciana Medina Caverero, de 21 años y residente de San Miguel, compartió detalles sobre su vida y expectativas en la entrevista de adopción de mascotas. Actualmente estudiante de derecho y soltera, vive con sus padres y está interesada en adoptar un perro joven que la acompañe en paseos y actividades en casa. Melanie busca mascotas con buen temperamento y prefiere conocerlas personalmente antes de adoptar. Utiliza principalmente Instagram, Facebook y WhatsApp, además de Google Chrome y Safari. Su principal objetivo es brindar un hogar a un animal necesitado, valorando servicio confiable y atención de calidad al elegir productos o servicios. |
+| **[]** |  |  |  |  |
+| **[]** |  |  |  |  |
+
+
+#### Entrevistas a Dueños que Necesitan Reubicar Mascotas
+
+| Entrevistado | Información básica | Screenshot | Video (URL) | Resumen |
+|--------------|-------------------|--------|------------------------------|---------------------------|
+| **[]** |  |  |  |  |
+| **[]** |  |  |  |  |
+| **[]** |  |  |  |  |
+
+#### Entrevistas a ONGs de Protección Animal
+
+| Entrevistado | Información básica | Screenshot | Video (URL) | Resumen |
+|--------------|-------------------|--------|------------------------------|---------------------------|
+| **[]** |  |  |  |  |
+| **[]** |  |  |  |  |
+| **[]** |  |  |  |  |
+
 ### 2.2.3. Análisis de entrevistas.
 
 ## 2.3. Needfinding.

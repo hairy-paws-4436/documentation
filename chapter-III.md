@@ -97,11 +97,6 @@ El Product Backlog representa la lista priorizada de funcionalidades a desarroll
 | 32 | US34 | Endpoints de donaciones | Como desarrollador, deseo endpoints para gestionar donaciones y necesidades. | 5 |
 | 33 | US35 | Documentación de API | Como desarrollador, deseo acceder a documentación completa del API. | 3 |
 
-[Link al Product Backlog en la herramienta de gestión: https://trello.com/b/hairy-paws-backlog]
-
-*Captura de pantalla del Product Backlog*
-
-![Product Backlog Screenshot](https://example.com/screenshot.png)
 
 La priorización del Product Backlog refleja nuestro enfoque en:
 
