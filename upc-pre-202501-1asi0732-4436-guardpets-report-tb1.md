@@ -24,7 +24,7 @@
 
 
 
-#### Mayo 2025
+#### Abril 2025
 
 ---
 
@@ -32,12 +32,12 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 |---------|-------|-------|----------------------------|
-| 1.0.0 | 02/05/2025 | Equipo GuardPets | Versión inicial del informe |
-| 1.1.0 | 10/05/2025 | Fiorella Vilca | Actualización de capítulos I y II |
-| 1.2.0 | 15/05/2025 | Max Paitan | Corrección de requerimientos y User Stories |
-| 1.3.0 | 18/05/2025 | Aldo Baldeon | Actualización de diseño y prototipado |
-| 1.4.0 | 20/05/2025 | Randy Rengifo | Implementación de evidencias y despliegue |
-| 1.5.0 | 22/05/2025 | Equipo GuardPets | Versión final con correcciones de retroalimentación |
+| 1.0.0 | 08/04/2025 | Equipo GuardPets | Versión inicial del informe |
+| 1.1.0 | 10/04/2025 | Fiorella Vilca | Actualización de capítulos I y II |
+| 1.2.0 | 15/04/2025 | Max Paitan | Corrección de requerimientos y User Stories |
+| 1.3.0 | 18/04/2025 | Aldo Baldeon | Actualización de diseño y prototipado |
+| 1.4.0 | 20/04/2025 | Randy Rengifo | Implementación de evidencias y despliegue |
+| 1.5.0 | 22/04/2025 | Equipo GuardPets | Versión final con correcciones de retroalimentación |
 
 ---
 
@@ -3215,11 +3215,12 @@ El backend de la aplicación se implementó utilizando NestJS como framework, si
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |------------|--------|-----------|----------------|---------------------|------------------|
-| guardpets/hairy-paws-api | feature/auth-service | 5e8c3b1 | feat: implement authentication service | Create JWT-based auth with roles and permissions | 2025-01-25 |
-| guardpets/hairy-paws-api | feature/users-module | 1d9f7e2 | feat: add users module | Implement CRUD operations for users management | 2025-01-27 |
-| guardpets/hairy-paws-api | feature/pets-module | 3c8b5a4 | feat: create pets module | Add endpoints for pet profiles with search functionality | 2025-02-02 |
-| guardpets/hairy-paws-api | feature/adoptions-module | 7b2e6f9 | feat: implement adoptions module | Create adoption request flow with status management | 2025-02-08 |
-| guardpets/hairy-paws-api | feature/donations-module | 4a5d9c3 | feat: add donations module | Implement donation tracking for NGOs | 2025-02-14 |
+| guardpets/hairy-paws-api | feature/auth-service | 5e8c3b1 | feat: implement authentication service | Create JWT-based auth with roles and permissions | 2025-04-10 |
+| guardpets/hairy-paws-api | feature/users-module | 1d9f7e2 | feat: add users module | Implement CRUD operations for users management | 2025-04-11 |
+| guardpets/hairy-paws-api | feature/pets-module | 3c8b5a4 | feat: create pets module | Add endpoints for pet profiles with search functionality | 2025-04-12 |
+| guardpets/hairy-paws-api | feature/adoptions-module | 7b2e6f9 | feat: implement adoptions module | Create adoption request flow with status management | 2025-04-15 |
+| guardpets/hairy-paws-api | feature/donations-module | 4a5d9c3 | feat: add donations module | Implement donation tracking for NGOs | 2025-04-20 |
+
 
 **Implementación de Endpoints Principales**
 
