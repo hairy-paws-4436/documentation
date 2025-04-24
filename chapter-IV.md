@@ -261,8 +261,18 @@ Nuestra landing page está diseñada para presentar de manera efectiva el propó
 [![image.png](https://i.postimg.cc/tCyGQSVv/image.png)](https://postimg.cc/QV6ycqmc)
 
 ## 4.5. Mobile Applications Prototyping.
+
 ### 4.5.1. Android Mobile Applications Prototyping.
+
+[![image.png](https://i.postimg.cc/05zd9FkG/image.png)](https://postimg.cc/WtPJn9Jt)
+
+[upc-pre-202501-1asi0732-4436-GuardPets-prototyping](https://drive.google.com/file/d/1deVwZVH0tWNUJ4nf2mrz33_X9ne2noEX/view?usp=sharing)
+
 ### 4.5.2. iOS Mobile Applications Prototyping.
+
+[![image.png](https://i.postimg.cc/05zd9FkG/image.png)](https://postimg.cc/WtPJn9Jt)
+
+[upc-pre-202501-1asi0732-4436-GuardPets-prototyping](https://drive.google.com/file/d/1deVwZVH0tWNUJ4nf2mrz33_X9ne2noEX/view?usp=sharing)
 
 ## 4.6. Web Applications UX/UI Design.
 ### 4.6.1. Web Applications Wireframes.
@@ -304,6 +314,10 @@ Nuestra landing page está diseñada para presentar de manera efectiva el propó
 [![image.png](https://i.postimg.cc/t4McT2Yj/image.png)](https://postimg.cc/gx3styVS)
 
 ## 4.7. Web Applications Prototyping.
+
+[![image.png](https://i.postimg.cc/8CZGmw04/image.png)](https://postimg.cc/kVRLnN9R)
+
+[upc-pre-202501-1asi0732-4436-GuardPets-prototyping](https://drive.google.com/file/d/1yQ1XcNaqSg0ddpH1_jJEMBnAUbwe24L6/view?usp=sharing)
 
 ## 4.8. Domain-Driven Software Architecture.
 ### 4.8.1. Software Architecture Context Diagram.

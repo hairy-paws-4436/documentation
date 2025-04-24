@@ -35,5 +35,3 @@
 9. **Exploración de tecnologías emergentes**: Evaluar la incorporación de tecnologías como blockchain para trazabilidad de donaciones, realidad aumentada para visualización de mascotas en entornos reales, y asistentes virtuales para guiar el proceso de adopción.
 
 10. **Sostenibilidad e impacto social**: Establecer métricas claras de impacto social y bienestar animal, que permitan cuantificar y comunicar el efecto positivo de la plataforma, atrayendo potenciales inversores de impacto y aliados institucionales.
-
-# Video About-the-Team.
