@@ -185,11 +185,11 @@ Nuestro sistema de navegación está diseñado para ser intuitivo, consistente y
 **_Tab bar/Bottom navigation con 4 ítems principales:_**
 
 - Pets
-- Notifications
-- Organizations
+- NOGs
+- Events
 - Profile
 
-[![image.png](https://i.postimg.cc/G231xnHB/image.png)](https://postimg.cc/VShTzT91)
+[![image.png](https://i.postimg.cc/zXgFmgQx/image.png)](https://postimg.cc/GHbyGHdD)
 
 
 ## 4.3. Landing Page UI Design.

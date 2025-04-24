@@ -636,7 +636,7 @@ La aplicación web frontend se implementó utilizando Angular 19 con PrimeNG com
 
 **URL de la Aplicación Web Desplegada**
 
-[https://app.hairypaws.com.pe](https://app.hairypaws.com.pe)
+[https://app.hairypaws.com.pe]()
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence
 
@@ -644,75 +644,120 @@ La aplicación móvil se desarrolló con Flutter para garantizar una experiencia
 
 **Capturas de la Implementación**
 
-![Mobile App - Onboarding](https://example.com/mobile-onboarding.jpg)
+[![Screenshot-20250423-234043.png](https://i.postimg.cc/N0MythMQ/Screenshot-20250423-234043.png)](https://postimg.cc/TKz2j4gs)
+[![Screenshot-20250423-234113.png](https://i.postimg.cc/g0TxkMX8/Screenshot-20250423-234113.png)](https://postimg.cc/g0TxkMX8)
+[![Screenshot-20250423-234125.png](https://i.postimg.cc/yxFxjsfy/Screenshot-20250423-234125.png)](https://postimg.cc/yxFxjsfy)
+[![Screenshot-20250423-234250.png](https://i.postimg.cc/KjX4tR5Y/Screenshot-20250423-234250.png)](https://postimg.cc/KjX4tR5Y)
+[![Screenshot-20250423-234301.png](https://i.postimg.cc/sXGvBp78/Screenshot-20250423-234301.png)](https://postimg.cc/sXGvBp78)
+[![Screenshot-20250423-234306.png](https://i.postimg.cc/FFcYNV9k/Screenshot-20250423-234306.png)](https://postimg.cc/FFcYNV9k)
+[![Screenshot-20250423-234316.png](https://i.postimg.cc/ncGMQV9H/Screenshot-20250423-234316.png)](https://postimg.cc/ncGMQV9H)
+[![Screenshot-20250423-234328.png](https://i.postimg.cc/HsgVx8xZ/Screenshot-20250423-234328.png)](https://postimg.cc/HsgVx8xZ)
+[![Screenshot-20250423-234339.png](https://i.postimg.cc/P5fJbG11/Screenshot-20250423-234339.png)](https://postimg.cc/P5fJbG11)
+[![Screenshot-20250423-234356.png](https://i.postimg.cc/t4rT2rzw/Screenshot-20250423-234356.png)](https://postimg.cc/t4rT2rzw)
+[![Screenshot-20250423-234410.png](https://i.postimg.cc/jjmjrLmh/Screenshot-20250423-234410.png)](https://postimg.cc/jjmjrLmh)
+[![Screenshot-20250423-234419.png](https://i.postimg.cc/8CjC3hK5/Screenshot-20250423-234419.png)](https://postimg.cc/8CjC3hK5)
+[![Screenshot-20250423-234439.png](https://i.postimg.cc/26WSjCfN/Screenshot-20250423-234439.png)](https://postimg.cc/26WSjCfN)
+[![Screenshot-20250423-234446.png](https://i.postimg.cc/SRpNJHy2/Screenshot-20250423-234446.png)](https://postimg.cc/SRpNJHy2)
+[![Screenshot-20250423-234514.png](https://i.postimg.cc/G3kmZ3Qk/Screenshot-20250423-234514.png)](https://postimg.cc/G3kmZ3Qk)
+[![Screenshot-20250423-234536.png](https://i.postimg.cc/L5B4fvXy/Screenshot-20250423-234536.png)](https://postimg.cc/L5B4fvXy)
 
-*Pantallas de onboarding para nuevos usuarios*
 
-![Mobile App - Home](https://example.com/mobile-home.jpg)
 
-*Dashboard personalizado en versión móvil*
-
-![Mobile App - Búsqueda](https://example.com/mobile-search.jpg)
-
-*Interfaz de búsqueda optimizada para móvil*
-
-![Mobile App - Detalle de Mascota](https://example.com/mobile-pet-detail.jpg)
-
-*Vista detallada con galería adaptada a pantalla táctil*
-
-![Mobile App - Chat](https://example.com/mobile-chat.jpg)
-
-*Interfaz de mensajería entre adoptantes y dueños/ONGs*
-
-**Evidencia de Desarrollo**
+# Evidencia de Desarrollo
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |------------|--------|-----------|----------------|---------------------|------------------|
-| guardpets/hairy-paws-mobile | feature/auth-screens | 4b7e2a3 | feat: implement authentication screens | Create login, registration and password recovery UI | 2025-01-28 |
-| guardpets/hairy-paws-mobile | feature/home-dashboard | 9d6f3c2 | feat: create personalized dashboard | Implement role-based dashboard with recent activity | 2025-02-05 |
-| guardpets/hairy-paws-mobile | feature/pet-search | 2e8f7a1 | feat: add pet search functionality | Implement search with filters and results list | 2025-02-09 |
-| guardpets/hairy-paws-mobile | feature/pet-detail | 7c5b3e9 | feat: implement pet detail view | Add detailed view with image gallery and adoption button | 2025-02-12 |
-| guardpets/hairy-paws-mobile | feature/messaging | 3a9f6d2 | feat: add real-time messaging | Implement chat functionality between users | 2025-02-15 |
+| hairy-paws-4436/mobile-app | feature/project-setup | a5c1b92 | chore: initial project setup | Configure project structure, dependencies and theme | 2025-04-11 |
+| hairy-paws-4436/mobile-app | feature/auth-screens | 4b7e2a3 | feat: implement authentication screens | Create login, registration and 2FA UI | 2025-04-11 |
+| hairy-paws-4436/mobile-app | feature/core-architecture | 8d9f64c | feat: implement BLoC architecture | Set up BLoC pattern, repositories and services | 2025-04-12 |
+| hairy-paws-4436/mobile-app | feature/pet-search | 2e8f7a1 | feat: add pet search functionality | Implement search with filters and results list | 2025-04-12 |
+| hairy-paws-4436/mobile-app | feature/pet-detail | 7c5b3e9 | feat: implement pet detail view | Add detailed view with image gallery and adoption buttons | 2025-04-12 |
+| hairy-paws-4436/mobile-app | feature/adoption-request | 9f6d2e1 | feat: implement adoption request flow | Add forms for adoption requests and visits | 2025-04-14 |
+| hairy-paws-4436/mobile-app | feature/owner-dashboard | 6b3a7f9 | feat: create pet owner features | Add pet management for owners including add/edit/delete | 2025-04-14 |
+| hairy-paws-4436/mobile-app | feature/ngo-integration | 3e5b8c2 | feat: implement NGO functionality | Add NGO registration, profile and donation screens | 2025-04-14 |
+| hairy-paws-4436/mobile-app | feature/events-management | 1a2b3c4 | feat: add events functionality | Create events listing, details and creation screens | 2025-04-15 |
+| hairy-paws-4436/mobile-app | feature/notifications | 5d4e3f2 | feat: implement notification system | Add notifications center with status updates | 2025-04-15 |
+| hairy-paws-4436/mobile-app | feature/user-profile | 7g6h5i4 | feat: enhance user profile | Implement profile editing and password change | 2025-04-16 |
+| hairy-paws-4436/mobile-app | feature/cache-optimization | 2k3l4m5 | perf: improve app performance | Implement caching to fix infinite loading issues | 2025-04-17 |
+| hairy-paws-4436/mobile-app | feature/ui-improvements | 9n8m7l6 | feat: enhance UI components | Polish UI elements and add animations | 2025-04-18 |
+| hairy-paws-4436/mobile-app | bugfix/navigation-issues | 5q6r7s8 | fix: resolve navigation bugs | Fix bottomNavigationBar issues and routing problems | 2025-04-18 |
 
-**Implementación de Funcionalidades Clave**
+### Características Implementadas
 
-1. **Experiencia Optimizada para Móvil**
-   - Gestos intuitivos (swipe, pull-to-refresh)
-   - Diseño adaptado a diferentes tamaños de pantalla
-   - Optimización para uso con una mano
-   - Soporte para modo oscuro
+#### 1. Autenticación y Gestión de Usuarios
+- Registro de usuarios con diferentes roles (adoptantes y propietarios)
+- Inicio de sesión seguro
+- Autenticación de dos factores para mayor seguridad
+- Gestión de perfil de usuario
+- Recuperación de contraseña
 
-2. **Funcionalidades Offline**
-   - Caché de mascotas vistas recientemente
-   - Guardado de borradores de formularios
-   - Sincronización automática al recuperar conexión
-   - Notificaciones de errores de conectividad
+#### 2. Exploración y Búsqueda de Mascotas
+- Listado de mascotas disponibles para adopción
+- Filtros avanzados por especie, tamaño y otras características
+- Búsqueda por texto para encontrar mascotas específicas
+- Vista detallada de cada mascota con galería de imágenes
+- Información completa sobre cada animal (edad, género, vacunas, etc.)
 
-3. **Notificaciones Push**
-   - Alertas de nuevas mascotas según preferencias
-   - Actualizaciones de estado de solicitudes
-   - Mensajes recibidos
-   - Recordatorios de visitas programadas
+#### 3. Proceso de Adopción
+- Solicitud de adopción directa desde la app
+- Programación de visitas para conocer a las mascotas
+- Seguimiento del estado de las solicitudes
+- Notificaciones sobre actualizaciones de solicitudes
 
-4. **Geolocalización**
-   - Búsqueda de mascotas por proximidad
-   - Mapas para ubicación de ONGs y eventos
-   - Cálculo de rutas para visitas
+#### 4. Gestión para Propietarios
+- Registro de mascotas para adopción
+- Edición de información de mascotas
+- Aprobación o rechazo de solicitudes de adopción
+- Estadísticas de interacciones
 
-**Tecnologías y Características Técnicas**
+#### 5. Integración con ONGs
+- Listado de organizaciones sin fines de lucro
+- Registro como ONG
+- Donaciones a través de la aplicación
+- Gestión de eventos de adopción
 
-- Flutter 3.19.0 como framework principal
-- Provider para gestión de estado
-- Dio para peticiones HTTP
-- Firebase Cloud Messaging para notificaciones push
-- GetX para navegación y gestión de dependencias
-- SharedPreferences para almacenamiento local
-- Camera plugin para captura de imágenes in-app
+#### 6. Sistema de Eventos
+- Calendario de eventos de adopción
+- Creación y gestión de eventos por ONGs
+- Registro para participación en eventos
+- Visualización detallada de información de eventos
 
-**Enlaces de Descarga**
+#### 7. Sistema de Notificaciones
+- Notificaciones en tiempo real sobre actualizaciones
+- Centro de notificaciones integrado
+- Marcado de notificaciones como leídas
+- Eliminación de notificaciones
 
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.guardpets.hairypaws)
-- [Apple App Store](https://apps.apple.com/us/app/hairy-paws/id1234567890)
+### Arquitectura Técnica
+
+La aplicación se ha implementado siguiendo una arquitectura limpia con separación de capas:
+
+#### 1. Capa de Presentación
+- **BLoC Pattern**: Implementación de la gestión de estado usando flutter_bloc para mantener una separación clara entre UI y lógica de negocio
+- **Componentes Reutilizables**: Widgets personalizados como PetCard, NGOCard, EventCard, etc.
+- **Navegación**: Sistema de enrutamiento centralizado usando Navigator 2.0
+
+#### 2. Capa de Dominio
+- **Repositorios**: Interfaces para acceder a los datos
+- **Modelos**: Definición de entidades de negocio (Animal, User, NGO, Event, etc.)
+- **BLoCs específicos**: Cada característica cuenta con su propio BLoC para gestionar su estado
+
+#### 3. Capa de Datos
+- **Servicios API**: Comunicación con el backend mediante HTTP
+- **Repositorios**: Implementación de cachés para mejorar el rendimiento
+- **Almacenamiento Local**: Persistencia de datos de sesión y configuraciones
+
+### Tecnologías Utilizadas
+
+- **Flutter 3.19.0**: Framework principal para desarrollo multiplataforma
+- **flutter_bloc**: Biblioteca para gestión de estado
+- **http**: Cliente HTTP para comunicación con la API REST
+- **flutter_secure_storage**: Almacenamiento seguro para datos sensibles como tokens
+- **get_it**: Inyección de dependencias
+- **intl**: Internacionalización y formateo
+- **image_picker**: Selección de imágenes para subir fotos de mascotas
+- **url_launcher**: Apertura de URLs externas
+
 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 
@@ -777,7 +822,7 @@ El backend de la aplicación se implementó utilizando NestJS como framework, si
 
 - Protección contra CSRF
 - Rate limiting para prevenir ataques de fuerza bruta
-- Validación exhaustiva de inputs
+- Validación de inputs
 - Hashing seguro de contraseñas con bcrypt
 - Sanitización de datos
 - Logs de seguridad y auditoría
@@ -949,76 +994,74 @@ La documentación de la API se implementó utilizando Swagger/OpenAPI integrado 
 
 **URL de la Documentación API**
 
-[https://api.hairypaws.com.pe/docs](https://api.hairypaws.com.pe/docs)
+[https://api.hairypaws.com.pe/docs]()
 
 ### 5.2.7. Team Collaboration Insights
 
-El desarrollo de Hairy Paws se llevó a cabo con una colaboración efectiva y equilibrada entre todos los miembros del equipo, como se evidencia en las estadísticas de contribución y métricas de colaboración.
-
 **Gráfico de Contribuciones en GitHub**
 
-![GitHub Contribuciones - Equipo](https://example.com/github-contributions.jpg)
-
-*Contribuciones del equipo durante el período de desarrollo*
+[![image.png](https://i.postimg.cc/pVfnDMmL/image.png)](https://postimg.cc/YjS9HVN5)
 
 **Distribución de Commits por Miembro**
 
-![Distribución de Commits](https://example.com/commits-distribution.jpg)
+[![image.png](https://i.postimg.cc/x1CJDktX/image.png)](https://postimg.cc/ykMY0NqK)
 
-*Distribución porcentual de commits entre miembros del equipo*
-
-**Actividad de Pull Requests**
-
-![Pull Requests Activity](https://example.com/pr-activity.jpg)
-
-*Actividad de creación, revisión y fusión de pull requests*
+[![image.png](https://i.postimg.cc/FzNzP1Ys/image.png)](https://postimg.cc/WFYszNmQ)
 
 
-
-**Insights sobre la Colaboración**
-
-- **Especialización Flexible**: Si bien cada miembro tenía áreas de especialización primaria (frontend, backend, móvil), todos contribuyeron en múltiples componentes del sistema.
-
-- **Revisiones Cruzadas**: Implementamos una política de que cada pull request debía ser revisado por al menos dos miembros del equipo, incluyendo uno de un área diferente a la del código modificado.
-
-- **Programación en Parejas**: Para funcionalidades críticas o complejas, utilizamos sesiones de programación en parejas, mejorando la calidad del código y compartiendo conocimiento.
-
-- **Documentación Colaborativa**: Cada miembro contribuyó a la documentación técnica y de usuario, garantizando que fuera completa y comprensible.
-
-- **Rotación de Roles**: Implementamos una rotación semanal para ciertos roles (coordinación de Daily Standups, gestión de integración continua, revisión de calidad) para evitar silos de conocimiento.
-
-**Lecciones Aprendidas**
-
-- La implementación de estándares claros de código desde el inicio redujo significativamente el tiempo dedicado a revisiones.
-- Las reuniones diarias breves (15 minutos) fueron cruciales para identificar y resolver bloqueos rápidamente.
-- La documentación continua de las APIs facilitó enormemente la integración entre frontend y backend.
-- El uso de ramas para características específicas permitió el desarrollo paralelo sin conflictos significativos.
-- La implementación de pruebas automatizadas desde el principio ayudó a detectar regresiones tempranamente.
 
 ## 5.3. Video About-the-Product
 
-El video "About-the-Product" se creó para presentar Hairy Paws a potenciales usuarios y stakeholders, destacando el propósito, funcionalidades clave y beneficios de la plataforma.
+El video "About-the-Product" se creó para presentar Hairy Paws a potenciales usuarios y stakeholders, destacando el propósito, funcionalidades clave y beneficios de la plataforma a través de una demostración detallada del producto.
 
-![Video Screenshot](https://example.com/video-screenshot.jpg)
+[![image.png](https://i.postimg.cc/7LWkTdNP/image.png)](https://postimg.cc/gw85CM51)
 
 **Descripción del Video**
 
-El video tiene una duración de 2:45 minutos y presenta de manera concisa y atractiva la plataforma Hairy Paws. Comienza con una introducción al problema que busca resolver: la desconexión entre adoptantes, dueños que necesitan reubicar mascotas y ONGs dedicadas al bienestar animal en Perú.
+El video tiene una duración de 6:51 minutos y presenta de manera concisa y demostrativa la plataforma Hairy Paws. El presentador, acompañado por Karen como usuario potencial, realiza un recorrido completo por las diferentes funcionalidades de la aplicación.
 
-A continuación, presenta la solución Hairy Paws a través de una demostración de las principales funcionalidades:
+El video comienza con una breve introducción donde se explica el propósito principal de Hairy Paws: facilitar la adopción de mascotas y canalizar donaciones a organizaciones afiliadas. A continuación, se muestra la aplicación en funcionamiento a través de una cuenta de demostración, recorriendo las siguientes características:
 
-1. Proceso de adopción, desde la búsqueda hasta la confirmación
-2. Creación de perfiles de mascotas para reubicación
-3. Gestión de donaciones y necesidades para ONGs
-4. Experiencia móvil integrada
+1. **Exploración de Mascotas**:
+   - Visualización del catálogo completo de mascotas disponibles
+   - Sistema de filtrado y ordenamiento por nombre, edad y otros criterios
+   - Visualización detallada de cada mascota con información relevante
 
-El video incluye el testimonio de Jimena Ramos, una usuaria real que participó en las entrevistas de validación y utilizó la plataforma para adoptar a su gato Simba. Ella destaca la transparencia del proceso y la confianza que le generó la verificación de usuarios.
+2. **Gestión de Mascotas para Dueños**:
+   - Panel de mascotas registradas por el usuario
+   - Formulario de registro con campos para información básica, estado de salud y carga de imágenes
+   - Opciones para editar y eliminar perfiles de mascotas
 
-El tono del video es cálido y cercano, alineado con la identidad de marca, y transmite los valores de responsabilidad, transparencia y amor por los animales que caracterizan a Hairy Paws.
+3. **Sistema de Notificaciones**:
+   - Alertas sobre solicitudes de adopción y visitas
+   - Opciones para aceptar o rechazar solicitudes
+
+4. **Organizaciones y Eventos**:
+   - Directorio de ONGs registradas con información detallada
+   - Calendario de eventos con filtrado por fechas
+   - Proceso para registrarse como voluntario
+   - Gestión de eventos para organizadores
+
+5. **Sistema de Donaciones**:
+   - Donaciones monetarias mediante transferencia bancaria
+   - Donaciones de productos con registro detallado
+   - Proceso de confirmación de donaciones recibidas por parte de las ONGs
+
+6. **Gestión de Perfil**:
+   - Configuración de cuenta y preferencias
+   - Opción de autenticación de dos pasos con Microsoft Authenticator
+   - Gestión de información para ONGs registradas
+
+7. **Proceso de Adopción**:
+   - Solicitud de visitas con selección de fecha
+   - Formulario de solicitud de adopción
+   - Sistema de aprobación por parte del dueño o la ONG
+
+El video incluye la reacción y comentarios de Karen, quien destaca la facilidad de uso de la plataforma, la claridad de la información y la intuitividad de la interfaz. También plantea una pregunta sobre la posibilidad de realizar donaciones con tarjeta de crédito, a lo que se explica que actualmente solo se permiten transferencias bancarias por razones de seguridad.
 
 **Enlaces del Video**
 
-- [Microsoft Stream](https://stream.microsoft.com/video/hairypaws-product)
-- [YouTube (Incrustado en Landing Page)](https://youtube.com/watch?v=hairypaws-product)
+- [upc-pre-202501-1asi0732-4436-GuardPets-about-the-product-sprint-1-2](https://drive.google.com/file/d/1Q8gUcalHj9FDStFfwGf0pnmEkq3WHxXs/view?usp=sharing)
 
-**Duración**: 2:45 minutos
+
+**Duración**: 6:51 minutos

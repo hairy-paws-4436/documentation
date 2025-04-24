@@ -150,8 +150,6 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 |  |  | Participar en eventos de recaudación | Calendario de eventos | US22, US23 |
 |  |  | Realizar donaciones recurrentes | Sistema de suscripción | US20 |
 |  | Gabriel Ruiz (Dueño) | Donar durante proceso de reubicación | Opción de donación integrada | US20 |
-|  |  | Aportar a causas específicas | Listado de necesidades | US19, US20 |
-|  | Valeria Torres (ONG) | Comunicar necesidades claramente | Sistema de lista de necesidades | US19 |
 |  |  | Confirmar donaciones recibidas | Sistema de confirmación | US21 |
 |  |  | Organizar eventos de recaudación | Gestión de eventos | US22, US23 |
 | **BG5**: Satisfacción 4.5/5 | Ana Martínez (Adoptante) | Tener experiencia positiva de adopción | Proceso fluido y transparente | US10, US13, US14 |
@@ -159,6 +157,5 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 |  |  | Proporcionar feedback constructivo | Sistema de evaluación | US18 |
 |  | Gabriel Ruiz (Dueño) | Sentir tranquilidad durante el proceso | Verificación de adoptantes | US15 |
 |  |  | Completar el proceso eficientemente | Flujo de proceso optimizado | US09, US15 |
-|  | Valeria Torres (ONG) | Optimizar procesos internos | Herramientas de gestión | US06, US15, US19 |
 |  |  | Mejorar relación con adoptantes | Comunicación integrada | US12, US15 |
 |  |  | Incrementar transparencia | Confirmación de donaciones | US21 |

@@ -26,14 +26,18 @@ Nuestra visión es convertirnos en la plataforma líder en Perú y eventualmente
 - 
 
 **_Randy Becker Rengifo Mirabal_**
+- <img src="https://i.postimg.cc/sfpMdF94/Randy.jpg"/>
 - **Código de estudiante:** U20211D683
 - **Carrera:** Ingeniería de Software 
 - Tengo 21 años y soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), actualmente cursando el octavo ciclo. Me considero una persona proactiva, responsable y comprometida con mis deberes. Siempre busco nuevas oportunidades para aprender, crecer profesionalmente y fortalecer mis habilidades tanto técnicas como personales. Tengo gran interés por la tecnología, el desarrollo de software y la innovación. Me adapto con facilidad a distintos entornos de trabajo, disfruto trabajar en equipo y estoy enfocado en encontrar soluciones eficientes a los problemas que se presentan. Además, me apasiona estar en constante aprendizaje, ya sea a través de proyectos académicos, personales o colaborativos.
 
+
+
 **_Fiorella Angela Vilca Valverde_**
+- <a href='https://postimg.cc/t1yrZF2x' target='_blank'><img src='https://i.postimg.cc/t1yrZF2x/image.png' border='0' alt='image'/></a>
 - **Código de estudiante:** U20211E417
 - **Carrera:** Ingeniería de Software 
-- 
+- Mi nombre es Fiorella Angela Vilca Valverde, tengo 23 años y actualmente estoy cursando 7mo ciclo de la carrera Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (U.P.C). Elegí esta carrera porque siempre quería saber de las funcionalidades de la computadora y aprender cada día más sobre los lenguajes de programación. Me considero una persona muy sociable, perseverante, responsable, trabajar en equipo y sobre todo leal. Tengo conocimientos en lenguaje de programación C++, Python y Matlab Básico.
 
 
 

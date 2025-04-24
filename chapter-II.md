@@ -437,28 +437,100 @@ Tecnología y comunicación:
 
 #### Entrevistas a Adoptantes Potenciales
 
-| Entrevistado | Información básica | Screenshot | Video (URL) | Resumen |
-|--------------|-------------------|--------|------------------------------|---------------------------|
-| **[Melanie Luciana Medina Caverero]** | 21 años y residente de San Miguel | [![image.png](https://i.postimg.cc/7LGGSY9R/image.png)](https://postimg.cc/8FGzSGqd) | https://drive.google.com/file/d/1pQJpUtnnju8vcVCvJaEovCwhez0GanyP/view?usp=sharing | Melanie Luciana Medina Caverero, de 21 años y residente de San Miguel, compartió detalles sobre su vida y expectativas en la entrevista de adopción de mascotas. Actualmente estudiante de derecho y soltera, vive con sus padres y está interesada en adoptar un perro joven que la acompañe en paseos y actividades en casa. Melanie busca mascotas con buen temperamento y prefiere conocerlas personalmente antes de adoptar. Utiliza principalmente Instagram, Facebook y WhatsApp, además de Google Chrome y Safari. Su principal objetivo es brindar un hogar a un animal necesitado, valorando servicio confiable y atención de calidad al elegir productos o servicios. |
-| **[]** |  |  |  |  |
-| **[]** |  |  |  |  |
+**Entrevista 1: Melanie Luciana Medina Caverero**
+*Información básica:* 21 años, residente de San Miguel, Lima
+*Screenshot:* 
+[![image.png](https://i.postimg.cc/7LGGSY9R/image.png)](https://postimg.cc/8FGzSGqd)
+*Video:* [https://drive.google.com/file/d/1pQJpUtnnju8vcVCvJaEovCwhez0GanyP/view?usp=sharing](https://drive.google.com/file/d/1pQJpUtnnju8vcVCvJaEovCwhez0GanyP/view?usp=sharing)
+
+*Resumen:*
+Melanie Luciana Medina Caverero, de 21 años y residente de San Miguel, compartió detalles sobre su vida y expectativas en la entrevista de adopción de mascotas. Actualmente estudiante de derecho y soltera, vive con sus padres y está interesada en adoptar un perro joven que la acompañe en paseos y actividades en casa. Melanie busca mascotas con buen temperamento y prefiere conocerlas personalmente antes de adoptar. Utiliza principalmente Instagram, Facebook y WhatsApp, además de Google Chrome y Safari. Su principal objetivo es brindar un hogar a un animal necesitado, valorando servicio confiable y atención de calidad al elegir productos o servicios.
+
+**Entrevista 2: Arturo Pizarro**
+*Información básica:* 23 años, residente de Miraflores, Lima
+*Screenshot:* 
+[![image.png](https://i.postimg.cc/qB8M3ZV4/image.png)](https://postimg.cc/Wt1vR81H)
+*Video:* [https://drive.google.com/file/d/1GqiM2v5rd-2-i1JBqhvOubW7fK7GMlTy/view?usp=sharing](https://drive.google.com/file/d/1GqiM2v5rd-2-i1JBqhvOubW7fK7GMlTy/view?usp=sharing)
+
+*Resumen:*
+Arturo, un médico de 23 años que vive solo en Miraflores, busca adoptar un perro pequeño (menos de 10 kg) adulto, esterilizado y tranquilo. Su experiencia previa buscando mascotas en Facebook fue frustrante debido a la falta de confiabilidad en las publicaciones. Valora la transparencia en el historial médico y el comportamiento del animal, y está dispuesto a someterse a un proceso de verificación si sus datos están protegidos. Usa dispositivos Apple, redes sociales como Instagram y TikTok, y prioriza funcionalidades como chat directo, filtros avanzados y seguimiento post-adopción.
+
+**Entrevista 3: José Antonio Flores Paicota**
+*Información básica:* 21 años, redisente de Pueblo Libre, Lima
+*Screenshot:* [![image.png](https://i.postimg.cc/gkn2SynT/image.png)](https://postimg.cc/crGW6n7R)
+
+*Video:* [https://drive.google.com/file/d/1vPSGSiiJRiJnn0Z7XDuN8E_sPjoApfcp/view?usp=sharing](https://drive.google.com/file/d/1vPSGSiiJRiJnn0Z7XDuN8E_sPjoApfcp/view?usp=sharing)
+
+*Resumen:* 
+José Antonio Flores Paicota, de 21 años, estudiante de Ingeniería de Software que vive en Pueblo Libre con sus padres y hermana. Ha tenido perros, gatos y actualmente un conejo, la mayoría rescatados o regalados.
+
+Le gustaría adoptar un gato porque son más independientes. Busca uno pequeño y juguetón. No ha usado apps de adopción, pero conoce grupos de ayuda. Considera importante saber sobre las vacunas, salud y carácter de la mascota antes de adoptarla.
+
+Está de acuerdo con procesos de verificación para evitar malos adoptantes. Usa celular y laptop, y redes como WhatsApp, Instagram y Telegram. Describiría su personalidad como hogareña, risueña y paciente. Le gusta caminar, programar, jugar videojuegos y comer.
+
+Valora la atención, calidad y diseño en los servicios. Quiere adoptar por compañía y desconexión del estudio. Le preocupa la actitud y salud previa de las mascotas adoptadas. Confiaría en una app de adopción con información clara, fácil acceso, ubicación de los refugios y procesos bien explicados.
 
 
 #### Entrevistas a Dueños que Necesitan Reubicar Mascotas
 
-| Entrevistado | Información básica | Screenshot | Video (URL) | Resumen |
-|--------------|-------------------|--------|------------------------------|---------------------------|
-| **[]** |  |  |  |  |
-| **[]** |  |  |  |  |
-| **[]** |  |  |  |  |
+**Entrevista 1: Normaher Carguapoma Pérez**
+*Información básica:* 53 años, residente de Lima Cercado
+*Screenshot:* 
+[![image.png](https://i.postimg.cc/9QPNCCZv/image.png)](https://postimg.cc/gxJKK9MD)
+*Video:* [https://drive.google.com/file/d/1Xqppb76pMjHG35eUgt2JMwmoi2J5Ly7e/view?usp=sharing](https://drive.google.com/file/d/1Xqppb76pMjHG35eUgt2JMwmoi2J5Ly7e/view?usp=sharing)
+
+*Resumen:*
+Normaher Carguapoma Pérez, una docente de secundaria de 53 años, casada y madre de dos hijos, que actualmente vive en Lima Cercado. Ella necesita reubicar a su perrita, una pekinés mestiza de un año, ya que se mudará a un departamento donde no permiten mascotas. Hasta ahora, ha intentado encontrarle un nuevo hogar preguntando a amigos, familiares y publicando en redes sociales, pero le ha resultado difícil encontrar personas responsables y comprometidas. Normaher busca para su perrita un hogar donde tenga espacio, tiempo y sobre todo mucho cariño. Quiere asegurarse de que los adoptantes sepan que la perrita es muy juguetona, está esterilizada y vacunada. Su mayor preocupación es que no la cuiden bien o que no sea feliz en su nuevo hogar. Por eso, considera importante conocer el estilo de vida, la experiencia previa con mascotas y el tiempo que podrían dedicarle. También le gustaría mantener contacto después de la adopción para saber cómo está su perrita. Normaher usa con frecuencia su smartphone, laptop, WhatsApp, Facebook y Google Chrome. Se describe como una persona responsable, cariñosa y organizada, y cuenta que siempre ha tenido mascotas desde pequeña. En su tiempo libre le gusta leer, ir al cine y pasear por parques. Su objetivo con este proceso es encontrar un hogar amoroso y estable para su perrita, y confiaría en una plataforma que verifique bien a los adoptantes, proteja sus datos personales y le permita compartir fotos, videos y toda la información necesaria sobre su mascota, además de contar con un sistema de mensajería segura.
+
+**Entrevista 2: Mathias Zamora**
+*Información básica:* 25 años, residente de San Isidro, Lima
+*Screenshot:* 
+[![image.png](https://i.postimg.cc/SxnBWJ2C/image.png)](https://postimg.cc/Xr01WNgY)
+*Video:* [https://drive.google.com/file/d/1QN6PKKHa_vesfW_SGVbBBhdoXd1DwmhA/view?usp=sharing](https://drive.google.com/file/d/1QN6PKKHa_vesfW_SGVbBBhdoXd1DwmhA/view?usp=sharing)
+
+*Resumen:*
+Mathias, abogado casado con hijos, busca reubicar a su gato siamés de 2 años debido a alergias de su hija. Ha usado grupos de Facebook sin éxito, enfrentando ofertas poco serias. Su principal preocupación es garantizar un hogar estable con dueños experimentados que vivan en casa (no departamento). Valora la verificación de identidad, contratos legales y perfiles detallados de adoptantes. Usa Android, Facebook y WhatsApp, y desea funcionalidades como visitas domiciliarias y seguimiento durante tres meses.
+
+**Entrevista 3: Renzo Antonio Corca Cruz**
+*Información básica: 20 años y vive en Carabayllo-Lima* 
+*Screenshot: [![image.png](https://i.postimg.cc/3xm2kQC7/image.png)](https://postimg.cc/HrWrNKhP)* 
+
+*Video:* [https://drive.google.com/file/d/1tAPy1GBV37XrJqijFhWk8dV2-ySDcZSA/view?usp=sharing](https://drive.google.com/file/d/1tAPy1GBV37XrJqijFhWk8dV2-ySDcZSA/view?usp=sharing)
+
+*Resumen:* 
+Renzo Antonio Corca Cruz, un joven de 20 años de Carabayllo que estudia Ingeniería de Software. Tiene cinco perros que necesita reubicar porque se mudará a un departamento con restricciones para mascotas y su familia no puede cuidarlos como antes. Ha intentado buscar hogar para ellos por redes sociales y conocidos, pero ha tenido dificultades porque la mayoría no se compromete. Le preocupa que sus perros no sean bien tratados y quiere asegurarse de que los adoptantes tengan experiencia, tiempo, espacio y buen trato. Renzo usa frecuentemente celular, laptop y redes sociales como TikTok, Instagram, WhatsApp y Facebook. Le gustaría que una app para reubicación de mascotas tenga verificación de adoptantes, seguimiento post adopción, perfiles detallados, chat directo y filtros por tipo de animal. Su prioridad es que sus perros encuentren un hogar seguro y amoroso.
+
 
 #### Entrevistas a ONGs de Protección Animal
 
-| Entrevistado | Información básica | Screenshot | Video (URL) | Resumen |
-|--------------|-------------------|--------|------------------------------|---------------------------|
-| **[]** |  |  |  |  |
-| **[]** |  |  |  |  |
-| **[]** |  |  |  |  |
+**Entrevista 1: Genaro**
+*Información básica:* Coordinador de la ONG Patitas Felices
+*Screenshot:* 
+[![image.png](https://i.postimg.cc/3rgLg3bW/image.png)](https://postimg.cc/mhgN4W4G)
+*Video:* [https://drive.google.com/file/d/17KZJtv2RpmqTtV2ivrStFgarWG2QI5fE/view?usp=sharing](https://drive.google.com/file/d/17KZJtv2RpmqTtV2ivrStFgarWG2QI5fE/view?usp=sharing)
+
+*Resumen:*
+Coordinador de voluntarios de la ONG Patitas Felices, una organización que se dedica a rescatar, rehabilitar y buscar hogares para animales en situación de calle. La organización lleva aproximadamente dos años operando y trabaja principalmente en los distritos del sur de Lima. Actualmente cuentan con un equipo de 15 personas entre voluntarios y trabajadores activos. Patitas Felices ofrece servicios de rescate, albergue temporal, campañas de adopción y jornadas de esterilización a bajo costo. El proceso de adopción se gestiona mediante formularios en línea, entrevistas presenciales y seguimientos post adopción. Genaro comentó que los principales desafíos que enfrentan son las limitaciones económicas y la alta cantidad de animales abandonados. También considera que una solución digital podría ayudar especialmente en la gestión de adopciones y donaciones. Sobre las mascotas en adopción, registran información como historia clínica, fotos, temperamento y necesidades especiales. Para evaluar adoptantes, toman en cuenta su estilo de vida, compromiso y capacidad económica. Actualmente se comunican internamente usando hojas de cálculo y WhatsApp, y se relacionan con su comunidad a través de Facebook e Instagram. Hasta ahora, no han usado ninguna plataforma digital especializada para gestionar adopciones o donaciones. Genaro mencionó que, si tuvieran una plataforma digital, buscarían que sea fácil de usar, que permita gestionar adopciones de forma eficiente y facilite el seguimiento de donaciones. Sus principales preocupaciones serían la seguridad de los datos y la curva de aprendizaje para su equipo. Consideran útiles los reportes sobre número de adopciones, origen de donativos y perfil de los donantes, y estarían dispuestos a verificar donaciones recibidas a través de una plataforma. Finalmente, mantienen contacto con adoptantes mediante mensajes y solicitando fotos de las mascotas reubicadas, y colaboran ocasionalmente con pequeñas organizaciones de rescate y veterinarias locales.
+
+**Entrevista 2: Carlos Ramírez**
+*Información básica:* Director de la ONG "Animales Protegidos"
+*Screenshot:* 
+[![image.png](https://i.postimg.cc/7PBtmqyV/image.png)](https://postimg.cc/nMD1Lbrj)
+*Video:* [https://drive.google.com/file/d/1VNqa77_kBxXqBaCZtEGoBgrXsaS2WP2m/view?usp=sharing](https://drive.google.com/file/d/1VNqa77_kBxXqBaCZtEGoBgrXsaS2WP2m/view?usp=sharing)
+
+*Resumen:*
+Carlos dirige una ONG con 7 años de operación en Lima Sur, enfocada en rescate, adopciones y esterilización. Usan WhatsApp y formularios en papel, lo que genera desorganización. Sus principales desafíos son la falta de fondos y voluntarios, y buscan una plataforma para gestionar adopciones y donaciones con verificación de adoptantes, reportes automáticos y compatibilidad con sus procesos. Valoran la transparencia en donaciones y necesitan reducir el tiempo de gestión en un 40%.
+
+**Entrevista 3: Ray Alessandro del Carmen Zorrilla**
+*Información básica:* 
+*Screenshot:* [![image.png](https://i.postimg.cc/QMVjd1TT/image.png)](https://postimg.cc/Z9kGf9jb)
+
+*Video:* [https://drive.google.com/file/d/1s2Papa60g_jEuBRdEmZHVtuXOoxblFiI/view?usp=sharing](https://drive.google.com/file/d/1s2Papa60g_jEuBRdEmZHVtuXOoxblFiI/view?usp=sharing)
+
+*Resumen:*
+Ray Alessandro del Carmen Zorrilla, coordinadora operativa de “Patitas Libres”, organización con 6 años rescatando, rehabilitando y buscando hogar para animales maltratados en Lima Metropolitana. Cuentan con 10 personas fijas y más de 40 voluntarios. Ofrecen rescates, atención veterinaria básica, campañas de esterilización, adopciones responsables y charlas educativas. Gestionan adopciones con formularios online, entrevistas, visitas domiciliarias y seguimiento. Sus mayores retos son el financiamiento y la falta de una plataforma digital eficiente. Usan Google Forms, WhatsApp, Canva y redes como Facebook y TikTok. Buscan implementar una plataforma que centralice adopciones, donaciones y seguimiento, con seguridad, facilidad de uso y métricas. A mediano plazo quieren tener un albergue propio y expandirse a provincias. Observan mayor conciencia sobre adopción, pero también más abandono tras la pandemia.
+
+
 
 ### 2.2.3. Análisis de entrevistas.
 
