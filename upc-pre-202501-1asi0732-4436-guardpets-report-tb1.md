@@ -24,7 +24,7 @@
 
 
 
-#### Abril 2025
+#### Mayo 2025
 
 ---
 
@@ -38,6 +38,12 @@
 | 1.3.0 | 18/04/2025 | Aldo Baldeon | Actualización de diseño y prototipado |
 | 1.4.0 | 20/04/2025 | Randy Rengifo | Implementación de evidencias y despliegue |
 | 1.5.0 | 22/04/2025 | Equipo GuardPets | Versión final con correcciones de retroalimentación |
+| 2.0.0 | 27/04/2025 | Equipo GuardPets | Segunda versión del informe |
+| 2.1.0 | 29/04/2025 | Fiorella Vilca | Actualización del capítulo III |
+| 2.2.0 | 03/05/2025 | Max Paitan | Actualización del capítulo V |
+| 2.3.0 | 05/05/2025 | Aldo Baldeon | Implementación del capítulo VI |
+| 2.4.0 | 07/05/2025 | Randy Rengifo | Implementación del capítulo VII |
+| 2.5.0 | 13/05/2025 | Equipo GuardPets | Versión final con correcciones de retroalimentación |
 
 ---
 
@@ -49,6 +55,10 @@
 **Colaboración en la Primera Entrega:**
 
 [![image.png](https://i.postimg.cc/Fs8Tj1Vt/image.png)](https://postimg.cc/dLRRFsfn)
+
+**Colaboración en la Segunda Entrega:**
+
+[![image.png]()]()
 
 ---
 
@@ -139,11 +149,31 @@
 #### [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
 #### [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
 #### [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
-#### [5.2.4. Implemented Native-Mobile Application Evidence](#524-implemented-native-mobile-application-evidence)
-#### [5.2.5. Implemented RESTful API and/or Serverless Backend Evidence](#525-implemented-restful-api-andor-serverless-backend-evidence)
-#### [5.2.6. RESTful API documentation](#526-restful-api-documentation)
-#### [5.2.7. Team Collaboration Insights](#527-team-collaboration-insights)
+#### [5.2.4. Acuerdo de Servicio - SaaA](#524-acuerdo-de-servicio-saaa)
+#### [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
+#### [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
+#### [5.2.7. RESTful API documentation](#526-restful-api-documentation)
+#### [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
 ### [5.3. Video About-the-Product](#53-video-about-the-product)
+
+## [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
+### [6.1. Testing Suites & Validation](#61-testing-suites--validation)
+#### [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
+#### [6.1.2. Core Integration Tests](#612-core-integration-tests)
+#### [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+#### [6.1.4. Core System Tests](#614-core-system-tests)
+
+## [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+### [7.1. Continuous Integration](#71-continuous-integration)
+#### [7.1.1. Tools and Practices](#711-tools-and-practices)
+#### [7.1.2. Build & Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+### [7.2. Continuous Delivery](#72-continuous-delivery)
+#### [7.2.1. Tools and Practices](#721-tools-and-practices)
+#### [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+### [7.3. Continuous Deployment](#73-continuous-deployment)
+#### [7.3.1. Tools and Practices](#731-tools-and-practices)
+#### [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+
 
 ## [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
@@ -163,8 +193,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---------------------|---------------------|--------------|
-| 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software | **Aldo Alberto Baldeon Fabian:**<br>TB1: Capítulo I <br><br>**Fiorella Angela Vilca Valverde:**<br>TB1: Capítulo II <br><br>**Max Anthony Paitan Pumacahua:**<br>TB1: Capítulo III <br><br>**Randy Becker Rengifo Mirabal:**<br>TB1: Capítulo IV Y V | A lo largo del desarrollo del proyecto, hemos reconocido la gran responsabilidad ética que conlleva crear una plataforma relacionada con el bienestar animal. Implementamos medidas de verificación rigurosas para todos los usuarios, especialmente para ONGs, asegurando que solo organizaciones legítimas puedan operar en nuestra plataforma. Establecimos múltiples capas de validación para proteger tanto a los animales como a los adoptantes y donantes. Comprendimos que nuestra responsabilidad profesional va más allá del desarrollo técnico, extendiéndose a crear un ecosistema digital que promueva la adopción responsable y el bienestar animal a largo plazo. El equipo mantuvo siempre presente que cada decisión técnica y de diseño tenía implicaciones éticas directas en el bienestar de las mascotas y la confianza de nuestros usuarios. |
-| 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | **Aldo Alberto Baldeon Fabian:**<br>TB1: Capítulo I <br><br>**Fiorella Angela Vilca Valverde:**<br>TB1: Capítulo II <br><br>**Max Anthony Paitan Pumacahua:**<br>TB1: Capítulo III <br><br>**Randy Becker Rengifo Mirabal:**<br>TB1: Capítulo IV Y V | El desarrollo de Hairy Paws nos permitió comprender en profundidad el impacto multidimensional de las soluciones de ingeniería. En el contexto social, identificamos cómo nuestra plataforma no solo facilita adopciones, sino que también educa sobre tenencia responsable, contribuyendo a un cambio cultural necesario en Perú. En el aspecto económico, diseñamos un modelo que permite a las ONGs incrementar su visibilidad y capacidad de recaudación mientras mantenemos la plataforma accesible para todos los usuarios. Desde la perspectiva ambiental, consideramos la eficiencia energética de nuestra solución y cómo el fomento de la adopción responsable contribuye indirectamente a mejorar las condiciones urbanas. Finalmente, en el contexto global, desarrollamos una arquitectura que, aunque inicialmente enfocada en Perú, está diseñada para escalar a otros países latinoamericanos con problemáticas similares. Esto nos permitió comprender que cada decisión técnica tiene repercusiones que trascienden el ámbito puramente tecnológico. |
+| 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software | **Aldo Alberto Baldeon Fabian:**<br>TB1: Capítulo I<br> TP: Capítulo VI<br><br>**Fiorella Angela Vilca Valverde:**<br>TB1: Capítulo II <br>TP: Actualición Capítulo III <br><br>**Max Anthony Paitan Pumacahua:**<br>TB1: Capítulo III <br>TP: Actualición Capítulo V <br><br>**Randy Becker Rengifo Mirabal:**<br>TB1: Capítulo IV y V <br>TP: Capítulo VII<br> | A lo largo del desarrollo del proyecto, hemos reconocido la gran responsabilidad ética que conlleva crear una plataforma relacionada con el bienestar animal. Implementamos medidas de verificación rigurosas para todos los usuarios, especialmente para ONGs, asegurando que solo organizaciones legítimas puedan operar en nuestra plataforma. Establecimos múltiples capas de validación para proteger tanto a los animales como a los adoptantes y donantes. Comprendimos que nuestra responsabilidad profesional va más allá del desarrollo técnico, extendiéndose a crear un ecosistema digital que promueva la adopción responsable y el bienestar animal a largo plazo. El equipo mantuvo siempre presente que cada decisión técnica y de diseño tenía implicaciones éticas directas en el bienestar de las mascotas y la confianza de nuestros usuarios. |
+| 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | **Aldo Alberto Baldeon Fabian:**<br>TB1: Capítulo I<br> TP: Capítulo VI<br><br>**Fiorella Angela Vilca Valverde:**<br>TB1: Capítulo II <br>TP: Actualición Capítulo III <br><br>**Max Anthony Paitan Pumacahua:**<br>TB1: Capítulo III <br>TP: Actualición Capítulo V <br><br>**Randy Becker Rengifo Mirabal:**<br>TB1: Capítulo IV y V <br>TP: Capítulo VII<br> | El desarrollo de Hairy Paws nos permitió comprender en profundidad el impacto multidimensional de las soluciones de ingeniería. En el contexto social, identificamos cómo nuestra plataforma no solo facilita adopciones, sino que también educa sobre tenencia responsable, contribuyendo a un cambio cultural necesario en Perú. En el aspecto económico, diseñamos un modelo que permite a las ONGs incrementar su visibilidad y capacidad de recaudación mientras mantenemos la plataforma accesible para todos los usuarios. Desde la perspectiva ambiental, consideramos la eficiencia energética de nuestra solución y cómo el fomento de la adopción responsable contribuye indirectamente a mejorar las condiciones urbanas. Finalmente, en el contexto global, desarrollamos una arquitectura que, aunque inicialmente enfocada en Perú, está diseñada para escalar a otros países latinoamericanos con problemáticas similares. Esto nos permitió comprender que cada decisión técnica tiene repercusiones que trascienden el ámbito puramente tecnológico. |
 
 -------------
 
@@ -3082,7 +3112,146 @@ La aplicación web frontend se implementó utilizando Angular 19 con PrimeNG com
 
 [https://app.hairypaws.com.pe]()
 
-### 5.2.4. Implemented Native-Mobile Application Evidence
+
+#### 5.2.4. Acuerdo de Servicio - SaaA
+
+**ACUERDO DE SERVICIO HAIRY PAWS**
+
+**1. INTRODUCCIÓN**
+
+Este Acuerdo de Servicio ("Acuerdo") establece los términos y condiciones bajo los cuales GuardPets, una startup peruana ("Proveedor de Servicio"), proporciona acceso a la plataforma Hairy Paws ("Servicio") a sus usuarios ("Usuario" o "Usuarios").
+
+**2. DESCRIPCIÓN DEL SERVICIO**
+
+Hairy Paws es una plataforma digital que facilita:
+- Adopción y reubicación responsable de mascotas
+- Conexión entre adoptantes, dueños y organizaciones sin fines de lucro (ONGs)
+- Gestión de donaciones para ONGs de protección animal
+- Organización y participación en eventos relacionados con el bienestar animal
+
+**3. REGISTRO Y CUENTAS DE USUARIO**
+
+3.1. Para utilizar el Servicio, los Usuarios deben registrarse proporcionando información precisa y completa.
+
+3.2. Los Usuarios son responsables de mantener la confidencialidad de sus credenciales de acceso.
+
+3.3. Los Usuarios deben tener al menos 18 años de edad para registrarse.
+
+**4. TÉRMINOS DE USO**
+
+4.1. Los Usuarios aceptan:
+- Proporcionar información veraz sobre sí mismos y las mascotas
+- No utilizar el Servicio para actividades ilegales o no autorizadas
+- Respetar los derechos de propiedad intelectual del Proveedor de Servicio
+- No intentar acceder al Servicio por medios no autorizados
+
+4.2. El Proveedor de Servicio se reserva el derecho de suspender o terminar el acceso de cualquier Usuario que viole estos términos.
+
+**5. PRIVACIDAD Y PROTECCIÓN DE DATOS**
+
+5.1. La recopilación y uso de información personal está sujeta a nuestra Política de Privacidad.
+
+5.2. El Proveedor de Servicio implementa medidas de seguridad para proteger la información del Usuario, pero no puede garantizar seguridad absoluta.
+
+**6. CONTENIDO DEL USUARIO**
+
+6.1. Los Usuarios mantienen la propiedad de su contenido, pero otorgan al Proveedor de Servicio una licencia mundial, no exclusiva y libre de regalías para usar, reproducir y distribuir dicho contenido en relación con el Servicio.
+
+6.2. El Proveedor de Servicio puede eliminar cualquier contenido que viole este Acuerdo o sea ilegal.
+
+**7. RESPONSABILIDADES ESPECÍFICAS PARA ADOPCIONES**
+
+7.1. El Proveedor de Servicio no garantiza la idoneidad de ningún adoptante, mascota u ONG.
+
+7.2. Los Usuarios son responsables de verificar la información proporcionada por otros Usuarios.
+
+7.3. El Proveedor de Servicio no es responsable del comportamiento de las mascotas después de la adopción.
+
+**8. DONACIONES**
+
+8.1. El Proveedor de Servicio facilita, pero no procesa directamente, las donaciones a ONGs.
+
+8.2. Las ONGs son responsables de utilizar las donaciones según lo declarado.
+
+8.3. El Proveedor de Servicio no se responsabiliza por el uso indebido de donaciones.
+
+**9. DISPONIBILIDAD DEL SERVICIO**
+
+9.1. El Proveedor de Servicio se esfuerza por mantener el Servicio disponible continuamente, pero no garantiza disponibilidad ininterrumpida.
+
+9.2. El Proveedor de Servicio puede modificar o interrumpir el Servicio temporalmente para mantenimiento o actualizaciones.
+
+**10. LIMITACIÓN DE RESPONSABILIDAD**
+
+10.1. El Servicio se proporciona "tal cual" sin garantías de ningún tipo.
+
+10.2. El Proveedor de Servicio no será responsable por daños indirectos, incidentales o consecuentes.
+
+**11. MODIFICACIONES DEL ACUERDO**
+
+11.1. El Proveedor de Servicio puede modificar este Acuerdo en cualquier momento.
+
+11.2. Los cambios sustanciales serán notificados a los Usuarios.
+
+11.3. El uso continuado del Servicio después de las modificaciones constituye aceptación de los nuevos términos.
+
+**12. TERMINACIÓN**
+
+12.1. Los Usuarios pueden terminar su cuenta en cualquier momento.
+
+12.2. El Proveedor de Servicio puede terminar o suspender el acceso al Servicio por violación de este Acuerdo.
+
+**13. LEGISLACIÓN APLICABLE**
+
+13.1. Este Acuerdo se rige por las leyes de la República del Perú.
+
+13.2. Cualquier disputa derivada de este Acuerdo se resolverá mediante arbitraje conforme a la legislación peruana vigente.
+
+**14. POLÍTICA DE DONACIONES**
+
+14.1. El Proveedor de Servicio solo facilita la conexión entre donantes y ONGs, proporcionando información de contacto y datos bancarios de las ONGs registradas.
+
+14.2. El Proveedor de Servicio no procesa, gestiona ni recibe pagos directos por donaciones monetarias.
+
+14.3. Los Usuarios que realizan donaciones monetarias deben registrar la transacción en la plataforma y adjuntar el comprobante correspondiente.
+
+14.4. Las ONGs son responsables de verificar la recepción de las donaciones y confirmarlas a través de la plataforma.
+
+14.5. Cualquier solicitud de reembolso o cancelación de donación debe ser negociada directamente entre el donante y la ONG correspondiente, sin intervención del Proveedor de Servicio.
+
+14.6. El Proveedor de Servicio no asume responsabilidad por disputas relacionadas con donaciones entre Usuarios y ONGs.
+
+**15. PROPIEDAD INTELECTUAL**
+
+15.1. Todo el contenido proporcionado por el Proveedor de Servicio, incluyendo pero no limitado a logos, diseños, textos y software, está protegido por derechos de propiedad intelectual.
+
+15.2. Los Usuarios no pueden reproducir, distribuir o crear trabajos derivados basados en dicho contenido sin autorización expresa.
+
+**16. NOTIFICACIONES**
+
+16.1. Las notificaciones al Usuario se enviarán a la dirección de correo electrónico proporcionada durante el registro.
+
+16.2. Las notificaciones al Proveedor de Servicio deben enviarse a legal@hairypaws.com.pe.
+
+**17. OBLIGACIONES FISCALES**
+
+17.1. Las ONGs son responsables de cumplir con todas las obligaciones fiscales relacionadas con las donaciones recibidas a través de la plataforma.
+
+
+**18. FUERZA MAYOR**
+
+18.1. El Proveedor de Servicio no será responsable por el incumplimiento de sus obligaciones debido a circunstancias fuera de su control razonable.
+
+**19. ACUERDO COMPLETO**
+
+19.1. Este Acuerdo constituye el entendimiento completo entre el Usuario y el Proveedor de Servicio respecto al uso del Servicio.
+
+**20. CONTACTO**
+
+Para preguntas sobre este Acuerdo, los Usuarios pueden contactar a: legal@hairypaws.com.pe
+
+
+### 5.2.5. Implemented Native-Mobile Application Evidence
 
 La aplicación móvil se desarrolló con Flutter para garantizar una experiencia nativa tanto en Android como en iOS, manteniendo la coherencia visual y funcional con la aplicación web.
 
@@ -3510,6 +3679,28 @@ El video incluye la reacción y comentarios de Karen, quien destaca la facilidad
 
 
 **Duración**: 6:51 minutos
+
+-----------
+
+# Capítulo VI: Product Verification & Validation 
+## 6.1. Testing Suites & Validation 
+### 6.1.1. Core Entities Unit Tests. 
+### 6.1.2. Core Integration Tests. 
+### 6.1.3. Core Behavior-Driven Development 
+### 6.1.4. Core System Tests. 
+
+-----------
+
+# Capítulo VII: DevOps Practices 
+## 7.1. Continuous Integration 
+### 7.1.1. Tools and Practices. 
+### 7.1.2. Build & Test Suite Pipeline Components. 
+## 7.2. Continuous Delivery 
+### 7.2.1. Tools and Practices. 
+### 7.2.2. Stages Deployment Pipeline Components. 
+## 7.3. Continuous deployment 
+### 7.3.1. Tools and Practices. 
+### 7.3.2. Production Deployment Pipeline Components.
 
 -----------
 
