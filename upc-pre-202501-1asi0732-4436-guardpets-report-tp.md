@@ -1530,7 +1530,6 @@ A continuación, presentamos el conjunto de User Stories organizadas en Epics, q
 | US06 | Creación de perfil de mascota | Como dueño/ONG, deseo crear un perfil detallado para mi mascota en adopción. | **Given** que soy un usuario autenticado como dueño u ONG<br>**When** completo el formulario de creación de perfil de mascota<br>**Then** la mascota aparece listada como disponible para adopción.<br><br>**Given** que estoy creando un perfil de mascota<br>**When** subo fotos y detalles de comportamiento<br>**Then** esta información se muestra en el perfil público de la mascota. | EP02 |
 | US07 | Edición de perfil de mascota | Como dueño/ONG, deseo poder editar la información de mi mascota para mantenerla actualizada. | **Given** que tengo una mascota publicada<br>**When** accedo a su perfil y modifico información<br>**Then** los cambios se reflejan inmediatamente en la visualización pública. | EP02 |
 | US08 | Eliminación de perfil de mascota | Como dueño/ONG, deseo poder eliminar un perfil de mascota cuando ya no esté disponible. | **Given** que tengo una mascota publicada<br>**When** selecciono "Eliminar perfil" y confirmo la acción<br>**Then** la mascota ya no aparece en los listados de adopción. | EP02 |
-| US09 | Marcado de mascota como adoptada | Como dueño/ONG, deseo poder marcar una mascota como adoptada para completar el proceso. | **Given** que he completado el proceso de adopción<br>**When** marco la mascota como "Adoptada"<br>**Then** la mascota muestra un estado "Adoptada" y no aparece en búsquedas activas. | EP02 |
 | **EP03** | **Búsqueda y Adopción** | **Como plataforma, necesito proporcionar funcionalidades para la búsqueda y solicitud de adopción de mascotas.** | | |
 | US10 | Búsqueda avanzada de mascotas | Como adoptante, deseo poder buscar mascotas utilizando filtros avanzados para encontrar la más compatible. | **Given** que estoy en la sección de búsqueda<br>**When** aplico filtros por especie, tamaño, edad, comportamiento, ubicación<br>**Then** recibo resultados que coinciden con mis criterios.<br><br>**Given** que he realizado una búsqueda<br>**When** guardo mis criterios<br>**Then** puedo recibir notificaciones cuando haya nuevas mascotas que coincidan. | EP03 |
 | US11 | Visualización detallada | Como adoptante, deseo ver información detallada de una mascota para evaluar su compatibilidad. | **Given** que estoy navegando por mascotas<br>**When** selecciono una mascota específica<br>**Then** puedo ver fotos, videos, historial médico, comportamiento y requisitos de adopción. | EP03 |
@@ -1563,7 +1562,6 @@ El Product Backlog representa la lista priorizada de funcionalidades a desarroll
 | 15 | US13 | Solicitud de adopción | Como adoptante, deseo poder enviar una solicitud formal de adopción. | 5 |
 | 17 | US14 | Programación de visita | Como adoptante/dueño/ONG, deseo poder programar una visita para conocer a la mascota/adoptante. | 5 |
 | 18 | US03 | Verificación de identidad | Como usuario, deseo poder verificar mi identidad para aumentar la confianza en mi perfil. | 8 |
-| 19 | US09 | Marcado de mascota como adoptada | Como dueño/ONG, deseo poder marcar una mascota como adoptada para completar el proceso. | 2 |
 | 21 | US20 | Registro de donación | Como usuario, deseo poder registrar mi intención de donación a una ONG. | 3 |
 | 22 | US21 | Confirmación de donación | Como ONG, deseo poder confirmar la recepción de donaciones. | 3 |
 | 23 | US22 | Publicación de eventos | Como ONG, deseo publicar eventos o campañas para promover la participación. | 5 |
@@ -1609,7 +1607,7 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 |  |  | Recomendar la plataforma a otros potenciales adoptantes | Sistema de referidos | US04 |
 |  |  | Mantener su cuenta activa y actualizada | Experiencia de usuario intuitiva | US01, US02, US04 |
 |  | Gabriel Ruiz (Dueño) | Registrarse para reubicar mascota | Landing Page atractiva | US24, US29 |
-|  |  | Completar todo el proceso de reubicación | Proceso de reubicación sencillo | US06, US15, US09 |
+|  |  | Completar todo el proceso de reubicación | Proceso de reubicación sencillo | US06, US15 |
 |  | Valeria Torres (ONG) | Registrar su organización | Sección específica para ONGs | US29 |
 |  |  | Invitar a voluntarios y colaboradores | Sistema de invitación | US22, US23 |
 | **BG2**: 500 adopciones completadas | Ana Martínez (Adoptante) | Encontrar mascotas compatibles | Búsqueda avanzada con filtros | US10, US11 |
@@ -1617,10 +1615,9 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 |  |  | Evaluar su experiencia | Sistema de evaluación | US18 |
 |  | Gabriel Ruiz (Dueño) | Crear perfiles atractivos y completos | Editor de perfiles de mascotas | US06, US07 |
 |  |  | Responder rápidamente a interesados | Sistema de notificaciones | US12, US15 |
-|  |  | Marcar adopciones completadas | Sistema de actualización de estados | US09 |
 |  | Valeria Torres (ONG) | Promocionar mascotas menos visibles | Algoritmo de visibilidad equitativa | US06, US11 |
 |  |  | Agilizar aprobaciones de adopción | Flujo de aprobación optimizado | US15 |
-|  |  | Mantener información actualizada | Sistema de gestión de perfiles | US07, US09 |
+|  |  | Mantener información actualizada | Sistema de gestión de perfiles | US07 |
 | **BG3**: 50 ONGs verificadas | Valeria Torres (ONG) | Completar proceso de verificación | Sistema de verificación | US03 |
 |  |  | Invitar a otras ONGs al ecosistema | Programa de referidos para ONGs | US04 |
 |  | Ana Martínez (Adoptante) | Preferir ONGs verificadas | Insignias de verificación | US03, US11 |
@@ -1636,7 +1633,7 @@ El Impact Mapping es una técnica de planificación estratégica que nos permite
 |  |  | Recibir respuestas oportunas | Sistema de notificaciones | US12, US13 |
 |  |  | Proporcionar feedback constructivo | Sistema de evaluación | US18 |
 |  | Gabriel Ruiz (Dueño) | Sentir tranquilidad durante el proceso | Verificación de adoptantes | US15 |
-|  |  | Completar el proceso eficientemente | Flujo de proceso optimizado | US09, US15 |
+|  |  | Completar el proceso eficientemente | Flujo de proceso optimizado | US15 |
 |  |  | Mejorar relación con adoptantes | Comunicación integrada | US12, US15 |
 |  |  | Incrementar transparencia | Confirmación de donaciones | US21 |
 
@@ -2939,7 +2936,6 @@ Esta sección detalla la implementación y despliegue de los diversos componente
 ||| TK48 | Implementar frontend de inscripción | Desarrollar componente para usuarios | 7 | Randy Rengifo | Done |
 ||| TK49 | Implementar API de inscripción | Crear endpoints para gestión de participantes | 6 | Aldo Baldeon | Done |
 ||| TK50 | Implementar notificaciones y recordatorios | Desarrollar sistema de alertas para eventos próximos | 6 | Max Paitan | Done |
-| US09 | Marcado de mascota como adoptada | TK51 | Diseñar interfaz de cambio de estado | Crear UI para actualizar estado de mascotas | 3 | Fiorella Vilca | Done |
 ||| TK52 | Implementar frontend de actualización | Desarrollar componente para cambio de estado | 5 | Randy Rengifo | Done |
 ||| TK53 | Implementar API de estado | Crear endpoint para actualizar estado de mascota | 4 | Aldo Baldeon | Done |
 ||| TK54 | Actualizar listados y búsqueda | Modificar componentes para filtrar mascotas adoptadas | 3 | Max Paitan | Done |
@@ -3684,23 +3680,2704 @@ El video incluye la reacción y comentarios de Karen, quien destaca la facilidad
 
 # Capítulo VI: Product Verification & Validation 
 ## 6.1. Testing Suites & Validation 
+
+En GuardPets, la verificación y validación del producto es un componente crítico de nuestro proceso de desarrollo. Siguiendo buenas prácticas de ingeniería de software, hemos implementado múltiples niveles de pruebas para asegurar la calidad, funcionalidad y fiabilidad de nuestra plataforma Hairy Paws.
+Nuestra estrategia de pruebas se basa en una estructura piramidal que prioriza las pruebas unitarias como base, seguidas de pruebas de integración, pruebas BDD y finalmente pruebas de sistema. Este enfoque nos permite detectar y corregir problemas tempranamente en el ciclo de desarrollo, reduciendo el costo de los errores y mejorando la calidad general del producto.
+
 ### 6.1.1. Core Entities Unit Tests. 
+
+- TwoFactorAuthService
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { ConfigService } from '@nestjs/config';
+import { authenticator } from 'otplib';
+import { TwoFactorAuthService } from '../../src/infrastructure/services/auth/twofa.service';
+import { Logger } from '@nestjs/common';
+
+jest.mock('otplib', () => ({
+  authenticator: {
+    options: {},
+    generateSecret: jest.fn().mockReturnValue('test-secret'),
+    keyuri: jest.fn().mockReturnValue('otpauth://test'),
+    verify: jest.fn().mockImplementation((params) => {
+      return params.token === 'valid-token';
+    }),
+    generate: jest.fn().mockReturnValue('generated-token'),
+  },
+}));
+
+jest.mock('qrcode', () => ({
+  toDataURL: jest.fn().mockResolvedValue('data:image/png;base64,testqrcode'),
+}));
+
+describe('TwoFactorAuthService', () => {
+  let service: TwoFactorAuthService;
+
+  beforeAll(() => {
+    jest.spyOn(Logger.prototype, 'error').mockImplementation(() => {});
+  });
+
+  afterAll(() => {
+    jest.restoreAllMocks();
+  });
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        TwoFactorAuthService,
+        {
+          provide: ConfigService,
+          useValue: {
+            get: jest.fn().mockImplementation((key) => {
+              if (key === 'APP_NAME') return 'HairyPaws Test';
+              return undefined;
+            }),
+          },
+        },
+      ],
+    }).compile();
+
+    service = module.get<TwoFactorAuthService>(TwoFactorAuthService);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('generateSecret', () => {
+    it('should generate a secret', () => {
+      const result = service.generateSecret();
+      expect(result).toEqual('test-secret');
+      expect(authenticator.generateSecret).toHaveBeenCalled();
+    });
+  });
+
+  describe('getOtpAuthUrl', () => {
+    it('should generate an OTP auth URL', () => {
+      const result = service.getOtpAuthUrl('test@example.com', 'test-secret');
+      expect(result).toEqual('otpauth://test');
+      expect(authenticator.keyuri).toHaveBeenCalledWith(
+        'test@example.com',
+        'HairyPaws Test',
+        'test-secret',
+      );
+    });
+  });
+
+  /*describe('generateQrCode', () => {
+    it('should generate a QR code data URL', async () => {
+      const result = await service.generateQrCode('otpauth://test');
+      expect(result).toEqual('data:image/png;base64,testqrcode');
+      expect(toDataURL).toHaveBeenCalledWith('otpauth://test');
+    });
+
+    it('should throw an error if QR code generation fails', async () => {
+      jest.spyOn(toDataURL as jest.Mock, 'mockRejectedValue').mockImplementation(() => {
+        throw new Error('QR code generation failed');
+      });
+
+      await expect(service.generateQrCode('otpauth://test')).rejects.toThrow();
+    });
+  });*/
+
+  describe('verifyToken', () => {
+    it('should verify a valid token', () => {
+      const result = service.verifyToken('valid-token', 'test-secret');
+      expect(result).toBe(true);
+      expect(authenticator.verify).toHaveBeenCalledWith({
+        token: 'valid-token',
+        secret: 'test-secret',
+      });
+    });
+
+    it('should return false for an invalid token', () => {
+      const result = service.verifyToken('invalid-token', 'test-secret');
+      expect(result).toBe(false);
+    });
+
+    it('should return false if verification throws an error', () => {
+      jest.spyOn(authenticator, 'verify').mockImplementation(() => {
+        throw new Error('Verification error');
+      });
+
+      const result = service.verifyToken('valid-token', 'test-secret');
+      expect(result).toBe(false);
+    });
+  });
+
+  describe('generateToken', () => {
+    it('should generate a token from a secret', () => {
+      const result = service.generateToken('test-secret');
+      expect(result).toEqual('generated-token');
+      expect(authenticator.generate).toHaveBeenCalledWith('test-secret');
+    });
+  });
+});
+```
+
+[![image.png](https://i.postimg.cc/dVjdfVhK/image.png)](https://postimg.cc/k2DB69Nj)
+
+
+- UserService
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import * as bcrypt from 'bcrypt';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+import { UserEntity } from '../../src/core/domain/user/user.entity';
+import { S3Service } from '../../src/infrastructure/services/aws/s3.service';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+import { UserService } from '../../src/application/services/user.service';
+import { DuplicateEntityException } from '../../src/core/exceptions/domain.exception';
+import { UserStatus } from '../../src/core/domain/user/value-objects/user-status';
+
+jest.mock('bcrypt');
+
+describe('UserService', () => {
+  let service: UserService;
+  let userRepository: UserRepository;
+  let s3Service: S3Service;
+
+  const mockUser = new UserEntity(
+    '1',
+    'test@example.com',
+    'hashedPassword',
+    'John',
+    'Doe',
+    '987654321',
+    UserRole.ADOPTER,
+    UserStatus.ACTIVE,
+    true,
+    'Test Address',
+    'http://example.com/profile.jpg',
+    undefined,
+    false,
+    '12345678'
+  );
+
+  const mockProfileImage: Express.Multer.File = {
+    fieldname: 'profileImage',
+    originalname: 'profile.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    buffer: Buffer.from('test'),
+    size: 4,
+    destination: '',
+    filename: '',
+    path: '',
+    stream: null
+  };
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        UserService,
+        {
+          provide: UserRepository,
+          useValue: {
+            findById: jest.fn().mockResolvedValue(mockUser),
+            findOne: jest.fn().mockResolvedValue(null),
+            update: jest.fn().mockResolvedValue(mockUser),
+          },
+        },
+        {
+          provide: S3Service,
+          useValue: {
+            uploadFile: jest.fn().mockResolvedValue('http://example.com/new-profile.jpg'),
+            deleteFile: jest.fn().mockResolvedValue(undefined),
+          },
+        },
+      ],
+    }).compile();
+
+    service = module.get<UserService>(UserService);
+    userRepository = module.get<UserRepository>(UserRepository);
+    s3Service = module.get<S3Service>(S3Service);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('getUserById', () => {
+    it('should return a user by id', async () => {
+      const result = await service.getUserById('1');
+      expect(result).toEqual(mockUser);
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+    });
+  });
+
+  describe('updateProfile', () => {
+    it('should update user profile', async () => {
+      const updateProfileSpy = jest.spyOn(mockUser, 'updateProfile');
+      const updateProfileImageSpy = jest.spyOn(mockUser, 'updateProfileImage');
+
+      const updateData = {
+        firstName: 'Jane',
+        lastName: 'Smith',
+        phoneNumber: '987654321',
+        address: 'New Address',
+        profileImage: mockProfileImage,
+      };
+
+      const result = await service.updateProfile('1', updateData);
+
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+      expect(updateProfileSpy).toHaveBeenCalledWith(
+        'Jane',
+        'Smith',
+        '987654321',
+        'New Address',
+      );
+      expect(s3Service.uploadFile).toHaveBeenCalledWith(
+        updateData.profileImage.buffer,
+        'profiles',
+        updateData.profileImage.originalname,
+      );
+      expect(s3Service.deleteFile).toHaveBeenCalledWith('http://example.com/profile.jpg');
+      expect(updateProfileImageSpy).toHaveBeenCalledWith('http://example.com/new-profile.jpg');
+      expect(userRepository.update).toHaveBeenCalledWith('1', mockUser);
+      expect(result).toEqual(mockUser);
+    });
+
+    it('should throw error if phone number is already in use', async () => {
+      jest.spyOn(userRepository, 'findOne').mockResolvedValue({
+        getId: () => '2',
+      } as any);
+
+      const updateData = {
+        phoneNumber: '987654321',
+      };
+
+      await expect(service.updateProfile('1', updateData)).rejects.toThrow(
+        DuplicateEntityException,
+      );
+    });
+
+    it('should not throw error if phone number belongs to same user', async () => {
+      jest.spyOn(userRepository, 'findOne').mockResolvedValue({
+        getId: () => '1',
+      } as any);
+
+      const updateData = {
+        phoneNumber: '987654321',
+      };
+
+      await expect(service.updateProfile('1', updateData)).resolves.not.toThrow();
+    });
+  });
+
+  describe('changePassword', () => {
+    it('should change user password', async () => {
+      (bcrypt.compare as jest.Mock).mockResolvedValue(true);
+      (bcrypt.hash as jest.Mock).mockResolvedValue('newHashedPassword');
+
+      const updatePasswordSpy = jest.spyOn(mockUser, 'updatePassword');
+
+      const changePasswordDto = {
+        oldPassword: 'oldPassword',
+        newPassword: 'newPassword',
+      };
+
+      await service.changePassword('1', changePasswordDto);
+
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+      expect(bcrypt.compare).toHaveBeenCalledWith('oldPassword', 'hashedPassword');
+      expect(bcrypt.hash).toHaveBeenCalledWith('newPassword', 10);
+      expect(updatePasswordSpy).toHaveBeenCalledWith('newHashedPassword');
+      expect(userRepository.update).toHaveBeenCalledWith('1', mockUser);
+    });
+
+    it('should throw error with incorrect current password', async () => {
+      (bcrypt.compare as jest.Mock).mockResolvedValue(false);
+
+      const changePasswordDto = {
+        oldPassword: 'wrongPassword',
+        newPassword: 'newPassword',
+      };
+
+      await expect(service.changePassword('1', changePasswordDto)).rejects.toThrow(
+        'Incorrect current password',
+      );
+    });
+  });
+
+  describe('deactivateAccount', () => {
+    it('should deactivate a user account', async () => {
+      const deactivateSpy = jest.spyOn(mockUser, 'deactivate');
+
+      await service.deactivateAccount('1');
+
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+      expect(deactivateSpy).toHaveBeenCalled();
+      expect(userRepository.update).toHaveBeenCalledWith('1', mockUser);
+    });
+  });
+});
+```
+[![image.png](https://i.postimg.cc/rmrwvfft/image.png)](https://postimg.cc/JDR8X5V1)
+
+- AuthService
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { JwtService } from '@nestjs/jwt';
+
+import * as bcrypt from 'bcrypt';
+import { AuthService } from '../../src/application/services/auth.service';
+import { TwoFactorAuthService } from '../../src/infrastructure/services/auth/twofa.service';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+import { UserEntity } from '../../src/core/domain/user/user.entity';
+import { InvalidCredentialsException } from '../../src/core/exceptions/domain.exception';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+
+jest.mock('bcrypt');
+
+describe('AuthService', () => {
+  let service: AuthService;
+  let userRepository: UserRepository;
+  let jwtService: JwtService;
+  let twoFactorAuthService: TwoFactorAuthService;
+
+  const mockUser = {
+    getId: jest.fn().mockReturnValue('1'),
+    getEmail: jest.fn().mockReturnValue('test@example.com'),
+    getPassword: jest.fn().mockReturnValue('hashedPassword'),
+    getFirstName: jest.fn().mockReturnValue('John'),
+    getLastName: jest.fn().mockReturnValue('Doe'),
+    getRole: jest.fn().mockReturnValue(UserRole.ADOPTER),
+    isActive: jest.fn().mockReturnValue(true),
+    isTwoFactorEnabled: jest.fn().mockReturnValue(false),
+    getTwoFactorSecret: jest.fn().mockReturnValue(null),
+    enableTwoFactor: jest.fn(),
+    disableTwoFactor: jest.fn(),
+    deactivate: jest.fn(),
+  } as unknown as UserEntity;
+
+  const mockOrmUser = {
+    id: '1',
+    email: 'test@example.com',
+    password: 'hashedPassword',
+    comparePassword: jest.fn(),
+  };
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        AuthService,
+        {
+          provide: UserRepository,
+          useValue: {
+            findByEmail: jest.fn().mockResolvedValue(mockUser),
+            findOne: jest.fn().mockResolvedValue(mockOrmUser),
+            findById: jest.fn().mockResolvedValue(mockUser),
+            updateTwoFactorSecret: jest.fn().mockResolvedValue(undefined),
+            update: jest.fn().mockResolvedValue(mockUser),
+          },
+        },
+        {
+          provide: JwtService,
+          useValue: {
+            sign: jest.fn().mockReturnValue('test-token'),
+          },
+        },
+        {
+          provide: TwoFactorAuthService,
+          useValue: {
+            generateSecret: jest.fn().mockReturnValue('secret'),
+            getOtpAuthUrl: jest.fn().mockReturnValue('otpAuthUrl'),
+            generateQrCode: jest.fn().mockResolvedValue('qrCodeDataUrl'),
+            verifyToken: jest.fn().mockReturnValue(true),
+          },
+        },
+      ],
+    }).compile();
+
+    service = module.get<AuthService>(AuthService);
+    userRepository = module.get<UserRepository>(UserRepository);
+    jwtService = module.get<JwtService>(JwtService);
+    twoFactorAuthService = module.get<TwoFactorAuthService>(TwoFactorAuthService);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('validateUser', () => {
+    it('should validate user with correct credentials', async () => {
+      (bcrypt.compare as jest.Mock).mockResolvedValue(true);
+      mockOrmUser.comparePassword.mockResolvedValue(true);
+
+      const result = await service.validateUser('test@example.com', 'password');
+      expect(result).toEqual(mockUser);
+      expect(userRepository.findByEmail).toHaveBeenCalledWith('test@example.com');
+    });
+
+    it('should throw an error if user is inactive', async () => {
+      const inactiveUser = {
+        ...mockUser,
+        isActive: jest.fn().mockReturnValue(false),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findByEmail').mockResolvedValue(inactiveUser);
+
+      await expect(service.validateUser('test@example.com', 'password')).rejects.toThrow(
+        InvalidCredentialsException,
+      );
+    });
+
+    it('should throw an error with incorrect password', async () => {
+      (bcrypt.compare as jest.Mock).mockResolvedValue(false);
+
+      await expect(service.validateUser('test@example.com', 'wrongpassword')).rejects.toThrow(
+        InvalidCredentialsException,
+      );
+    });
+
+    it('should throw an error with non-existent email', async () => {
+      jest.spyOn(userRepository, 'findByEmail').mockRejectedValue(new Error());
+
+      await expect(service.validateUser('nonexistent@example.com', 'password')).rejects.toThrow(
+        InvalidCredentialsException,
+      );
+    });
+  });
+
+  describe('generateToken', () => {
+    it('should generate a JWT token for the user', () => {
+      const result = service.generateToken(mockUser);
+
+      expect(result).toEqual({ access_token: 'test-token' });
+      expect(jwtService.sign).toHaveBeenCalledWith({
+        sub: mockUser.getId(),
+        email: mockUser.getEmail(),
+        role: mockUser.getRole(),
+      });
+    });
+  });
+
+  describe('enableTwoFactorAuth', () => {
+    it('should enable two-factor authentication for a user', async () => {
+      const userWithout2FA = {
+        ...mockUser,
+        isTwoFactorEnabled: jest.fn().mockReturnValue(false),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(userWithout2FA);
+
+      const result = await service.enableTwoFactorAuth('1');
+
+      expect(result).toEqual({
+        otpAuthUrl: 'otpAuthUrl',
+        qrCodeDataUrl: 'qrCodeDataUrl',
+        secret: 'secret',
+      });
+      expect(userRepository.updateTwoFactorSecret).toHaveBeenCalledWith('1', 'secret');
+    });
+
+    it('should throw an error if user already has 2FA enabled', async () => {
+      const userWith2FA = {
+        ...mockUser,
+        isTwoFactorEnabled: jest.fn().mockReturnValue(true),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(userWith2FA);
+
+      await expect(service.enableTwoFactorAuth('1')).rejects.toThrow();
+    });
+  });
+
+  describe('verifyTwoFactorAuthToken', () => {
+    it('should verify a valid token', async () => {
+      const userWith2FA = {
+        ...mockUser,
+        getTwoFactorSecret: jest.fn().mockReturnValue('secret'),
+        isTwoFactorEnabled: jest.fn().mockReturnValue(false),
+        enableTwoFactor: jest.fn(),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(userWith2FA);
+      jest.spyOn(twoFactorAuthService, 'verifyToken').mockReturnValue(true);
+
+      const result = await service.verifyTwoFactorAuthToken('1', 'valid-token');
+
+      expect(result).toBe(true);
+      expect(userWith2FA.enableTwoFactor).toHaveBeenCalled();
+      expect(userRepository.update).toHaveBeenCalled();
+    });
+
+    it('should not enable 2FA if user already has it enabled', async () => {
+      const userWith2FA = {
+        ...mockUser,
+        getTwoFactorSecret: jest.fn().mockReturnValue('secret'),
+        isTwoFactorEnabled: jest.fn().mockReturnValue(true),
+        enableTwoFactor: jest.fn(),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(userWith2FA);
+      jest.spyOn(twoFactorAuthService, 'verifyToken').mockReturnValue(true);
+
+      const result = await service.verifyTwoFactorAuthToken('1', 'valid-token');
+
+      expect(result).toBe(true);
+      expect(userWith2FA.enableTwoFactor).not.toHaveBeenCalled();
+      expect(userRepository.update).not.toHaveBeenCalled();
+    });
+
+    it('should return false for an invalid token', async () => {
+      const userWith2FA = {
+        ...mockUser,
+        getTwoFactorSecret: jest.fn().mockReturnValue('secret'),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(userWith2FA);
+      jest.spyOn(twoFactorAuthService, 'verifyToken').mockReturnValue(false);
+
+      const result = await service.verifyTwoFactorAuthToken('1', 'invalid-token');
+
+      expect(result).toBe(false);
+    });
+
+    it('should throw an error if user does not have 2FA setup', async () => {
+      const userWithout2FA = {
+        ...mockUser,
+        getTwoFactorSecret: jest.fn().mockReturnValue(null),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(userWithout2FA);
+
+      await expect(service.verifyTwoFactorAuthToken('1', 'token')).rejects.toThrow();
+    });
+  });
+
+  describe('disableTwoFactorAuth', () => {
+    it('should disable two-factor authentication for a user', async () => {
+      const userWith2FA = {
+        ...mockUser,
+        disableTwoFactor: jest.fn(),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(userWith2FA);
+
+      await service.disableTwoFactorAuth('1');
+
+      expect(userWith2FA.disableTwoFactor).toHaveBeenCalled();
+      expect(userRepository.update).toHaveBeenCalledWith('1', userWith2FA);
+    });
+  });
+});
+```
+[![image.png](https://i.postimg.cc/Vkh1mjr9/image.png)](https://postimg.cc/68CFh4hT)
+
+
+- AdminService
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { AdminService } from '../../src/application/services/admin.service';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+import { OngRepository, } from '../../src/infrastructure/database/mysql/repositories/ong.repository';
+import { NotificationService } from '../../src/infrastructure/services/notification/notification.service';
+import { UserEntity } from '../../src/core/domain/user/user.entity';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+import { UserStatus } from '../../src/core/domain/user/value-objects/user-status';
+import { NotificationType } from '../../src/core/domain/notification/value-objects/notification-type.enum';
+
+
+describe('AdminService', () => {
+  let service: AdminService;
+  let userRepository: UserRepository;
+  let ongRepository: OngRepository;
+  let notificationService: NotificationService;
+
+  const mockUser = new UserEntity(
+    '1',
+    'test@example.com',
+    'hashedPassword',
+    'John',
+    'Doe',
+    '987654321',
+    UserRole.ADOPTER,
+    UserStatus.ACTIVE,
+    false,
+    'Test Address',
+    undefined,
+    undefined,
+    false,
+    '12345678'
+  );
+
+  const mockOng = {
+    id: '1',
+    userId: '1',
+    name: 'Test ONG',
+    ruc: '12345678901',
+    verified: false,
+  };
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        AdminService,
+        {
+          provide: UserRepository,
+          useValue: {
+            findAll: jest.fn().mockResolvedValue([mockUser]),
+            findById: jest.fn().mockResolvedValue(mockUser),
+            update: jest.fn().mockResolvedValue(mockUser),
+            delete: jest.fn().mockResolvedValue(undefined),
+          },
+        },
+        {
+          provide: OngRepository,
+          useValue: {
+            findAll: jest.fn().mockResolvedValue([mockOng]),
+            findById: jest.fn().mockResolvedValue(mockOng),
+            updateVerificationStatus: jest.fn().mockResolvedValue(undefined),
+          },
+        },
+        {
+          provide: NotificationService,
+          useValue: {
+            create: jest.fn().mockResolvedValue(undefined),
+          },
+        },
+      ],
+    }).compile();
+
+    service = module.get<AdminService>(AdminService);
+    userRepository = module.get<UserRepository>(UserRepository);
+    ongRepository = module.get<OngRepository>(OngRepository);
+    notificationService = module.get<NotificationService>(NotificationService);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('getAllUsers', () => {
+    it('should return all users', async () => {
+      const result = await service.getAllUsers();
+      expect(result).toEqual([mockUser]);
+      expect(userRepository.findAll).toHaveBeenCalledWith({});
+    });
+
+    it('should filter users by role', async () => {
+      await service.getAllUsers(UserRole.ADMIN);
+      expect(userRepository.findAll).toHaveBeenCalledWith({ role: UserRole.ADMIN });
+    });
+
+    it('should filter users by verification status', async () => {
+      await service.getAllUsers(undefined, true);
+      expect(userRepository.findAll).toHaveBeenCalledWith({ verified: true });
+    });
+
+    it('should filter users by status', async () => {
+      await service.getAllUsers(undefined, undefined, UserStatus.ACTIVE);
+      expect(userRepository.findAll).toHaveBeenCalledWith({ status: UserStatus.ACTIVE });
+    });
+  });
+
+  describe('getAllOngs', () => {
+    it('should return all ONGs', async () => {
+      const result = await service.getAllOngs();
+      expect(result).toEqual([mockOng]);
+      expect(ongRepository.findAll).toHaveBeenCalledWith({});
+    });
+
+    it('should filter ONGs by verification status', async () => {
+      await service.getAllOngs(true);
+      expect(ongRepository.findAll).toHaveBeenCalledWith({ verified: true });
+    });
+  });
+
+  describe('verifyUser', () => {
+    it('should verify a user', async () => {
+      const verifySpy = jest.spyOn(mockUser, 'verify');
+
+      await service.verifyUser('1', 'Verification note');
+
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+      expect(verifySpy).toHaveBeenCalled();
+      expect(userRepository.update).toHaveBeenCalledWith('1', mockUser);
+      expect(notificationService.create).toHaveBeenCalledWith({
+        userId: '1',
+        type: NotificationType.ACCOUNT_VERIFIED,
+        title: 'Account Verified',
+        message: 'Your account has been verified by an administrator.',
+      });
+    });
+  });
+
+  describe('verifyOng', () => {
+    it('should verify an ONG', async () => {
+      const verifySpy = jest.spyOn(mockUser, 'verify');
+
+      await service.verifyOng('1', 'Verification note');
+
+      expect(ongRepository.updateVerificationStatus).toHaveBeenCalledWith('1', true);
+      expect(ongRepository.findById).toHaveBeenCalledWith('1');
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+      expect(verifySpy).toHaveBeenCalled();
+      expect(userRepository.update).toHaveBeenCalledWith('1', mockUser);
+      expect(notificationService.create).toHaveBeenCalledWith({
+        userId: '1',
+        type: NotificationType.ACCOUNT_VERIFIED,
+        title: 'Organization Verified',
+        message: 'Your organization has been verified by an administrator.',
+      });
+    });
+  });
+
+  describe('changeUserStatus', () => {
+    it('should activate a user', async () => {
+      const activateSpy = jest.spyOn(mockUser, 'activate');
+
+      await service.changeUserStatus('1', UserStatus.ACTIVE);
+
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+      expect(activateSpy).toHaveBeenCalled();
+      expect(userRepository.update).toHaveBeenCalledWith('1', mockUser);
+    });
+
+    it('should deactivate a user', async () => {
+      const deactivateSpy = jest.spyOn(mockUser, 'deactivate');
+
+      await service.changeUserStatus('1', UserStatus.INACTIVE);
+
+      expect(userRepository.findById).toHaveBeenCalledWith('1');
+      expect(deactivateSpy).toHaveBeenCalled();
+      expect(userRepository.update).toHaveBeenCalledWith('1', mockUser);
+    });
+  });
+
+  describe('deleteUser', () => {
+    it('should delete a user', async () => {
+      await service.deleteUser('1');
+      expect(userRepository.delete).toHaveBeenCalledWith('1');
+    });
+  });
+});
+```
+[![image.png](https://i.postimg.cc/zB1sGpJh/image.png)](https://postimg.cc/CZmPvGnM)
+
+
+- DonationService
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { DonationService } from '../../src/application/services/donation.service';
+import { DonationStatus } from '../../src/core/domain/donation/value-objects/donation-status.enum';
+import { DonationType } from '../../src/core/domain/donation/value-objects/donation-type.enum';
+import { DonationItemRepository } from '../../src/infrastructure/database/mysql/repositories/donation-item.repository';
+import { DonationRepository } from '../../src/infrastructure/database/mysql/repositories/donation.repository';
+import { OngRepository } from '../../src/infrastructure/database/mysql/repositories/ong.repository';
+import { S3Service } from '../../src/infrastructure/services/aws/s3.service';
+import { NotificationService } from '../../src/infrastructure/services/notification/notification.service';
+import { DonationEntity } from '../../src/infrastructure/database/mysql/entities/donation.entity';
+import { CreateDonationDto } from 'src/presentation/dtos/requests/create-donation.dto';
+import { NotificationType } from '../../src/core/domain/notification/value-objects/notification-type.enum';
+import { BusinessRuleValidationException } from '../../src/core/exceptions/domain.exception';
+
+
+describe('DonationService', () => {
+  let service: DonationService;
+  let donationRepository: DonationRepository;
+  let donationItemRepository: DonationItemRepository;
+  let s3Service: S3Service;
+  let notificationService: NotificationService;
+  let ongRepository: OngRepository;
+
+  const mockDonation = {
+    id: 'donation1',
+    donorId: 'donor1',
+    ongId: 'ong1',
+    type: DonationType.MONEY,
+    status: DonationStatus.PENDING,
+    amount: 100,
+    transactionId: 'transaction1',
+    notes: 'Test donation',
+    receiptUrl: 'https://example.com/receipt.jpg',
+    getStatus: jest.fn().mockReturnValue(DonationStatus.PENDING),
+    isPending: jest.fn().mockReturnValue(true),
+    confirm: jest.fn(),
+    cancel: jest.fn(),
+    toObject: jest.fn().mockReturnValue({
+      id: 'donation1',
+      donorId: 'donor1',
+      ongId: 'ong1',
+      type: DonationType.MONEY,
+      status: DonationStatus.PENDING,
+      amount: 100,
+      transactionId: 'transaction1',
+      notes: 'Test donation',
+      receiptUrl: 'https://example.com/receipt.jpg',
+    }),
+  } as unknown as DonationEntity;
+
+  const mockConfirmedDonation = {
+    ...mockDonation,
+    status: DonationStatus.CONFIRMED,
+    isPending: jest.fn().mockReturnValue(false),
+  } as unknown as DonationEntity;
+
+  const mockOng = {
+    id: 'ong1',
+    userId: 'ongUser1',
+    name: 'Test ONG',
+  };
+
+  const mockReceipt: Express.Multer.File = {
+    fieldname: 'receipt',
+    originalname: 'receipt.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    buffer: Buffer.from('test'),
+    size: 4,
+    destination: '',
+    filename: '',
+    path: '',
+    stream: null
+  } as Express.Multer.File;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        DonationService,
+        {
+          provide: DonationRepository,
+          useValue: {
+            create: jest.fn().mockResolvedValue(mockDonation),
+            findById: jest.fn().mockResolvedValue(mockDonation),
+            findAll: jest.fn().mockResolvedValue([mockDonation]),
+            findByDonorId: jest.fn().mockResolvedValue([mockDonation]),
+            findByOngId: jest.fn().mockResolvedValue([mockDonation]),
+            update: jest.fn().mockImplementation((id, data) => Promise.resolve({
+              ...mockDonation,
+              ...data,
+            } as unknown as DonationEntity)),
+          },
+        },
+        {
+          provide: DonationItemRepository,
+          useValue: {
+            createMany: jest.fn().mockResolvedValue([]),
+          },
+        },
+        {
+          provide: S3Service,
+          useValue: {
+            uploadFile: jest.fn().mockResolvedValue('https://example.com/receipt.jpg'),
+          },
+        },
+        {
+          provide: NotificationService,
+          useValue: {
+            create: jest.fn().mockResolvedValue(undefined),
+          },
+        },
+        {
+          provide: OngRepository,
+          useValue: {
+            findById: jest.fn().mockResolvedValue(mockOng),
+          },
+        },
+      ],
+    }).compile();
+
+    service = module.get<DonationService>(DonationService);
+    donationRepository = module.get<DonationRepository>(DonationRepository);
+    donationItemRepository = module.get<DonationItemRepository>(DonationItemRepository);
+    s3Service = module.get<S3Service>(S3Service);
+    notificationService = module.get<NotificationService>(NotificationService);
+    ongRepository = module.get<OngRepository>(OngRepository);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('createDonation', () => {
+    it('should create a money donation', async () => {
+      const createDonationDto = {
+        donorId: 'donor1',
+        ongId: 'ong1',
+        type: DonationType.MONEY,
+        amount: 100,
+        transactionId: 'transaction1',
+        notes: 'Test donation',
+        receipt: mockReceipt,
+      } as CreateDonationDto;
+
+      const result = await service.createDonation(createDonationDto);
+
+      expect(s3Service.uploadFile).toHaveBeenCalledWith(
+        createDonationDto.receipt.buffer,
+        'donations',
+        createDonationDto.receipt.originalname,
+      );
+      expect(donationRepository.create).toHaveBeenCalledWith({
+        donorId: 'donor1',
+        ongId: 'ong1',
+        type: DonationType.MONEY,
+        status: DonationStatus.PENDING,
+        amount: 100,
+        transactionId: 'transaction1',
+        notes: 'Test donation',
+        receiptUrl: 'https://example.com/receipt.jpg',
+      });
+      expect(donationItemRepository.createMany).not.toHaveBeenCalled();
+      expect(ongRepository.findById).toHaveBeenCalledWith('ong1');
+      expect(notificationService.create).toHaveBeenCalledWith({
+        userId: 'ongUser1',
+        type: NotificationType.DONATION_RECEIVED,
+        title: 'New donation received',
+        message: 'You have received a new donation of money',
+        referenceId: 'donation1',
+        referenceType: 'donation',
+      });
+      expect(result).toEqual(mockDonation);
+    });
+
+    it('should create an items donation', async () => {
+      const createDonationDto = {
+        donorId: 'donor1',
+        ongId: 'ong1',
+        type: DonationType.ITEMS,
+        items: [
+          { name: 'Item 1', quantity: 2, description: 'Description 1' },
+          { name: 'Item 2', quantity: 1, description: 'Description 2' },
+        ],
+        notes: 'Test donation',
+        receipt: mockReceipt,
+      } as CreateDonationDto;
+
+      const result = await service.createDonation(createDonationDto);
+
+      expect(donationRepository.create).toHaveBeenCalled();
+      expect(donationItemRepository.createMany).toHaveBeenCalledWith([
+        { donationId: 'donation1', name: 'Item 1', quantity: 2, description: 'Description 1' },
+        { donationId: 'donation1', name: 'Item 2', quantity: 1, description: 'Description 2' },
+      ]);
+      expect(notificationService.create).toHaveBeenCalledWith({
+        userId: 'ongUser1',
+        type: NotificationType.DONATION_RECEIVED,
+        title: 'New donation received',
+        message: 'You have received a new donation of items',
+        referenceId: 'donation1',
+        referenceType: 'donation',
+      });
+      expect(result).toEqual(mockDonation);
+    });
+
+    it('should throw an error for money donation without amount', async () => {
+      const createDonationDto = {
+        donorId: 'donor1',
+        ongId: 'ong1',
+        type: DonationType.MONEY,
+        transactionId: 'transaction1',
+        receipt: mockReceipt,
+      } as CreateDonationDto;
+
+      await expect(service.createDonation(createDonationDto)).rejects.toThrow(
+        BusinessRuleValidationException,
+      );
+      expect(donationRepository.create).not.toHaveBeenCalled();
+    });
+
+    it('should throw an error for items donation without items', async () => {
+      const createDonationDto = {
+        donorId: 'donor1',
+        ongId: 'ong1',
+        type: DonationType.ITEMS,
+        receipt: mockReceipt,
+      } as CreateDonationDto;
+
+      await expect(service.createDonation(createDonationDto)).rejects.toThrow(
+        BusinessRuleValidationException,
+      );
+      expect(donationRepository.create).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('getDonations', () => {
+    it('should return donations based on filters', async () => {
+      const filters = { ongId: 'ong1', status: DonationStatus.PENDING };
+
+      const result = await service.getDonations(filters);
+
+      expect(donationRepository.findAll).toHaveBeenCalledWith(filters);
+      expect(result).toEqual([mockDonation]);
+    });
+  });
+
+  describe('getDonationById', () => {
+    it('should return a donation by id', async () => {
+      const result = await service.getDonationById('donation1');
+
+      expect(donationRepository.findById).toHaveBeenCalledWith('donation1');
+      expect(result).toEqual(mockDonation);
+    });
+  });
+
+  describe('confirmDonation', () => {
+    it('should confirm a pending donation', async () => {
+      const result = await service.confirmDonation('donation1', 'confirmer1', 'Confirmation note');
+
+      expect(donationRepository.findById).toHaveBeenCalledWith('donation1');
+      expect(donationRepository.update).toHaveBeenCalledWith('donation1', {
+        status: DonationStatus.CONFIRMED,
+        confirmationDate: expect.any(Date),
+        confirmedBy: 'confirmer1',
+        notes: 'Confirmation note',
+      });
+      expect(notificationService.create).toHaveBeenCalledWith({
+        userId: 'donor1',
+        type: NotificationType.DONATION_CONFIRMED,
+        title: 'Donation confirmed',
+        message: 'Your donation has been confirmed. Thank you for your support!',
+        referenceId: 'donation1',
+        referenceType: 'donation',
+      });
+    });
+
+    it('should throw an error if donation is not pending', async () => {
+      jest.spyOn(donationRepository, 'findById').mockResolvedValue(mockConfirmedDonation);
+
+      await expect(service.confirmDonation('donation1', 'confirmer1')).rejects.toThrow(
+        BusinessRuleValidationException,
+      );
+      expect(donationRepository.update).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('cancelDonation', () => {
+    it('should cancel a pending donation', async () => {
+      const result = await service.cancelDonation('donation1');
+
+      expect(donationRepository.findById).toHaveBeenCalledWith('donation1');
+      expect(donationRepository.update).toHaveBeenCalledWith('donation1', {
+        status: DonationStatus.CANCELLED,
+      });
+    });
+
+    it('should throw an error if donation is not pending', async () => {
+      jest.spyOn(donationRepository, 'findById').mockResolvedValue(mockConfirmedDonation);
+
+      await expect(service.cancelDonation('donation1')).rejects.toThrow(
+        BusinessRuleValidationException,
+      );
+      expect(donationRepository.update).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('getDonationsByDonor', () => {
+    it('should return donations by donor id', async () => {
+      const result = await service.getDonationsByDonor('donor1');
+
+      expect(donationRepository.findByDonorId).toHaveBeenCalledWith('donor1');
+      expect(result).toEqual([mockDonation]);
+    });
+  });
+
+  describe('getDonationsByOng', () => {
+    it('should return donations by ONG id', async () => {
+      const result = await service.getDonationsByOng('ong1');
+
+      expect(donationRepository.findByOngId).toHaveBeenCalledWith('ong1');
+      expect(result).toEqual([mockDonation]);
+    });
+  });
+});
+```
+[![image.png](https://i.postimg.cc/Y0CyvsTv/image.png)](https://postimg.cc/DJRcDBvh)
+
+
+- OngService
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { OngService } from '../../src/application/services/ong.service';
+import { OngRepository } from '../../src/infrastructure/database/mysql/repositories/ong.repository';
+import { S3Service } from '../../src/infrastructure/services/aws/s3.service';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+import { DuplicateEntityException, EntityNotFoundException } from '../../src/core/exceptions/domain.exception';
+import { UserEntity } from '../../src/core/domain/user/user.entity';
+
+describe('OngService', () => {
+  let service: OngService;
+  let ongRepository: OngRepository;
+  let userRepository: UserRepository;
+  let s3Service: S3Service;
+
+  const mockUser = {
+    getId: jest.fn().mockReturnValue('user1'),
+    getEmail: jest.fn().mockReturnValue('user@example.com'),
+    getFirstName: jest.fn().mockReturnValue('John'),
+    getLastName: jest.fn().mockReturnValue('Doe'),
+    getRole: jest.fn().mockReturnValue(UserRole.ADOPTER),
+    changeRole: jest.fn(),
+    isActive: jest.fn().mockReturnValue(true),
+  } as unknown as UserEntity;
+
+  const mockOng = {
+    id: 'ong1',
+    userId: 'user1',
+    name: 'Test ONG',
+    ruc: '12345678901',
+    description: 'Test description',
+    address: 'Test address',
+    phone: '987654321',
+    email: 'ong@example.com',
+    logoUrl: 'https://example.com/logo.jpg',
+    verified: false,
+    legalDocuments: JSON.stringify(['https://example.com/doc1.pdf']),
+  };
+
+  const mockLogo = {
+    fieldname: 'logo',
+    originalname: 'logo.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    buffer: Buffer.from('test'),
+    size: 4,
+    destination: '',
+    filename: '',
+    path: '',
+    stream: null
+  } as Express.Multer.File;
+
+  const mockLegalDoc = {
+    fieldname: 'legalDocuments',
+    originalname: 'doc.pdf',
+    encoding: '7bit',
+    mimetype: 'application/pdf',
+    buffer: Buffer.from('test'),
+    size: 4,
+    destination: '',
+    filename: '',
+    path: '',
+    stream: null
+  } as Express.Multer.File;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        OngService,
+        {
+          provide: OngRepository,
+          useValue: {
+            exists: jest.fn().mockResolvedValue(false),
+            create: jest.fn().mockResolvedValue(mockOng),
+            findAll: jest.fn().mockResolvedValue([mockOng]),
+            findById: jest.fn().mockResolvedValue(mockOng),
+            findByUserId: jest.fn().mockResolvedValue(mockOng),
+            update: jest.fn().mockResolvedValue(mockOng),
+          },
+        },
+        {
+          provide: UserRepository,
+          useValue: {
+            findById: jest.fn().mockResolvedValue(mockUser),
+            update: jest.fn().mockResolvedValue(mockUser),
+          },
+        },
+        {
+          provide: S3Service,
+          useValue: {
+            uploadFile: jest.fn().mockResolvedValue('https://example.com/logo.jpg'),
+            deleteFile: jest.fn().mockResolvedValue(undefined),
+            uploadMultipleFiles: jest.fn().mockResolvedValue(['https://example.com/doc1.pdf']),
+          },
+        },
+      ],
+    }).compile();
+
+    service = module.get<OngService>(OngService);
+    ongRepository = module.get<OngRepository>(OngRepository);
+    userRepository = module.get<UserRepository>(UserRepository);
+    s3Service = module.get<S3Service>(S3Service);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('createOng', () => {
+    it('should create a new ONG', async () => {
+      const createOngDto = {
+        userId: 'user1',
+        name: 'Test ONG',
+        ruc: '12345678901',
+        description: 'Test description',
+        address: 'Test address',
+        phone: '987654321',
+        email: 'ong@example.com',
+        website: 'https://example.com',
+        mission: 'Test mission',
+        vision: 'Test vision',
+        bankAccount: '123456789',
+        bankName: 'Test Bank',
+        interbankAccount: '123456789012345',
+        logo: mockLogo,
+        legalDocuments: [mockLegalDoc],
+      };
+
+      const result = await service.createOng(createOngDto);
+
+      expect(ongRepository.exists).toHaveBeenCalledWith({ ruc: '12345678901' });
+      expect(userRepository.findById).toHaveBeenCalledWith('user1');
+      expect(mockUser.changeRole).toHaveBeenCalledWith(UserRole.ONG);
+      expect(userRepository.update).toHaveBeenCalledWith('user1', mockUser);
+      expect(s3Service.uploadFile).toHaveBeenCalledWith(
+        mockLogo.buffer,
+        'ongs',
+        mockLogo.originalname,
+      );
+      expect(ongRepository.create).toHaveBeenCalledWith(expect.objectContaining({
+        userId: 'user1',
+        name: 'Test ONG',
+        ruc: '12345678901',
+        description: 'Test description',
+        logoUrl: 'https://example.com/logo.jpg',
+        legalDocuments: expect.any(String),
+      }));
+      expect(result).toEqual(mockOng);
+    });
+
+    it('should throw an error if RUC already exists', async () => {
+      jest.spyOn(ongRepository, 'exists').mockResolvedValue(true);
+
+      const createOngDto = {
+        userId: 'user1',
+        name: 'Test ONG',
+        ruc: '12345678901',
+        description: 'Test description',
+        address: 'Test address',
+        phone: '987654321',
+        email: 'ong@example.com',
+        legalDocuments: [mockLegalDoc],
+      };
+
+      await expect(service.createOng(createOngDto)).rejects.toThrow(
+        DuplicateEntityException,
+      );
+      expect(userRepository.update).not.toHaveBeenCalled();
+      expect(ongRepository.create).not.toHaveBeenCalled();
+    });
+
+    it('should not change role if user is already an ONG', async () => {
+      const ongUser = {
+        getId: jest.fn().mockReturnValue('user1'),
+        getEmail: jest.fn().mockReturnValue('user@example.com'),
+        getFirstName: jest.fn().mockReturnValue('John'),
+        getLastName: jest.fn().mockReturnValue('Doe'),
+        getRole: jest.fn().mockReturnValue(UserRole.ONG),
+        changeRole: jest.fn(),
+        isActive: jest.fn().mockReturnValue(true),
+      } as unknown as UserEntity;
+
+      jest.spyOn(userRepository, 'findById').mockResolvedValue(ongUser);
+
+      const createOngDto = {
+        userId: 'user1',
+        name: 'Test ONG',
+        ruc: '12345678901',
+        description: 'Test description',
+        address: 'Test address',
+        phone: '987654321',
+        email: 'ong@example.com',
+        legalDocuments: [mockLegalDoc],
+      };
+
+      await service.createOng(createOngDto);
+
+      expect(ongUser.changeRole).not.toHaveBeenCalled();
+      expect(userRepository.update).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('getAllOngs', () => {
+    it('should return all ONGs', async () => {
+      const result = await service.getAllOngs();
+      expect(result).toEqual([mockOng]);
+      expect(ongRepository.findAll).toHaveBeenCalledWith({});
+    });
+
+    it('should filter ONGs by verification status', async () => {
+      await service.getAllOngs(true);
+      expect(ongRepository.findAll).toHaveBeenCalledWith({ verified: true });
+    });
+  });
+
+  describe('getOngById', () => {
+    it('should return an ONG by id', async () => {
+      const result = await service.getOngById('ong1');
+      expect(result).toEqual(mockOng);
+      expect(ongRepository.findById).toHaveBeenCalledWith('ong1');
+    });
+  });
+
+  describe('getOngByUserId', () => {
+    it('should return an ONG by user id', async () => {
+      const result = await service.getOngByUserId('user1');
+      expect(result).toEqual(mockOng);
+      expect(ongRepository.findByUserId).toHaveBeenCalledWith('user1');
+    });
+
+    it('should throw an error if ONG is not found', async () => {
+      jest.spyOn(ongRepository, 'findByUserId').mockImplementation(() => {
+        return Promise.reject(new EntityNotFoundException('ONG for the user'));
+      });
+
+      await expect(service.getOngByUserId('nonexistent')).rejects.toThrow(
+        EntityNotFoundException,
+      );
+    });
+  });
+
+  describe('updateOng', () => {
+    it('should update an ONG', async () => {
+      const updateOngDto = {
+        name: 'Updated ONG',
+        description: 'Updated description',
+        logo: mockLogo,
+      };
+
+      const result = await service.updateOng('ong1', updateOngDto);
+
+      expect(ongRepository.findById).toHaveBeenCalledWith('ong1');
+      expect(s3Service.uploadFile).toHaveBeenCalledWith(
+        mockLogo.buffer,
+        'ongs',
+        mockLogo.originalname,
+      );
+      expect(s3Service.deleteFile).toHaveBeenCalledWith('https://example.com/logo.jpg');
+      expect(ongRepository.update).toHaveBeenCalledWith('ong1', {
+        name: 'Updated ONG',
+        description: 'Updated description',
+        logoUrl: 'https://example.com/logo.jpg',
+      });
+      expect(result).toEqual(mockOng);
+    });
+
+    it('should update an ONG without changing logo', async () => {
+      const updateOngDto = {
+        name: 'Updated ONG',
+        description: 'Updated description',
+      };
+
+      const result = await service.updateOng('ong1', updateOngDto);
+
+      expect(ongRepository.findById).toHaveBeenCalledWith('ong1');
+      expect(s3Service.uploadFile).not.toHaveBeenCalled();
+      expect(s3Service.deleteFile).not.toHaveBeenCalled();
+      expect(ongRepository.update).toHaveBeenCalledWith('ong1', updateOngDto);
+      expect(result).toEqual(mockOng);
+    });
+  });
+
+  describe('hasOng', () => {
+    it('should return true if user has an ONG', async () => {
+      const result = await service.hasOng('user1');
+      expect(result).toBe(true);
+      expect(ongRepository.findByUserId).toHaveBeenCalledWith('user1');
+    });
+
+    it('should return false if user does not have an ONG', async () => {
+      jest.spyOn(ongRepository, 'findByUserId').mockImplementation(() => {
+        return Promise.reject(new EntityNotFoundException('ONG for the user'));
+      });
+
+      const result = await service.hasOng('user1');
+      expect(result).toBe(false);
+    });
+
+    it('should rethrow unexpected errors', async () => {
+      jest.spyOn(ongRepository, 'findByUserId').mockImplementation(() => {
+        return Promise.reject(new Error('Unexpected error'));
+      });
+
+      await expect(service.hasOng('user1')).rejects.toThrow('Unexpected error');
+    });
+  });
+});
+
+```
+[![image.png](https://i.postimg.cc/yNCQmdw4/image.png)](https://postimg.cc/SnVfqySD)
+
+
 ### 6.1.2. Core Integration Tests. 
+
+- Adoption Integration Tests
+```typescript
+import { INestApplication } from '@nestjs/common';
+import * as request from 'supertest';
+import { TestSetup } from './setup';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+import { AnimalRepository } from '../../src/infrastructure/database/mysql/repositories/animal.repository';
+import { AdoptionRepository } from '../../src/infrastructure/database/mysql/repositories/adoption.repository';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+import { UserStatus } from '../../src/core/domain/user/value-objects/user-status';
+import { AnimalType } from '../../src/core/domain/animal/value-objects/animal-type.enum';
+import { AnimalGender } from '../../src/core/domain/animal/value-objects/animal-gender.enum';
+import { AdoptionType } from '../../src/core/domain/adoption/value-objects/adoption-type.enum';
+import { AdoptionStatus } from '../../src/core/domain/adoption/value-objects/adoption-status.enum';
+import * as bcrypt from 'bcrypt';
+
+describe('Adoption Integration Tests', () => {
+  let app: INestApplication;
+  let testSetup: TestSetup;
+  let userRepository: UserRepository;
+  let animalRepository: AnimalRepository;
+  let adoptionRepository: AdoptionRepository;
+
+  beforeAll(async () => {
+    testSetup = new TestSetup();
+    await testSetup.initialize();
+    app = testSetup.app;
+    userRepository = app.get<UserRepository>(UserRepository);
+    animalRepository = app.get<AnimalRepository>(AnimalRepository);
+    adoptionRepository = app.get<AdoptionRepository>(AdoptionRepository);
+  });
+
+  afterAll(async () => {
+    await testSetup.cleanup();
+  });
+
+  beforeEach(async () => {
+    await testSetup.clearDatabase();
+  });
+
+  async function createUserAndGetToken(userData: any) {
+    const hashedPassword = await bcrypt.hash(userData.password, 10);
+    const user = await userRepository.create({
+      ...userData,
+      password: hashedPassword,
+      status: UserStatus.ACTIVE,
+      verified: true,
+    });
+
+    const loginResponse = await request(testSetup.getHttpServer())
+      .post('/auth/login')
+      .send({
+        email: userData.email,
+        password: userData.password,
+      });
+
+    return {
+      user,
+      token: loginResponse.body.access_token,
+    };
+  }
+
+  describe('Adoption Flow', () => {
+    it('should allow users to request, approve, and complete an adoption', async () => {
+      const ownerData = {
+        email: 'owner@example.com',
+        password: 'Password123!',
+        firstName: 'Owner',
+        lastName: 'User',
+        phone: '123456789',
+        role: UserRole.ADOPTER,
+        address: 'Owner Address',
+        dni: '87654321'
+      };
+
+      const adopterData = {
+        email: 'adopter@example.com',
+        password: 'Password123!',
+        firstName: 'Adopter',
+        lastName: 'User',
+        phone: '987654321',
+        role: UserRole.ADOPTER,
+        address: 'Adopter Address',
+        dni: '12345678'
+      };
+
+      const { user: owner, token: ownerToken } = await createUserAndGetToken(ownerData);
+      const { user: adopter, token: adopterToken } = await createUserAndGetToken(adopterData);
+
+      const animalData = {
+        name: 'Fluffy',
+        type: AnimalType.DOG,
+        breed: 'Mixed',
+        gender: AnimalGender.MALE,
+        age: 2,
+        description: 'A friendly dog looking for a new home',
+        weight: 15,
+        color: 'Brown',
+        isVaccinated: true,
+        isNeutered: true,
+        healthDetails: 'Healthy and energetic',
+        adoptionStatus: 'AVAILABLE',
+        ownerId: owner.getId(),
+      };
+
+      const createAnimalResponse = await request(testSetup.getHttpServer())
+        .post('/animals')
+        .set('Authorization', `Bearer ${ownerToken}`)
+        .send(animalData)
+        .expect(201);
+
+      const animalId = createAnimalResponse.body.id;
+
+      const adoptionRequestData = {
+        animalId,
+        type: AdoptionType.ADOPTION,
+        notes: 'I would love to adopt Fluffy',
+      };
+
+      const adoptionRequestResponse = await request(testSetup.getHttpServer())
+        .post('/adoptions/request')
+        .set('Authorization', `Bearer ${adopterToken}`)
+        .send(adoptionRequestData)
+        .expect(201);
+
+      const adoptionId = adoptionRequestResponse.body.id;
+      expect(adoptionRequestResponse.body.status).toBe(AdoptionStatus.PENDING);
+
+      const adoptionRequestsResponse = await request(testSetup.getHttpServer())
+        .get('/adoptions/received')
+        .set('Authorization', `Bearer ${ownerToken}`)
+        .expect(200);
+
+      expect(adoptionRequestsResponse.body).toHaveLength(1);
+      expect(adoptionRequestsResponse.body[0].id).toBe(adoptionId);
+      expect(adoptionRequestsResponse.body[0].animalId).toBe(animalId);
+      expect(adoptionRequestsResponse.body[0].adopterInfo.email).toBe(adopterData.email);
+
+      const approveResponse = await request(testSetup.getHttpServer())
+        .post(`/adoptions/${adoptionId}/approve`)
+        .set('Authorization', `Bearer ${ownerToken}`)
+        .send({ notes: 'Approved. You can pick up Fluffy next week.' })
+        .expect(200);
+
+      expect(approveResponse.body.status).toBe(AdoptionStatus.APPROVED);
+
+      const getAnimalResponse = await request(testSetup.getHttpServer())
+        .get(`/animals/${animalId}`)
+        .expect(200);
+
+      expect(getAnimalResponse.body.adoptionStatus).toBe('ADOPTED');
+
+      const getAdoptionResponse = await request(testSetup.getHttpServer())
+        .get(`/adoptions/${adoptionId}`)
+        .set('Authorization', `Bearer ${adopterToken}`)
+        .expect(200);
+
+      expect(getAdoptionResponse.body.status).toBe(AdoptionStatus.APPROVED);
+      expect(getAdoptionResponse.body.notes).toContain('Approved');
+    });
+
+    it('should handle visit requests', async () => {
+      const { user: owner, token: ownerToken } = await createUserAndGetToken({
+        email: 'owner@example.com',
+        password: 'Password123!',
+        firstName: 'Owner',
+        lastName: 'User',
+        phone: '123456789',
+        role: UserRole.ADOPTER,
+        address: 'Owner Address',
+        dni: '87654321'
+      });
+
+      const { user: adopter, token: adopterToken } = await createUserAndGetToken({
+        email: 'adopter@example.com',
+        password: 'Password123!',
+        firstName: 'Adopter',
+        lastName: 'User',
+        phone: '987654321',
+        role: UserRole.ADOPTER,
+        address: 'Adopter Address',
+        dni: '12345678'
+      });
+
+      const createAnimalResponse = await request(testSetup.getHttpServer())
+        .post('/animals')
+        .set('Authorization', `Bearer ${ownerToken}`)
+        .send({
+          name: 'Whiskers',
+          type: AnimalType.CAT,
+          breed: 'Siamese',
+          gender: AnimalGender.FEMALE,
+          age: 3,
+          description: 'A beautiful cat looking for a new home',
+          weight: 4,
+          color: 'White and Brown',
+          isVaccinated: true,
+          isNeutered: true,
+          healthDetails: 'Healthy and playful',
+          adoptionStatus: 'AVAILABLE',
+        })
+        .expect(201);
+
+      const animalId = createAnimalResponse.body.id;
+
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+
+      const visitRequestData = {
+        animalId,
+        type: AdoptionType.VISIT,
+        visitDate: tomorrow.toISOString(),
+        notes: 'I would like to visit Whiskers tomorrow',
+      };
+
+      const visitRequestResponse = await request(testSetup.getHttpServer())
+        .post('/adoptions/request')
+        .set('Authorization', `Bearer ${adopterToken}`)
+        .send(visitRequestData)
+        .expect(201);
+
+      const visitId = visitRequestResponse.body.id;
+      expect(visitRequestResponse.body.status).toBe(AdoptionStatus.PENDING);
+      expect(visitRequestResponse.body.visitDate).toBeDefined();
+
+      const approveResponse = await request(testSetup.getHttpServer())
+        .post(`/adoptions/${visitId}/approve`)
+        .set('Authorization', `Bearer ${ownerToken}`)
+        .send({ notes: 'Approved. Looking forward to your visit.' })
+        .expect(200);
+
+      expect(approveResponse.body.status).toBe(AdoptionStatus.APPROVED);
+
+      const getAnimalResponse = await request(testSetup.getHttpServer())
+        .get(`/animals/${animalId}`)
+        .expect(200);
+
+      expect(getAnimalResponse.body.adoptionStatus).toBe('AVAILABLE');
+    });
+  });
+});
+```
+
+- Auth Integration Tests
+```typescript
+import { INestApplication } from '@nestjs/common';
+import * as request from 'supertest';
+import { TestSetup } from './setup';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+import { UserStatus } from '../../src/core/domain/user/value-objects/user-status';
+import * as bcrypt from 'bcrypt';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+
+describe('Auth Integration Tests', () => {
+  let app: INestApplication;
+  let testSetup: TestSetup;
+  let userRepository: UserRepository;
+
+  beforeAll(async () => {
+    testSetup = new TestSetup();
+    await testSetup.initialize();
+    app = testSetup.app;
+    userRepository = app.get<UserRepository>(UserRepository);
+  });
+
+  afterAll(async () => {
+    await testSetup.cleanup();
+  });
+
+  beforeEach(async () => {
+    await testSetup.clearDatabase();
+  });
+
+  describe('Authentication Flow', () => {
+    it('should register, login, and access protected resources', async () => {
+      const userData = {
+        email: 'test@example.com',
+        password: 'Password123!',
+        firstName: 'John',
+        lastName: 'Doe',
+        phone: '987654321',
+        address: 'Test Address',
+        dni: '12345678'
+      };
+
+      const registerResponse = await request(testSetup.getHttpServer())
+        .post('/auth/register')
+        .send(userData)
+        .expect(201);
+
+      expect(registerResponse.body).toHaveProperty('id');
+      expect(registerResponse.body.email).toBe(userData.email);
+      expect(registerResponse.body.role).toBe(UserRole.ADOPTER);
+
+      const loginResponse = await request(testSetup.getHttpServer())
+        .post('/auth/login')
+        .send({
+          email: userData.email,
+          password: userData.password,
+        })
+        .expect(200);
+
+      expect(loginResponse.body).toHaveProperty('access_token');
+      const token = loginResponse.body.access_token;
+
+      const profileResponse = await request(testSetup.getHttpServer())
+        .get('/users/profile')
+        .set('Authorization', `Bearer ${token}`)
+        .expect(200);
+
+      expect(profileResponse.body.email).toBe(userData.email);
+      expect(profileResponse.body.firstName).toBe(userData.firstName);
+      expect(profileResponse.body.lastName).toBe(userData.lastName);
+
+      await request(testSetup.getHttpServer())
+        .get('/users/profile')
+        .expect(401);
+    });
+
+    it('should handle invalid login credentials', async () => {
+      const hashedPassword = await bcrypt.hash('Password123!', 10);
+      await userRepository.create({
+        email: 'test@example.com',
+        password: hashedPassword,
+        firstName: 'John',
+        lastName: 'Doe',
+        phoneNumber: '987654321',
+        role: UserRole.ADOPTER,
+        status: UserStatus.ACTIVE,
+        verified: true,
+        address: 'Test Address',
+        identityDocument: '12345678',
+      } as any);
+
+      await request(testSetup.getHttpServer())
+        .post('/auth/login')
+        .send({
+          email: 'test@example.com',
+          password: 'WrongPassword123!',
+        })
+        .expect(401);
+
+      await request(testSetup.getHttpServer())
+        .post('/auth/login')
+        .send({
+          email: 'nonexistent@example.com',
+          password: 'Password123!',
+        })
+        .expect(401);
+    });
+  });
+});
+```
+
+- Donation Integration Tests
+```typescript
+import { INestApplication } from '@nestjs/common';
+import * as request from 'supertest';
+import { TestSetup } from './setup';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+import { OngRepository } from '../../src/infrastructure/database/mysql/repositories/ong.repository';
+import { DonationRepository } from '../../src/infrastructure/database/mysql/repositories/donation.repository';
+import { DonationItemRepository } from '../../src/infrastructure/database/mysql/repositories/donation-item.repository';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+import { UserStatus } from '../../src/core/domain/user/value-objects/user-status';
+import { DonationType } from '../../src/core/domain/donation/value-objects/donation-type.enum';
+import { DonationStatus } from '../../src/core/domain/donation/value-objects/donation-status.enum';
+import * as bcrypt from 'bcrypt';
+import * as fs from 'fs';
+import * as path from 'path';
+
+describe('Donation Integration Tests', () => {
+  let app: INestApplication;
+  let testSetup: TestSetup;
+  let userRepository: UserRepository;
+  let ongRepository: OngRepository;
+  let donationRepository: DonationRepository;
+  let donationItemRepository: DonationItemRepository;
+
+  beforeAll(async () => {
+    testSetup = new TestSetup();
+    await testSetup.initialize();
+    app = testSetup.app;
+    userRepository = app.get<UserRepository>(UserRepository);
+    ongRepository = app.get<OngRepository>(OngRepository);
+    donationRepository = app.get<DonationRepository>(DonationRepository);
+    donationItemRepository = app.get<DonationItemRepository>(DonationItemRepository);
+  });
+
+  afterAll(async () => {
+    await testSetup.cleanup();
+  });
+
+  beforeEach(async () => {
+    await testSetup.clearDatabase();
+  });
+
+  async function createUserAndGetToken(userData: any) {
+    const hashedPassword = await bcrypt.hash(userData.password, 10);
+    const user = await userRepository.create({
+      ...userData,
+      password: hashedPassword,
+      status: UserStatus.ACTIVE,
+      verified: true,
+    });
+
+    const loginResponse = await request(testSetup.getHttpServer())
+      .post('/auth/login')
+      .send({
+        email: userData.email,
+        password: userData.password,
+      });
+
+    return {
+      user,
+      token: loginResponse.body.access_token,
+    };
+  }
+
+  function createTestFile(filename: string, content: string = 'test content') {
+    const testFilePath = path.join(__dirname, '..', 'temp', filename);
+    const dirPath = path.join(__dirname, '..', 'temp');
+
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
+    }
+
+    fs.writeFileSync(testFilePath, content);
+    return testFilePath;
+  }
+
+  describe('Donation Flow', () => {
+    it('should allow users to make a money donation and ONG confirm it', async () => {
+      const donorData = {
+        email: 'donor@example.com',
+        password: 'Password123!',
+        firstName: 'Donor',
+        lastName: 'User',
+        phone: '123456789',
+        role: UserRole.ADOPTER,
+        address: 'Donor Address',
+        dni: '87654321'
+      };
+
+      const ongUserData = {
+        email: 'ong@example.com',
+        password: 'Password123!',
+        firstName: 'ONG',
+        lastName: 'Admin',
+        phone: '987654321',
+        role: UserRole.ONG,
+        address: 'ONG Address',
+        dni: '12345678'
+      };
+
+      const { user: donor, token: donorToken } = await createUserAndGetToken(donorData);
+      const { user: ongUser, token: ongToken } = await createUserAndGetToken(ongUserData);
+
+      const ongData = {
+        name: 'Test ONG',
+        ruc: '12345678901',
+        description: 'A test ONG for animal rescue',
+        address: 'ONG Office Address',
+        phone: '987654321',
+        email: 'ong@example.com',
+      };
+
+      const logoPath = createTestFile('logo.jpg');
+      const docPath = createTestFile('legal_doc.pdf');
+
+      const createOngResponse = await request(testSetup.getHttpServer())
+        .post('/ongs')
+        .set('Authorization', `Bearer ${ongToken}`)
+        .field('name', ongData.name)
+        .field('ruc', ongData.ruc)
+        .field('description', ongData.description)
+        .field('address', ongData.address)
+        .field('phone', ongData.phone)
+        .field('email', ongData.email)
+        .attach('logo', logoPath)
+        .attach('legalDocuments', docPath)
+        .expect(201);
+
+      const ongId = createOngResponse.body.id;
+
+      const receiptPath = createTestFile('receipt.jpg');
+
+      const donationResponse = await request(testSetup.getHttpServer())
+        .post('/donations')
+        .set('Authorization', `Bearer ${donorToken}`)
+        .field('ongId', ongId)
+        .field('type', DonationType.MONEY)
+        .field('amount', '100')
+        .field('transactionId', 'tx-123456')
+        .field('notes', 'Test donation')
+        .attach('receipt', receiptPath)
+        .expect(201);
+
+      const donationId = donationResponse.body.id;
+      expect(donationResponse.body.status).toBe(DonationStatus.PENDING);
+      expect(donationResponse.body.amount).toBe(100);
+
+      const ongDonationsResponse = await request(testSetup.getHttpServer())
+        .get('/donations/ong')
+        .set('Authorization', `Bearer ${ongToken}`)
+        .expect(200);
+
+      expect(ongDonationsResponse.body).toHaveLength(1);
+      expect(ongDonationsResponse.body[0].id).toBe(donationId);
+      expect(ongDonationsResponse.body[0].amount).toBe(100);
+
+      const confirmResponse = await request(testSetup.getHttpServer())
+        .post(`/donations/${donationId}/confirm`)
+        .set('Authorization', `Bearer ${ongToken}`)
+        .send({ notes: 'Thank you for your donation!' })
+        .expect(200);
+
+      expect(confirmResponse.body.status).toBe(DonationStatus.CONFIRMED);
+
+      const getDonationResponse = await request(testSetup.getHttpServer())
+        .get(`/donations/${donationId}`)
+        .set('Authorization', `Bearer ${donorToken}`)
+        .expect(200);
+
+      expect(getDonationResponse.body.status).toBe(DonationStatus.CONFIRMED);
+      expect(getDonationResponse.body.notes).toContain('Thank you');
+
+      fs.unlinkSync(logoPath);
+      fs.unlinkSync(docPath);
+      fs.unlinkSync(receiptPath);
+    });
+
+    it('should allow users to make an items donation', async () => {
+      const { user: donor, token: donorToken } = await createUserAndGetToken({
+        email: 'donor@example.com',
+        password: 'Password123!',
+        firstName: 'Donor',
+        lastName: 'User',
+        phone: '123456789',
+        role: UserRole.ADOPTER,
+        address: 'Donor Address',
+        dni: '87654321'
+      });
+
+      const { user: ongUser, token: ongToken } = await createUserAndGetToken({
+        email: 'ong@example.com',
+        password: 'Password123!',
+        firstName: 'ONG',
+        lastName: 'Admin',
+        phone: '987654321',
+        role: UserRole.ONG,
+        address: 'ONG Address',
+        dni: '12345678'
+      });
+
+      const logoPath = createTestFile('logo.jpg');
+      const docPath = createTestFile('legal_doc.pdf');
+
+      const createOngResponse = await request(testSetup.getHttpServer())
+        .post('/ongs')
+        .set('Authorization', `Bearer ${ongToken}`)
+        .field('name', 'Test ONG')
+        .field('ruc', '12345678901')
+        .field('description', 'A test ONG for animal rescue')
+        .field('address', 'ONG Office Address')
+        .field('phone', '987654321')
+        .field('email', 'ong@example.com')
+        .attach('logo', logoPath)
+        .attach('legalDocuments', docPath)
+        .expect(201);
+
+      const ongId = createOngResponse.body.id;
+
+      const receiptPath = createTestFile('receipt.jpg');
+      const items = [
+        { name: 'Dog Food', quantity: 5, description: 'Bags of premium dog food' },
+        { name: 'Cat Toys', quantity: 10, description: 'Assorted toys for cats' }
+      ];
+
+      const donationResponse = await request(testSetup.getHttpServer())
+        .post('/donations')
+        .set('Authorization', `Bearer ${donorToken}`)
+        .field('ongId', ongId)
+        .field('type', DonationType.ITEMS)
+        .field('notes', 'Donation of pet supplies')
+        .field('items', JSON.stringify(items))
+        .attach('receipt', receiptPath)
+        .expect(201);
+
+      const donationId = donationResponse.body.id;
+      expect(donationResponse.body.status).toBe(DonationStatus.PENDING);
+      expect(donationResponse.body.type).toBe(DonationType.ITEMS);
+
+      const donationDetailsResponse = await request(testSetup.getHttpServer())
+        .get(`/donations/${donationId}`)
+        .set('Authorization', `Bearer ${ongToken}`)
+        .expect(200);
+
+      expect(donationDetailsResponse.body.items).toBeDefined();
+      expect(donationDetailsResponse.body.items.length).toBe(2);
+      expect(donationDetailsResponse.body.items[0].name).toBe('Dog Food');
+      expect(donationDetailsResponse.body.items[1].name).toBe('Cat Toys');
+
+      fs.unlinkSync(logoPath);
+      fs.unlinkSync(docPath);
+      fs.unlinkSync(receiptPath);
+    });
+  });
+});
+```
+
+- Event Integration Tests
+```typescript
+import { INestApplication } from '@nestjs/common';
+import * as request from 'supertest';
+import { TestSetup } from './setup';
+import { UserRepository } from '../../src/infrastructure/database/mysql/repositories/user.repository';
+import { OngRepository } from '../../src/infrastructure/database/mysql/repositories/ong.repository';
+import { EventRepository } from '../../src/infrastructure/database/mysql/repositories/event.repository';
+import { UserRole } from '../../src/core/domain/user/value-objects/user-role.enum';
+import { UserStatus } from '../../src/core/domain/user/value-objects/user-status';
+import * as bcrypt from 'bcrypt';
+import * as fs from 'fs';
+import * as path from 'path';
+
+describe('Event Integration Tests', () => {
+  let app: INestApplication;
+  let testSetup: TestSetup;
+  let userRepository: UserRepository;
+  let ongRepository: OngRepository;
+  let eventRepository: EventRepository;
+
+  beforeAll(async () => {
+    testSetup = new TestSetup();
+    await testSetup.initialize();
+    app = testSetup.app;
+    userRepository = app.get<UserRepository>(UserRepository);
+    ongRepository = app.get<OngRepository>(OngRepository);
+    eventRepository = app.get<EventRepository>(EventRepository);
+  });
+
+  afterAll(async () => {
+    await testSetup.cleanup();
+  });
+
+  beforeEach(async () => {
+    await testSetup.clearDatabase();
+  });
+
+  async function createUserAndGetToken(userData: any) {
+    const hashedPassword = await bcrypt.hash(userData.password, 10);
+    const user = await userRepository.create({
+      ...userData,
+      password: hashedPassword,
+      status: UserStatus.ACTIVE,
+      verified: true,
+    });
+
+    const loginResponse = await request(testSetup.getHttpServer())
+      .post('/auth/login')
+      .send({
+        email: userData.email,
+        password: userData.password,
+      });
+
+    return {
+      user,
+      token: loginResponse.body.access_token,
+    };
+  }
+
+  function createTestFile(filename: string, content: string = 'test content') {
+    const testFilePath = path.join(__dirname, '..', 'temp', filename);
+    const dirPath = path.join(__dirname, '..', 'temp');
+
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
+    }
+
+    fs.writeFileSync(testFilePath, content);
+    return testFilePath;
+  }
+
+  describe('Event Flow', () => {
+    it('should allow ONG users to create and manage events', async () => {
+      const ongUserData = {
+        email: 'ong@example.com',
+        password: 'Password123!',
+        firstName: 'ONG',
+        lastName: 'Admin',
+        phoneNumber: '987654321',
+        role: UserRole.ONG,
+        address: 'ONG Address',
+        identityDocument: '12345678',
+      };
+
+      const { user: ongUser, token: ongToken } = await createUserAndGetToken(ongUserData);
+
+      const ongData = {
+        name: 'Test ONG',
+        ruc: '12345678901',
+        description: 'A test ONG for animal rescue',
+        address: 'ONG Office Address',
+        phone: '987654321',
+        email: 'ong@example.com',
+      };
+
+      const logoPath = createTestFile('logo.jpg');
+      const docPath = createTestFile('legal_doc.pdf');
+
+      const createOngResponse = await request(testSetup.getHttpServer())
+        .post('/ongs')
+        .set('Authorization', `Bearer ${ongToken}`)
+        .field('name', ongData.name)
+        .field('ruc', ongData.ruc)
+        .field('description', ongData.description)
+        .field('address', ongData.address)
+        .field('phone', ongData.phone)
+        .field('email', ongData.email)
+        .attach('logo', logoPath)
+        .attach('legalDocuments', docPath)
+        .expect(201);
+
+      const ongId = createOngResponse.body.id;
+
+      const eventDate = new Date();
+      eventDate.setDate(eventDate.getDate() + 7);
+
+      const imagePath = createTestFile('event_image.jpg');
+
+      const createEventResponse = await request(testSetup.getHttpServer())
+        .post('/events')
+        .set('Authorization', `Bearer ${ongToken}`)
+        .field('title', 'Animal Adoption Day')
+        .field('description', 'Come find your new furry friend at our adoption event!')
+        .field('eventDate', eventDate.toISOString())
+        .field('location', 'Central Park, Lima')
+        .field('isVolunteerEvent', 'false')
+        .attach('image', imagePath)
+        .expect(201);
+
+      const eventId = createEventResponse.body.id;
+      expect(createEventResponse.body.title).toBe('Animal Adoption Day');
+      expect(createEventResponse.body.ongId).toBe(ongId);
+
+      const getEventsResponse = await request(testSetup.getHttpServer())
+        .get('/events')
+        .expect(200);
+
+      expect(Array.isArray(getEventsResponse.body)).toBe(true);
+      expect(getEventsResponse.body.length).toBe(1);
+      expect(getEventsResponse.body[0].id).toBe(eventId);
+
+      const getEventResponse = await request(testSetup.getHttpServer())
+        .get(`/events/${eventId}`)
+        .expect(200);
+
+      expect(getEventResponse.body.id).toBe(eventId);
+      expect(getEventResponse.body.title).toBe('Animal Adoption Day');
+
+      const updateEventResponse = await request(testSetup.getHttpServer())
+        .put(`/events/${eventId}`)
+        .set('Authorization', `Bearer ${ongToken}`)
+        .field('title', 'Updated Event Title')
+        .field('description', 'Updated event description')
+        .expect(200);
+
+      expect(updateEventResponse.body.title).toBe('Updated Event Title');
+
+      await request(testSetup.getHttpServer())
+        .delete(`/events/${eventId}`)
+        .set('Authorization', `Bearer ${ongToken}`)
+        .expect(200);
+
+      await request(testSetup.getHttpServer())
+        .get(`/events/${eventId}`)
+        .expect(404);
+
+      fs.unlinkSync(logoPath);
+      fs.unlinkSync(docPath);
+      fs.unlinkSync(imagePath);
+    });
+  });
+});
+```
+
 ### 6.1.3. Core Behavior-Driven Development 
+
+- US06_RegistroMascota.feature
+```markdown
+Feature: US06 Registro de mascota
+  Como dueño/ONG
+  quiero crear un perfil detallado para mi mascota en adopción
+  para que pueda ser visible en la plataforma y encontrar un hogar adecuado.
+
+  Scenario Outline: Registrar una nueva mascota
+    Given el <usuario> desea registrar una mascota para adopción
+    And se encuentra en el apartado de "Registrar Mascotas"
+    And ingresa la información básica <nombre>, <tipo>, <raza>, <edad>, <género>, <descripción>
+    And sube <numero_fotos> fotos de la mascota
+    And haga clic en "Publicar"
+    Then el sistema registrará la mascota correctamente
+    And mostrará un mensaje de confirmación "Mascota registrada exitosamente"
+
+    Examples:
+      | usuario | nombre | tipo | raza     | edad | género | descripción              |
+      | "ONG"   | "Luna" | "Perro" | "Mestizo" | "2"  | "Hembra" | "Amigable y juguetona" |
+      | "Dueño" | "Max"  | "Gato" | "Siamés"  | "3"  | "Macho" | "Tranquilo y cariñoso" |
+
+  Scenario: Fallar en el registro de mascota
+    Given el "Dueño" desea registrar una mascota para adopción
+    And se encuentra en el apartado de "Registrar Mascotas"
+    And intenta ingresar la información del animal pero no completa todos los campos obligatorios
+    And haga clic en "Publicar"
+    Then el sistema le mostrará un <mensaje de error>
+
+    Examples:
+      | mensaje de error                    |
+      | "Faltan completar campos obligatorios" |
+```
+
+
+- US07_EdicionPerfilMascota.feature
+```markdown
+Feature: US07 Edición de perfil de mascota
+  Como dueño/ONG
+  quiero poder editar la información de mi mascota
+  para mantenerla actualizada
+
+  Scenario: Actualizar información básica de mascota
+    Given el usuario "Dueño" está autenticado en la plataforma
+    And tiene una mascota registrada "Toby"
+    When navega a la sección "Mis Mascotas"
+    And selecciona la mascota "Toby"
+    And hace clic en "Editar Perfil"
+    And actualiza la descripción a "Muy juguetón y le encanta correr"
+    And actualiza el peso a "12.5 kg"
+    And hace clic en "Guardar Cambios"
+    Then el sistema actualiza la información de la mascota
+    And muestra un mensaje "Información actualizada correctamente"
+``` 
+
+- US13_SolicitudAdopcion.feature 
+```markdown
+Feature: US13 Solicitud de adopción
+  Como adoptante
+  quiero poder enviar una solicitud formal de adopción
+  para iniciar el proceso de adopción de una mascota
+
+  Scenario: Enviar solicitud de adopción
+    Given el usuario "Adoptante" está viendo el perfil de la mascota <mascota>
+    When haga clic en el botón "Adopción"
+    And completa el formulario
+    And haga clic en "Enviar Solicitud"
+    Then el sistema registrará la solicitud con estado "Pendiente"
+    And enviará una notificación al dueño o ONG
+
+  Scenario: Solicitud de adopción sin información completa
+    Given el usuario "Adoptante" está viendo el perfil de la mascota "Luna"
+    When haga clic en el botón "Adopción"
+    And no completa todos los campos requeridos del formulario
+    And haga clic en "Enviar Solicitud"
+    Then el sistema mostrará un mensaje de error "Por favor complete todos los campos obligatorios"
+``` 
+
+- US14_ProgramacionVisita.feature
+```markdown
+Feature: US14 Programación de visita
+  Como adoptante/dueño/ONG
+  quiero poder programar una visita
+  para conocer a la mascota/adoptante
+
+  Scenario Outline: Solicitar una visita como adoptante
+    Given el usuario "Adoptante" está viendo el perfil de la mascota <mascota>
+    When hace clic en "Visita"
+    And selecciona una fecha <fecha> y hora <hora> disponibles
+    And ingresa un mensaje <motivo> para la visita
+    And hace clic en "Solicitar Visita"
+    Then el sistema registra la solicitud de visita con estado "Pendiente"
+    And envía una notificación al dueño o ONG
+
+    Examples:
+      | mascota | fecha        | hora    | motivo                                |
+      | "Rocky" | "2025-05-20" | "15:00" | "Me interesa conocerlo personalmente" |
+      | "Nala"  | "2025-05-22" | "10:30" | "Quisiera evaluar su interacción con niños" |
+
+  Scenario: Aprobar solicitud de visita
+    Given el usuario "Dueño" tiene una solicitud de visita pendiente
+    And está en la sección "Notificaciones"
+    When selecciona una solicitud
+    And hace clic en "Aprobar Visita"
+    And hace clic en "Confirmar"
+    Then el sistema actualiza el estado de la visita a "Aprobada"
+    And envía una notificación al adoptante
+
+  Scenario: Rechazar solicitud de visita
+    Given el usuario "ONG" tiene una solicitud de visita pendiente
+    And está en la sección "Notificaciones"
+    When selecciona una solicitud
+    And hace clic en "Rechazar Visita"
+    And ingresa un motivo "No estamos disponibles en esa fecha"
+    And hace clic en "Confirmar"
+    Then el sistema actualiza el estado de la visita a "Rechazada"
+    And envía una notificación al adoptante con el motivo
+``` 
+
+- US20_RegistroDonacion.feature
+```markdown
+Feature: US20 Registro de donación
+  Como usuario
+  quiero poder registrar mi intención de donación a una ONG
+  para ayudar a las organizaciones que cuidan mascotas
+
+  Scenario Outline: Registrar donación monetaria
+    Given el usuario "Donante" está en el perfil de la ONG <ong>
+    When selecciona la opción "Realizar Donación"
+    And selecciona tipo de donación "Monetaria"
+    And ingresa el monto <monto> y <Transaction ID>
+    And sube comprobante de transferencia
+    And ingresa <notas>
+    And haga clic en "Confirmar Donación"
+    Then el sistema registrará la donación con estado "Pendiente"
+    And enviará una notificación a la ONG
+
+    Examples:
+      | ong       | monto | monto | notas                        |
+      | "Patitas" | "100" |   1231   |"Para alimento de cachorros" |
+      | "Huellas" | "50"  |   4141   |"Donación mensual"           |
+
+  Scenario Outline: Registrar donación de productos
+    Given el usuario "Donante" está en el perfil de la ONG <ong>
+    When selecciona la opción "Realizar Donación"
+    And selecciona tipo de donación "Productos"
+    And agrega los productos <productos>
+    And ingresa <notas>
+    And haga clic en "Confirmar Donación"
+    Then el sistema registrará la donación con estado "Pendiente"
+    And enviará una notificación a la ONG
+
+    Examples:
+      | ong       | productos                      | notas                    |
+      | "Patitas" | "Alimento para perros:5 kg"    | "Donación de alimento"   |
+      | "Huellas" | "Camas:2, Juguetes:5, Ropa:3"  | "Donación mensual"       |
+``` 
+
+- US21_ConfirmacionDonacion.feature
+```markdown
+Feature: US21 Confirmación de donación
+  Como ONG
+  quiero poder confirmar la recepción de donaciones
+  para mantener transparencia con los donantes
+
+  Scenario Outline: Confirmar recepción de donación
+    Given el usuario "ONG" ha recibido una donación con ID <donacion_id>
+    And está en la sección "Notificaciones"
+    When selecciona la donación <donacion_id>
+    And haga clic en "Confirmar Recepción"
+    And agrega una nota de agradecimiento <nota>
+    And haga clic en "Confirmar"
+    Then el sistema actualizará el estado de la donación a "Confirmada"
+    And enviará una notificación al donante
+
+    Examples:
+      | donacion_id | nota                                              |
+      | "D001"      | "¡Gracias por tu ayuda para nuestros rescatados!" |
+      | "D002"      | "Tu donación ayudará a mejorar nuestro albergue"  |
+``` 
+
+- US22_PublicacionEventos.feature
+```markdown
+Feature: US22 Publicación de eventos
+  Como ONG
+  quiero publicar eventos o campañas
+  para promover la participación de la comunidad
+
+  Scenario Outline: Crear un nuevo evento
+    Given el usuario "ONG" está en la sección "Eventos"
+    When haga clic en "Crear Evento"
+    And completa el formulario con <titulo>, <descripcion>, <fecha>, <ubicacion>, <tipo>
+    And sube una imagen para el evento
+    And haga clic en "Publicar Evento"
+    Then el sistema registrará el evento como "Activo"
+    And el evento será visible para todos los usuarios
+
+    Examples:
+      | titulo                | descripcion                    | fecha        | ubicacion                | tipo        |
+      | "Feria de Adopción"   | "Ven y conoce a nuestros rescatados" | "2025-06-15" | "Parque Kennedy, Miraflores" | "Adopción"  |
+      | "Jornada de Limpieza" | "Ayúdanos a limpiar el albergue"     | "2025-06-20" | "Albergue Central, San Borja" | "Voluntario" |
+``` 
+
+
 ### 6.1.4. Core System Tests. 
+
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|-----------------|--------|-------------|-------------------------|---------------------------|
+| US01 | Registro de usuario | Como visitante, deseo poder registrarme en la plataforma para acceder a las funcionalidades según mi rol (adoptante, dueño, ONG). | **Given** que soy un visitante no registrado<br>**When** completo el formulario de registro con información válida<br>**Then** se crea mi cuenta y recibo un correo de confirmación.<br><br>**Given** que estoy en el formulario de registro<br>**When** selecciono mi rol (adoptante, dueño, ONG)<br>**Then** se me solicitan los campos específicos para ese rol. | EP01 |
+| US02 | Inicio de sesión | Como usuario registrado, deseo iniciar sesión en la plataforma para acceder a mis funcionalidades. | **Given** que soy un usuario registrado<br>**When** ingreso mi correo y contraseña correctos<br>**Then** accedo a mi cuenta con las funcionalidades correspondientes a mi rol.<br><br>**Given** que intento iniciar sesión<br>**When** ingreso credenciales incorrectas<br>**Then** se muestra un mensaje de error apropiado. | EP01 |
+| US03 | Verificación de identidad | Como usuario, deseo poder verificar mi identidad para aumentar la confianza en mi perfil. | **Given** que estoy registrado en la plataforma<br>**When** subo documentos de identidad y completo el proceso de verificación<br>**Then** mi perfil muestra una insignia de "Usuario Verificado".<br><br>**Given** que soy una ONG<br>**When** subo documentos legales de la organización<br>**Then** mi perfil se marca como "ONG Verificada". | EP01 |
+| US04 | Gestión de perfil | Como usuario, deseo poder editar mi perfil para mantener mi información actualizada. | **Given** que estoy autenticado en la plataforma<br>**When** accedo a la sección "Mi Perfil" y modifico mis datos<br>**Then** mis cambios se guardan correctamente y se reflejan en mi perfil. | EP01 |
+| US05 | Recuperación de contraseña | Como usuario, deseo poder recuperar mi contraseña en caso de olvidarla. | **Given** que olvidé mi contraseña<br>**When** selecciono "Olvidé mi contraseña" e ingreso mi correo<br>**Then** recibo un enlace para crear una nueva contraseña. | EP01 |
+| **EP02** | **Gestión de Mascotas** | **Como plataforma, necesito gestionar la información de mascotas para facilitar el proceso de adopción.** | | |
+| US06 | Creación de perfil de mascota | Como dueño/ONG, deseo crear un perfil detallado para mi mascota en adopción. | **Given** que soy un usuario autenticado como dueño u ONG<br>**When** completo el formulario de creación de perfil de mascota<br>**Then** la mascota aparece listada como disponible para adopción.<br><br>**Given** que estoy creando un perfil de mascota<br>**When** subo fotos y detalles de comportamiento<br>**Then** esta información se muestra en el perfil público de la mascota. | EP02 |
+| US07 | Edición de perfil de mascota | Como dueño/ONG, deseo poder editar la información de mi mascota para mantenerla actualizada. | **Given** que tengo una mascota publicada<br>**When** accedo a su perfil y modifico información<br>**Then** los cambios se reflejan inmediatamente en la visualización pública. | EP02 |
+| US08 | Eliminación de perfil de mascota | Como dueño/ONG, deseo poder eliminar un perfil de mascota cuando ya no esté disponible. | **Given** que tengo una mascota publicada<br>**When** selecciono "Eliminar perfil" y confirmo la acción<br>**Then** la mascota ya no aparece en los listados de adopción. | EP02 |
+| **EP03** | **Búsqueda y Adopción** | **Como plataforma, necesito proporcionar funcionalidades para la búsqueda y solicitud de adopción de mascotas.** | | |
+| US10 | Búsqueda avanzada de mascotas | Como adoptante, deseo poder buscar mascotas utilizando filtros avanzados para encontrar la más compatible. | **Given** que estoy en la sección de búsqueda<br>**When** aplico filtros por especie, tamaño, edad, comportamiento, ubicación<br>**Then** recibo resultados que coinciden con mis criterios.<br><br>**Given** que he realizado una búsqueda<br>**When** guardo mis criterios<br>**Then** puedo recibir notificaciones cuando haya nuevas mascotas que coincidan. | EP03 |
+| US11 | Visualización detallada | Como adoptante, deseo ver información detallada de una mascota para evaluar su compatibilidad. | **Given** que estoy navegando por mascotas<br>**When** selecciono una mascota específica<br>**Then** puedo ver fotos, videos, historial médico, comportamiento y requisitos de adopción. | EP03 |
+| US13 | Solicitud de adopción | Como adoptante, deseo poder enviar una solicitud formal de adopción. | **Given** que estoy interesado en adoptar una mascota<br>**When** completo el formulario de solicitud de adopción<br>**Then** el dueño/ONG recibe mi solicitud para evaluación.<br><br>**Given** que he enviado una solicitud<br>**When** el dueño/ONG responde<br>**Then** recibo una notificación con su respuesta. | EP03 |
+| US14 | Programación de visita | Como adoptante/dueño/ONG, deseo poder programar una visita para conocer a la mascota/adoptante. | **Given** que hay interés en una adopción<br>**When** propongo fechas y horarios para una visita<br>**Then** la otra parte recibe la propuesta y puede confirmar o proponer alternativas.<br><br>**Given** que se ha acordado una fecha<br>**When** se acerca la fecha programada<br>**Then** ambas partes reciben recordatorios. | EP03 |
+| **EP04** | **Gestión de Adopciones** | **Como plataforma, necesito facilitar el proceso de adopción desde la solicitud hasta la finalización.** | | |
+| US15 | Evaluación de solicitudes | Como dueño/ONG, deseo poder evaluar solicitudes de adopción para seleccionar al mejor adoptante. | **Given** que he recibido solicitudes de adopción<br>**When** reviso cada solicitud con la información del adoptante<br>**Then** puedo aprobar, rechazar o solicitar más información. | EP04 |
+| **EP05** | **Donaciones y Eventos** | **Como plataforma, necesito facilitar donaciones y la gestión de eventos para ONGs.** | | |
+| US20 | Registro de donación | Como usuario, deseo poder registrar mi intención de donación a una ONG. | **Given** que veo las necesidades de una ONG<br>**When** selecciono los items que deseo donar<br>**Then** la ONG recibe una notificación con mi compromiso. | EP05 |
+| US21 | Confirmación de donación | Como ONG, deseo poder confirmar la recepción de donaciones. | **Given** que un usuario ha registrado una donación<br>**When** recibo los items y confirmo la recepción<br>**Then** el usuario recibe una notificación de agradecimiento. | EP05 |
+| US22 | Publicación de eventos | Como ONG, deseo publicar eventos o campañas para promover la participación. | **Given** que soy una ONG verificada<br>**When** creo un evento con fecha, ubicación y detalles<br>**Then** el evento se publica y usuarios pueden registrarse para participar. | EP05 |
+| US23 | Registro en eventos | Como usuario, deseo poder registrarme para participar en eventos de ONGs. | **Given** que estoy viendo un evento publicado<br>**When** selecciono "Participar" y confirmo mi asistencia<br>**Then** recibo una confirmación y recordatorios previos al evento. | EP05 |
 
 -----------
 
-# Capítulo VII: DevOps Practices 
-## 7.1. Continuous Integration 
-### 7.1.1. Tools and Practices. 
-### 7.1.2. Build & Test Suite Pipeline Components. 
-## 7.2. Continuous Delivery 
-### 7.2.1. Tools and Practices. 
-### 7.2.2. Stages Deployment Pipeline Components. 
-## 7.3. Continuous deployment 
-### 7.3.1. Tools and Practices. 
-### 7.3.2. Production Deployment Pipeline Components.
+# Capítulo VII: DevOps Practices
+
+## 7.1. Continuous Integration
+
+En el ámbito del desarrollo y pruebas de software, es esencial contar con herramientas y métodos que aseguren tanto la calidad del código como la productividad del equipo. En nuestro proyecto Hairy Paws, hemos implementado un conjunto de herramientas y prácticas que optimizan tanto la creación como la validación de la funcionalidad y el comportamiento previsto de las aplicaciones web y móviles.
+
+### 7.1.1. Tools and Practices
+
+Seguimos las metodologías de Desarrollo Orientado por Comportamiento (BDD) y Desarrollo Orientado por Pruebas (TDD) para asegurar que nuestras soluciones no solo cumplan con los requerimientos del cliente, sino que también mantengan altos niveles de calidad técnica. Algunas de las herramientas principales que utilizamos son:
+
+| Herramienta | Tipo | Descripción | Propósito |
+|-------------|------|-------------|-----------|
+| Jest | Herramienta para pruebas (TDD) | Framework de testing para JavaScript/TypeScript con soporte para mocking y cobertura de código | Facilita la creación y ejecución de pruebas unitarias para nuestro backend NestJS y frontend Angular |
+| Cypress | Herramienta para pruebas E2E | Framework para pruebas end-to-end que permite simular interacciones de usuario con la aplicación | Verificar que la aplicación web funciona correctamente desde la perspectiva del usuario final |
+| Cucumber.js | Herramienta de BDD | Permite escribir especificaciones de comportamiento en lenguaje Gherkin, entendible por clientes y desarrolladores | Define el comportamiento esperado del sistema mediante ejemplos concretos que sirven como documentación viva |
+| GitHub Actions | Herramienta de CI/CD | Plataforma de automatización integrada con GitHub para crear pipelines de CI/CD | Automatizar la construcción, pruebas y despliegue de nuestras aplicaciones |
+| ESLint | Análisis estático de código | Herramienta para identificar y reportar patrones problemáticos en código JavaScript/TypeScript | Mantener la consistencia y calidad del código fuente |
+
+
+Estas herramientas nos permiten mantener un alto nivel de calidad en nuestro código, detectando problemas tempranamente en el ciclo de desarrollo y facilitando la colaboración entre los miembros del equipo.
+
+#### Prácticas adoptadas
+
+Hemos implementado las siguientes prácticas de CI que han sido fundamentales para el éxito del proyecto:
+
+1. **Integración frecuente**: Todos los desarrolladores integran su código a la rama principal de desarrollo varias veces al día. Esto permite detectar conflictos de integración tempranamente.
+
+2. **Pruebas automatizadas**: Cada commit desencadena la ejecución de pruebas unitarias, de integración y de comportamiento, garantizando que los cambios no rompen la funcionalidad existente.
+
+3. **Pull Requests**: Todos los cambios se integran a través de Pull Requests que deben ser revisados por al menos un miembro del equipo antes de ser fusionados.
+
+4. **Feedback rápido**: Los desarrolladores reciben notificaciones inmediatas sobre el estado de la compilación y las pruebas, lo que permite una rápida corrección de problemas.
+
+### 7.1.2. Build & Test Suite Pipeline Components
+
+Nuestro pipeline de CI incluye varios componentes que aseguran la calidad del código y facilitan la entrega continua. El objetivo es automatizar la integración y pruebas del código, manteniéndolo siempre listo para un despliegue cuando sea necesario.
+
+#### Componentes principales:
+
+1. **Validación de código**: El primer paso del pipeline verifica la calidad básica del código mediante:
+   - **Linting**: ESLint analiza el código en busca de problemas de estilo y patrones problemáticos.
+   - **Formatting**: Prettier se ejecuta para garantizar la consistencia del formato.
+   - **Type checking**: Para TypeScript, verificamos la validez de los tipos.
+
+2. **Pruebas automatizadas**: Ejecutamos distintos niveles de pruebas:
+   - **Pruebas unitarias**: Con Jest para verificar componentes individuales.
+   - **Pruebas de integración**: Para validar la interacción entre componentes.
+   - **Pruebas BDD**: Con Cucumber.js para asegurar que las funcionalidades cumplen con los comportamientos esperados.
+
+3. **Análisis de calidad y seguridad**:
+   - **Cobertura de código**: Aseguramos una cobertura mínima del 80%.
+   - **Análisis de complejidad**: Identificamos código complejo que podría necesitar refactorización.
+   - **Detección de vulnerabilidades**: Escaneamos dependencias y patrones de código inseguro.
+
+4. **Construcción de artefactos**:
+   - **Backend**: Compilación de TypeScript a JavaScript optimizado.
+   - **Frontend**: Construcción de bundles optimizados con lazy loading.
+   - **Mobile**: Generación de APK para Android y archivos IPA para iOS.
+
+5. **Almacenamiento de artefactos**:
+   - Guardamos los artefactos generados para su posterior despliegue.
+   - Etiquetamos cada build con metadatos relevantes como commit ID, rama, y timestamp.
+
+## 7.2. Continuous Delivery
+
+### 7.2.1. Tools and Practices
+
+En Hairy Paws, implementamos Continuous Delivery para asegurar que nuestro código está siempre en un estado desplegable, aunque el despliegue final a producción requiera aprobación manual. Esto nos permite mayor control y verificación antes de afectar a los usuarios finales.
+
+#### Tools:
+
+- **GitHub Actions**: Automatiza todo nuestro pipeline de CI/CD, con una configuración específica donde el despliegue final requiere aprobación manual.
+
+- **Render**: Plataforma cloud utilizada para el despliegue de nuestro backend (NestJS) y frontend (Angular), ofreciendo entornos separados para desarrollo, staging y producción.
+
+
+- **MySQL en Railway**: Base de datos gestionada que proporciona alta disponibilidad y backups automáticos.
+
+- **AWS S3**: Para almacenamiento de artefactos y despliegue del landing page estático.
+
+- **Firebase App Distribution**: Para distribuir versiones de prueba de nuestras aplicaciones móviles a testers internos y externos.
+
+#### Practices:
+
+1. **Feature Branching y Pull Requests**:
+   - Desarrollamos nuevas funcionalidades en ramas separadas.
+   - Utilizamos Pull Requests para la revisión de código antes de fusionar con la rama principal.
+   - Los cambios se fusionan a la rama de desarrollo después de pasar todas las pruebas automáticas.
+
+2. **Pipeline de Validación en Staging**:
+   - Antes del despliegue a producción, los cambios pasan por un entorno de staging con condiciones similares a producción.
+   - Realizamos pruebas manuales y recopilamos feedback de usuarios clave en este entorno.
+
+3. **Despliegue Semiautomático**:
+   - El pipeline prepara la aplicación para ser desplegada, pero el despliegue final a producción requiere aprobación manual.
+   - Esto permite una última verificación antes de afectar a los usuarios finales.
+
+4. **Aprobación Manual**:
+   - Utilizamos environments protegidos en GitHub Actions donde los responsables del proyecto deben revisar y aprobar el despliegue.
+   - Esto reduce el riesgo de desplegar código no deseado en producción.
+
+5. **Rollback Manual**:
+   - Mantenemos la capacidad de revertir rápidamente a versiones anteriores si se detectan problemas.
+   - El equipo de operaciones puede realizar un rollback controlado cuando sea necesario.
+
+### 7.2.2. Stages Deployment Pipeline Components
+
+Nuestro pipeline de Continuous Delivery incluye varios componentes que aseguran que el código está siempre listo para ser desplegado de manera segura:
+
+1. **Integración Continua (CI)**:
+   - Al hacer un commit en una rama de feature, el pipeline ejecuta pruebas automáticas y analiza la calidad del código.
+   - Esto garantiza que cada cambio mantiene la aplicación en un estado "desplegable".
+
+2. **Promoción a Desarrollo**:
+   - Cuando un Pull Request es aprobado y fusionado a la rama `develop`, el código se despliega automáticamente al entorno de desarrollo.
+   - Este entorno es utilizado por el equipo para pruebas iniciales y validación de funcionalidades.
+
+3. **Validación en Staging**:
+   - Los cambios en la rama `release/*` desencadenan un despliegue automático al entorno de staging.
+   - En este entorno se simulan escenarios de producción y se realizan pruebas adicionales, incluyendo pruebas manuales, de carga y seguridad.
+   - Este paso es crucial para detectar problemas que podrían no manifestarse en entornos de desarrollo.
+
+4. **Preparación para Producción**:
+   - Una vez validados en staging, los cambios están listos para su despliegue a producción.
+   - El pipeline genera artefactos finales, actualiza el changelog y prepara todo para el despliegue.
+
+5. **Aprobación de Despliegue**:
+   - El pipeline queda en espera hasta que un responsable del proyecto apruebe el despliegue a producción.
+   - Esta aprobación se realiza a través de la interfaz de GitHub Environments.
+
+6. **Monitoreo y Feedback**:
+   - Después del despliegue, utilizamos herramientas de monitoreo como AWS CloudWatch y Sentry para verificar el comportamiento en producción.
+   - Recopilamos métricas de rendimiento y experiencia de usuario para evaluar el impacto de los cambios.
+
+## 7.3. Continuous Deployment
+
+### 7.3.1. Tools and Practices
+
+El objetivo de nuestro Continuous Deployment (CD) es que los cambios aprobados en el código pasen automáticamente desde el desarrollo hasta la producción, garantizando que cada nueva versión sea entregada de manera confiable, siempre y cuando pase todas las pruebas de validación.
+
+#### Tools:
+
+- **GitHub Actions**: Utilizamos GitHub Actions como nuestra plataforma principal para automatizar todo el pipeline de CI/CD, desde la compilación hasta el despliegue en producción.
+
+- **Render**: Plataforma cloud que utilizamos para el despliegue automático de nuestro backend NestJS y frontend Angular, ofreciendo escalabilidad automática y monitoreo integrado.
+
+
+- **MySQL en Railway**: Base de datos gestionada que proporciona alta disponibilidad y backups automáticos, facilitando la gestión de datos en producción.
+
+- **AWS S3**: Utilizamos S3 para el almacenamiento de activos estáticos y el despliegue del landing page, aprovechando su alta disponibilidad y distribución global.
+
+
+#### Practices:
+
+1. **Despliegue Automático a Producción**:
+   - Cada cambio fusionado a la rama `main` que pasa todas las pruebas se despliega automáticamente en producción.
+   - Esto minimiza el tiempo entre la implementación de una funcionalidad y su disponibilidad para los usuarios.
+
+2. **Pruebas de Humo Post-Despliegue**:
+   - Inmediatamente después del despliegue, ejecutamos pruebas de humo para verificar la funcionalidad básica del sistema.
+   - Estas pruebas aseguran que las funcionalidades críticas siguen operativas después del despliegue.
+
+3. **Rollback Automático**:
+   - Si las pruebas de humo fallan o se detectan problemas críticos, el sistema puede revertir automáticamente al despliegue anterior.
+   - Esto minimiza el tiempo de inactividad y el impacto en los usuarios finales.
+
+4. **Despliegues Canarios**:
+   - Para funcionalidades críticas, implementamos despliegues graduales que exponen la nueva versión a un porcentaje creciente de usuarios.
+   - Esto permite detectar problemas antes de afectar a todos los usuarios.
+
+5. **Monitoreo Continuo**:
+   - Utilizamos DataDog y Sentry para monitorear constantemente el rendimiento y la estabilidad del sistema.
+   - Configuramos alertas para notificar al equipo sobre anomalías o degradaciones en el servicio.
+
+### 7.3.2. Production Deployment Pipeline Components
+
+Este apartado describe los componentes que forman parte de nuestro pipeline de despliegue a producción para Hairy Paws y cómo se integran para automatizar todo el proceso.
+
+#### Componentes del Pipeline de la Base de Datos:
+
+1. **Gestión de Migraciones Automáticas**: 
+   - Las migraciones de la base de datos se manejan automáticamente a través de TypeORM en nuestro backend NestJS.
+   - Cuando se modifican las entidades, las migraciones se generan y aplican automáticamente a la base de datos en Railway.
+
+2. **Backup Automático**: 
+   - Railway crea backups (diarios, semanales, mensuales) de la base de datos, con una retención de 7 días.
+   - Adicionalmente, generamos backups manuales antes de migraciones críticas o cambios importantes.
+
+3. **Monitoreo de la Base de Datos**: 
+   - Utilizamos las herramientas de monitoreo integradas en Railway para supervisar el rendimiento de la base de datos.
+   - Configuramos alertas para notificar sobre anomalías como consultas lentas o alto uso de recursos.
+
+4. **Validación de Esquema**: 
+   - Después de aplicar migraciones, ejecutamos pruebas automatizadas que validan la integridad del esquema y los datos.
+   - Esto incluye verificación de relaciones, índices y restricciones para asegurar la consistencia.
+
+#### Componentes del Pipeline del Backend (NestJS):
+
+1. **Integración Continua**: 
+   - Al hacer un commit en la rama `main`, GitHub Actions inicia el proceso de construcción y pruebas del backend.
+   - Se ejecutan pruebas unitarias, de integración y BDD para validar la funcionalidad.
+
+
+2. **Despliegue Automatizado**: 
+   - Render despliega automáticamente la nueva imagen en producción.
+   - El despliegue sigue una estrategia de zero-downtime para minimizar la interrupción del servicio.
+
+3. **Pruebas de Humo**: 
+   - Se ejecutan pruebas básicas para verificar que los endpoints críticos responden correctamente.
+   - Si las pruebas fallan, se activa el proceso de rollback automático.
+
+
+#### Componentes del Pipeline del Frontend (Angular):
+
+1. **Compilación del Frontend**: 
+   - GitHub Actions compila la aplicación Angular en modo producción, con optimizaciones para rendimiento.
+   - Se generan bundles con lazy-loading para mejorar el tiempo de carga inicial.
+
+2. **Ejecución de Pruebas**: 
+   - Se ejecutan pruebas unitarias y end-to-end para validar la interfaz de usuario.
+   - La cobertura de código se reporta a SonarQube para análisis.
+
+3. **Despliegue en Render**: 
+   - Los artefactos compilados se despliegan automáticamente en Render.
+   - La distribución incluye configuración de cache-control para optimizar la carga.
+
+4. **Validación de Despliegue**: 
+   - Se realizan comprobaciones automatizadas del sitio desplegado, incluyendo validación de enlaces y recursos.
+   - Lighthouse se ejecuta para evaluar el rendimiento, accesibilidad y mejores prácticas.
+
+#### Componentes del Pipeline para Aplicaciones Móviles (Flutter):
+
+1. **Compilación de Aplicaciones Móviles**: 
+   - GitHub Actions compila la aplicación Flutter para generar APK/AAB para Android y archivos IPA para iOS.
+   - Se firman digitalmente los paquetes con las credenciales almacenadas de forma segura.
+
+2. **Testing en Dispositivos Reales**: 
+   - Firebase Test Lab ejecuta pruebas en una matriz de dispositivos reales para validar el comportamiento.
+   - Se capturan screenshots para verificación visual.
+
+3. **Distribución a Testers**: 
+   - Las builds de prueba se distribuyen a través de Firebase App Distribution a testers internos.
+   - Se recopila feedback automático sobre crashes y problemas de UX.
+
+4. **Publicación en Tiendas**: 
+   - Después de la aprobación, los paquetes se envían automáticamente a Google Play Console y App Store Connect.
+   - Las notas de versión se generan automáticamente a partir del changelog.
+
 
 -----------
 
