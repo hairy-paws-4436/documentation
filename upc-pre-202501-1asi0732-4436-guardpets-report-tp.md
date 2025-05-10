@@ -50,7 +50,7 @@
 # Project Report Collaboration Insights
 
 
-**URL del Repositorio:** [https://github.com/hairy-paws-4436/documentation/blob/main/upc-pre-202501-1asi0732-4436-guardpets-report-tb1.md](https://github.com/hairy-paws-4436/documentation/blob/main/upc-pre-202501-1asi0732-4436-guardpets-report-tb1.md)
+**URL del Repositorio:** [https://github.com/hairy-paws-4436/documentation/blob/main/upc-pre-202501-1asi0732-4436-guardpets-report-tp.md](https://github.com/hairy-paws-4436/documentation/blob/main/upc-pre-202501-1asi0732-4436-guardpets-report-tp.md)
 
 **Colaboración en la Primera Entrega:**
 
@@ -58,7 +58,7 @@
 
 **Colaboración en la Segunda Entrega:**
 
-[![image.png]()]()
+[![image.png](https://i.postimg.cc/hvhdvJP6/image.png)](https://postimg.cc/vxFBSZnt)
 
 ---
 
@@ -149,7 +149,7 @@
 #### [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
 #### [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
 #### [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
-#### [5.2.4. Acuerdo de Servicio - SaaA](#524-acuerdo-de-servicio-saaa)
+#### [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio-saas)
 #### [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
 #### [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
 #### [5.2.7. RESTful API documentation](#526-restful-api-documentation)
@@ -3106,7 +3106,7 @@ La aplicación web frontend se implementó utilizando Angular 19 con PrimeNG com
 
 **URL de la Aplicación Web Desplegada**
 
-[https://app.hairypaws.com.pe]()
+[https://hairy-paws-c47d9.web.app/](https://hairy-paws-c47d9.web.app/)
 
 
 #### 5.2.4. Acuerdo de Servicio - SaaA
@@ -6104,29 +6104,102 @@ Feature: US22 Publicación de eventos
 
 ### 6.1.4. Core System Tests. 
 
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|-----------------|--------|-------------|-------------------------|---------------------------|
-| US01 | Registro de usuario | Como visitante, deseo poder registrarme en la plataforma para acceder a las funcionalidades según mi rol (adoptante, dueño, ONG). | **Given** que soy un visitante no registrado<br>**When** completo el formulario de registro con información válida<br>**Then** se crea mi cuenta y recibo un correo de confirmación.<br><br>**Given** que estoy en el formulario de registro<br>**When** selecciono mi rol (adoptante, dueño, ONG)<br>**Then** se me solicitan los campos específicos para ese rol. | EP01 |
-| US02 | Inicio de sesión | Como usuario registrado, deseo iniciar sesión en la plataforma para acceder a mis funcionalidades. | **Given** que soy un usuario registrado<br>**When** ingreso mi correo y contraseña correctos<br>**Then** accedo a mi cuenta con las funcionalidades correspondientes a mi rol.<br><br>**Given** que intento iniciar sesión<br>**When** ingreso credenciales incorrectas<br>**Then** se muestra un mensaje de error apropiado. | EP01 |
-| US03 | Verificación de identidad | Como usuario, deseo poder verificar mi identidad para aumentar la confianza en mi perfil. | **Given** que estoy registrado en la plataforma<br>**When** subo documentos de identidad y completo el proceso de verificación<br>**Then** mi perfil muestra una insignia de "Usuario Verificado".<br><br>**Given** que soy una ONG<br>**When** subo documentos legales de la organización<br>**Then** mi perfil se marca como "ONG Verificada". | EP01 |
-| US04 | Gestión de perfil | Como usuario, deseo poder editar mi perfil para mantener mi información actualizada. | **Given** que estoy autenticado en la plataforma<br>**When** accedo a la sección "Mi Perfil" y modifico mis datos<br>**Then** mis cambios se guardan correctamente y se reflejan en mi perfil. | EP01 |
-| US05 | Recuperación de contraseña | Como usuario, deseo poder recuperar mi contraseña en caso de olvidarla. | **Given** que olvidé mi contraseña<br>**When** selecciono "Olvidé mi contraseña" e ingreso mi correo<br>**Then** recibo un enlace para crear una nueva contraseña. | EP01 |
-| **EP02** | **Gestión de Mascotas** | **Como plataforma, necesito gestionar la información de mascotas para facilitar el proceso de adopción.** | | |
-| US06 | Creación de perfil de mascota | Como dueño/ONG, deseo crear un perfil detallado para mi mascota en adopción. | **Given** que soy un usuario autenticado como dueño u ONG<br>**When** completo el formulario de creación de perfil de mascota<br>**Then** la mascota aparece listada como disponible para adopción.<br><br>**Given** que estoy creando un perfil de mascota<br>**When** subo fotos y detalles de comportamiento<br>**Then** esta información se muestra en el perfil público de la mascota. | EP02 |
-| US07 | Edición de perfil de mascota | Como dueño/ONG, deseo poder editar la información de mi mascota para mantenerla actualizada. | **Given** que tengo una mascota publicada<br>**When** accedo a su perfil y modifico información<br>**Then** los cambios se reflejan inmediatamente en la visualización pública. | EP02 |
-| US08 | Eliminación de perfil de mascota | Como dueño/ONG, deseo poder eliminar un perfil de mascota cuando ya no esté disponible. | **Given** que tengo una mascota publicada<br>**When** selecciono "Eliminar perfil" y confirmo la acción<br>**Then** la mascota ya no aparece en los listados de adopción. | EP02 |
-| **EP03** | **Búsqueda y Adopción** | **Como plataforma, necesito proporcionar funcionalidades para la búsqueda y solicitud de adopción de mascotas.** | | |
-| US10 | Búsqueda avanzada de mascotas | Como adoptante, deseo poder buscar mascotas utilizando filtros avanzados para encontrar la más compatible. | **Given** que estoy en la sección de búsqueda<br>**When** aplico filtros por especie, tamaño, edad, comportamiento, ubicación<br>**Then** recibo resultados que coinciden con mis criterios.<br><br>**Given** que he realizado una búsqueda<br>**When** guardo mis criterios<br>**Then** puedo recibir notificaciones cuando haya nuevas mascotas que coincidan. | EP03 |
-| US11 | Visualización detallada | Como adoptante, deseo ver información detallada de una mascota para evaluar su compatibilidad. | **Given** que estoy navegando por mascotas<br>**When** selecciono una mascota específica<br>**Then** puedo ver fotos, videos, historial médico, comportamiento y requisitos de adopción. | EP03 |
-| US13 | Solicitud de adopción | Como adoptante, deseo poder enviar una solicitud formal de adopción. | **Given** que estoy interesado en adoptar una mascota<br>**When** completo el formulario de solicitud de adopción<br>**Then** el dueño/ONG recibe mi solicitud para evaluación.<br><br>**Given** que he enviado una solicitud<br>**When** el dueño/ONG responde<br>**Then** recibo una notificación con su respuesta. | EP03 |
-| US14 | Programación de visita | Como adoptante/dueño/ONG, deseo poder programar una visita para conocer a la mascota/adoptante. | **Given** que hay interés en una adopción<br>**When** propongo fechas y horarios para una visita<br>**Then** la otra parte recibe la propuesta y puede confirmar o proponer alternativas.<br><br>**Given** que se ha acordado una fecha<br>**When** se acerca la fecha programada<br>**Then** ambas partes reciben recordatorios. | EP03 |
-| **EP04** | **Gestión de Adopciones** | **Como plataforma, necesito facilitar el proceso de adopción desde la solicitud hasta la finalización.** | | |
-| US15 | Evaluación de solicitudes | Como dueño/ONG, deseo poder evaluar solicitudes de adopción para seleccionar al mejor adoptante. | **Given** que he recibido solicitudes de adopción<br>**When** reviso cada solicitud con la información del adoptante<br>**Then** puedo aprobar, rechazar o solicitar más información. | EP04 |
-| **EP05** | **Donaciones y Eventos** | **Como plataforma, necesito facilitar donaciones y la gestión de eventos para ONGs.** | | |
-| US20 | Registro de donación | Como usuario, deseo poder registrar mi intención de donación a una ONG. | **Given** que veo las necesidades de una ONG<br>**When** selecciono los items que deseo donar<br>**Then** la ONG recibe una notificación con mi compromiso. | EP05 |
-| US21 | Confirmación de donación | Como ONG, deseo poder confirmar la recepción de donaciones. | **Given** que un usuario ha registrado una donación<br>**When** recibo los items y confirmo la recepción<br>**Then** el usuario recibe una notificación de agradecimiento. | EP05 |
-| US22 | Publicación de eventos | Como ONG, deseo publicar eventos o campañas para promover la participación. | **Given** que soy una ONG verificada<br>**When** creo un evento con fecha, ubicación y detalles<br>**Then** el evento se publica y usuarios pueden registrarse para participar. | EP05 |
-| US23 | Registro en eventos | Como usuario, deseo poder registrarme para participar en eventos de ONGs. | **Given** que estoy viendo un evento publicado<br>**When** selecciono "Participar" y confirmo mi asistencia<br>**Then** recibo una confirmación y recordatorios previos al evento. | EP05 |
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US01    | Registro de usuario   | Como visitante, deseo poder registrarme en la plataforma para acceder a las funcionalidades según mi rol (adoptante, dueño, ONG). |
+
+[![image.png](https://i.postimg.cc/B6fyNMsJ/image.png)](https://postimg.cc/941JQPrk)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US02    | Inicio de sesión   | Como usuario registrado, deseo iniciar sesión en la plataforma para acceder a mis funcionalidades. |
+
+[![image.png](https://i.postimg.cc/xdnMRz7W/image.png)](https://postimg.cc/RWpWCNvR)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US04    | Gestión de perfil   | Como usuario, deseo poder editar mi perfil para mantener mi información actualizada. |
+
+[![image.png](https://i.postimg.cc/YC3xL7qN/image.png)](https://postimg.cc/cvv3PV36)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US06    | Creación de perfil de mascota   | Como dueño/ONG, deseo poder editar la información de mi mascota para mantenerla actualizada. |
+
+[![image.png](https://i.postimg.cc/gJv775Hg/image.png)](https://postimg.cc/ZB5jBwgN)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US07    | Edición de perfil de mascota   | Como dueño/ONG, deseo crear un perfil detallado para mi mascota en adopción. |
+
+[![image.png](https://i.postimg.cc/wTPS7hMc/image.png)](https://postimg.cc/tY3rcnhY)
+
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US08    | Eliminación de perfil de mascota   | Como dueño/ONG, deseo poder eliminar un perfil de mascota cuando ya no esté disponible. |
+
+[![image.png](https://i.postimg.cc/NM6Hr7Qy/image.png)](https://postimg.cc/YGS95FGk)
+
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US10    | Búsqueda avanzada de mascotas   | Como adoptante, deseo poder buscar mascotas utilizando filtros avanzados para encontrar la más compatible. |
+
+[![image.png](https://i.postimg.cc/cHnV7Czt/image.png)](https://postimg.cc/0M9WPkP9)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US11    | Visualización detallada   | Como adoptante, deseo ver información detallada de una mascota para evaluar su compatibilidad. |
+
+[![image.png](https://i.postimg.cc/jC0q6Bvt/image.png)](https://postimg.cc/q6wd4b95)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US13    | Solicitud de adopción   | Como adoptante, deseo poder enviar una solicitud formal de adopción. |
+
+[![image.png](https://i.postimg.cc/bNyqP0M6/image.png)](https://postimg.cc/c6bpM3dY)
+
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US14    | Programación de visita   | Como adoptante/dueño/ONG, deseo poder programar una visita para conocer a la mascota/adoptante. |
+
+[![image.png](https://i.postimg.cc/Gt1GtgYT/image.png)](https://postimg.cc/hzpf3r2K)
+
+
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US15    | Evaluación de solicitudes   | Como dueño/ONG, deseo poder evaluar solicitudes de adopción para seleccionar al mejor adoptante. |
+
+[![image.png](https://i.postimg.cc/mgF93Gw1/image.png)](https://postimg.cc/qN4g0SWp)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US20    | Registro de donación   | Como usuario, deseo poder registrar mi intención de donación a una ONG. |
+
+[![image.png](https://i.postimg.cc/nrrW010z/image.png)](https://postimg.cc/tn0DgF0Q)
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US21    | Confirmación de donación   | Como ONG, deseo poder confirmar la recepción de donaciones. |
+
+[![image.png](https://i.postimg.cc/Njsd4DFw/image.png)](https://postimg.cc/QHzgNpc6)
+
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US22    | Publicación de eventos   | Como ONG, deseo publicar eventos o campañas para promover la participación. |
+
+[![image.png](https://i.postimg.cc/5tHTBgK2/image.png)](https://postimg.cc/yJHLBmzM)
+
+
+- | Story ID | Título | Descripción |
+  |----------|----------|----------|
+  | US23    | Registro en eventos   | Como usuario, deseo poder registrarme para participar en eventos de ONGs. |
+
+[![image.png](https://i.postimg.cc/YSg82syY/image.png)](https://postimg.cc/7CHSmm4Z)
 
 -----------
 
