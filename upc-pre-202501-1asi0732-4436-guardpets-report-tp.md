@@ -1567,7 +1567,6 @@ El Product Backlog representa la lista priorizada de funcionalidades a desarroll
 | 23 | US22 | Publicación de eventos | Como ONG, deseo publicar eventos o campañas para promover la participación. | 5 |
 | 24 | US23 | Registro en eventos | Como usuario, deseo poder registrarme para participar en eventos de ONGs. | 3 |
 | 26 | US08 | Eliminación de perfil de mascota | Como dueño/ONG, deseo poder eliminar un perfil de mascota cuando ya no esté disponible. | 2 |
-| 27 | US05 | Recuperación de contraseña | Como usuario, deseo poder recuperar mi contraseña en caso de olvidarla. | 3 |
 | 28 | US30 | Autenticación API | Como desarrollador, deseo poder autenticarme en el API para realizar operaciones seguras. | 5 |
 | 29 | US31 | CRUD de mascotas | Como desarrollador, deseo endpoints para gestionar perfiles de mascotas. | 5 |
 | 30 | US32 | CRUD de usuarios | Como desarrollador, deseo endpoints para gestionar usuarios. | 5 |
@@ -5898,6 +5897,78 @@ describe('Event Integration Tests', () => {
 ```
 
 ### 6.1.3. Core Behavior-Driven Development 
+
+- US01_RegistroUsuario.feature
+```markdown
+Feature: US01 Registro de usuario
+  Como visitante
+  quiero poder registrarme en la plataforma
+  para acceder a las funcionalidades según mi rol (adoptante, dueño, ONG)
+
+  Scenario Outline: Registro exitoso de usuario
+    Given el visitante se encuentra en la página de registro
+    When completa el formulario con <email>, <password>, <firstName>, <lastName>, <phoneNumber>, etc
+    And selecciona el rol <role>
+    And acepta los términos y condiciones
+    And hace clic en "Registrarse"
+    Then el sistema crea la cuenta correctamente
+    And muestra un mensaje de éxito "Tu cuenta ha sido creada exitosamente"
+    And envía un correo de bienvenida al <email>
+
+    Examples:
+      | email                 | password     | firstName | lastName | phoneNumber | role       |
+      | "adoptante@gmail.com" | "Pass123!"   | "Juan"    | "Pérez"  | "987654321" |"Adoptante" |
+      | "dueno@gmail.com"    | "Pass123!"   | "María"   | "García" | "912345678" | "Dueño"    |
+      | "ong@gmail.com"       | "Pass123!"   | "ONG"     | "Patitas" | "956781234" | "ONG"      |
+
+  Scenario: Registro con email ya existente
+    Given el visitante se encuentra en la página de registro
+    When completa el formulario con email "existente@gmail.com" que ya está registrado
+    And completa el resto de campos correctamente
+    And hace clic en "Registrarse"
+    Then el sistema muestra un mensaje de error "El correo electrónico ya está registrado"
+    And no crea la cuenta
+```
+
+
+- US02_InicioSesion.feature
+```markdown
+Feature: US02 Inicio de sesión
+  Como usuario registrado
+  quiero iniciar sesión en la plataforma
+  para acceder a mis funcionalidades
+
+  Scenario Outline: Inicio de sesión exitoso
+    Given el usuario está en la página de inicio de sesión
+    When ingresa el correo <email>
+    And ingresa la contraseña <password>
+    And hace clic en "Iniciar Sesión"
+    Then el sistema valida las credenciales correctamente
+    And redirige al usuario según su rol <role>
+
+    Examples:
+      | email                 | password     |
+      | "adoptante@gmail.com" | "Pass123!"   |
+      | "dueno@gmail.com"    | "Pass123!"   |
+      | "ong@gmail.com"       | "Pass123!"   |
+
+  Scenario: Inicio de sesión con credenciales incorrectas
+    Given el usuario está en la página de inicio de sesión
+    When ingresa el correo "usuario@gmail.com"
+    And ingresa una contraseña incorrecta "ContraseñaIncorrecta123!"
+    And hace clic en "Iniciar Sesión"
+    Then el sistema muestra un mensaje de error "Correo electrónico o contraseña incorrectos"
+    And el usuario permanece en la página de inicio de sesión
+
+  Scenario: Inicio de sesión con autenticación de dos factores
+    Given el usuario está en la página de inicio de sesión
+    And tiene habilitada la autenticación de dos factores
+    When ingresa credenciales correctas
+    And hace clic en "Iniciar Sesión"
+    Then el sistema solicita el código de verificación
+    When el usuario ingresa el código correcto
+    Then el sistema completa el inicio de sesión
+```
 
 - US06_RegistroMascota.feature
 ```markdown
