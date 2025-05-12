@@ -3108,7 +3108,7 @@ La aplicación web frontend se implementó utilizando Angular 19 con PrimeNG com
 [https://hairy-paws-c47d9.web.app/](https://hairy-paws-c47d9.web.app/)
 
 
-#### 5.2.4. Acuerdo de Servicio - SaaA
+#### 5.2.4. Acuerdo de Servicio - SaaS
 
 **ACUERDO DE SERVICIO HAIRY PAWS**
 
@@ -6418,7 +6418,7 @@ El objetivo de nuestro Continuous Deployment (CD) es que los cambios aprobados e
 
 - **GitHub Actions**: Utilizamos GitHub Actions como nuestra plataforma principal para automatizar todo el pipeline de CI/CD, desde la compilación hasta el despliegue en producción.
 
-- **Render**: Plataforma cloud que utilizamos para el despliegue automático de nuestro backend NestJS y frontend Angular, ofreciendo escalabilidad automática y monitoreo integrado.
+- **Render**: Plataforma cloud que utilizamos para el despliegue automático de nuestro backend NestJS, ofreciendo escalabilidad automática y monitoreo integrado.
 
 
 - **MySQL en Railway**: Base de datos gestionada que proporciona alta disponibilidad y backups automáticos, facilitando la gestión de datos en producción.
