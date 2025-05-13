@@ -17,10 +17,10 @@
 
 
 ### Integrantes:
-- Aldo Alberto Baldeon Fabian - U202122633
-- Fiorella Angela Vilca Valverde - U20211E417
-- Max Anthony Paitan Pumacahua - U201314454
-- Randy Becker Rengifo Mirabal - U20211D683
+- Baldeon Fabian, Aldo Alberto - U202122633
+- Paitan Pumacahua, Max Anthony - U201314454
+- Rengifo Mirabal, Randy Becker - U20211D683
+- Vilca Valverde, Fiorella Angela - U20211E417
 
 
 
