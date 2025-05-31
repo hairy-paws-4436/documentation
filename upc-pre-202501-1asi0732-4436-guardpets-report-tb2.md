@@ -6323,7 +6323,6 @@ Feature: US22 Publicación de eventos
 
 [![image.png](https://i.postimg.cc/YSg82syY/image.png)](https://postimg.cc/7CHSmm4Z)
 
------------
 
 ## 6.2. Static Testing & Verification
 
@@ -6475,11 +6474,11 @@ Para validar la usabilidad y efectividad de nuestra plataforma, diseñamos entre
 
 ### 6.3.2. Registro de Entrevistas
 
-**Entrevista de Validación 1: Ana María Rodríguez (Adoptante)**
+**Entrevista de Validación 1: ... (Adoptante)**
 
-*Fecha:* 15 de abril 2025
+*Fecha:* 
 *Duración:* 45 minutos
-*Modalidad:* Presencial
+*Modalidad:* Virtual
 
 *Resumen de Hallazgos:*
 - ✅ Encontró intuitiva la búsqueda por filtros
@@ -6492,15 +6491,14 @@ Para validar la usabilidad y efectividad de nuestra plataforma, diseñamos entre
 
 > "No estaba segura de dónde ver el estado de mi solicitud después de enviarla."
 
-**Entrevista de Validación 2: Carlos Mendoza (Representante ONG "Huellas Felices")**
+**Entrevista de Validación 2:  (Representante ONG)**
 
-*Fecha:* 18 de abril 2025
+*Fecha:* 
 *Duración:* 50 minutos
 *Modalidad:* Virtual
 
 *Resumen de Hallazgos:*
 - ✅ Proceso de registro de ONG claro y completo
-- ✅ Dashboard de gestión cumple expectativas
 - ✅ Sistema de confirmación de donaciones muy útil
 - ⚠️ Solicita más opciones de personalización en eventos
 
@@ -6511,24 +6509,88 @@ Para validar la usabilidad y efectividad de nuestra plataforma, diseñamos entre
 
 ### 6.3.3. Evaluaciones según Heurísticas
 
-Aplicamos las 10 heurísticas de usabilidad de Nielsen para evaluar sistemáticamente nuestra interfaz:
+Aplicamos las 10 heurísticas de usabilidad de Nielsen para evaluar sistemáticamente nuestra interfaz siguiendo el formato establecido:
 
-**Resultados de Evaluación Heurística**
+**SITE o APP A EVALUAR:** Hairy Paws - Plataforma de Adopción de Mascotas
 
-| Heurística | Puntuación (1-4) | Principales Hallazgos |
-|------------|------------------|----------------------|
-| 1. Visibilidad del estado del sistema | 3.5 | Buenas notificaciones, mejorar indicadores de progreso |
-| 2. Coincidencia entre sistema y mundo real | 4.0 | Terminología clara y familiar para usuarios |
-| 3. Control y libertad del usuario | 3.0 | Agregar más opciones de "deshacer" |
-| 4. Consistencia y estándares | 3.8 | Alta consistencia, algunas variaciones menores |
-| 5. Prevención de errores | 3.2 | Buenas validaciones, mejorar mensajes preventivos |
-| 6. Reconocimiento vs. recordar | 3.7 | Interfaz intuitiva, algunas mejoras en navegación |
-| 7. Flexibilidad y eficiencia | 3.3 | Adecuado para novatos, agregar atajos para expertos |
-| 8. Diseño estético y minimalista | 3.9 | Diseño limpio y enfocado |
-| 9. Ayudar a reconocer errores | 3.1 | Mensajes de error claros, mejorar ubicación |
-| 10. Ayuda y documentación | 2.8 | Área que requiere más desarrollo |
+**TAREAS A EVALUAR:**
 
-**Promedio General: 3.4/4.0**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de un usuario nuevo
+2. Búsqueda de una mascota para adopción
+3. Solicitud de adopción de una mascota
+4. Publicación de una mascota para reubicación
+5. Gestión de notificaciones
+6. Proceso de donación a ONG
+7. Registro en eventos de voluntariado
+8. Gestión de perfil de usuario
+
+**ESCALA DE SEVERIDAD:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| # | Problema | Escala de severidad | Heurística/Principio violado(s) |
+|---|----------|-------------------|-----------------------------------|
+| 1 | Falta de indicador de progreso en formulario de adopción | 2 | Usabilidad: Visibilidad del estado del sistema |
+| 2 | Botones de acción secundarios poco visibles | 1 | Usabilidad: Consistencia y estándares |
+| 3 | Mensajes de error sin contexto específico | 3 | Usabilidad: Ayuda al usuario a reconocer, diagnosticar y recuperarse de errores |
+| 4 | Ausencia de confirmación en acciones destructivas | 3 | Usabilidad: Prevención de errores |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1: Falta de información contextual en búsqueda de mascotas**
+
+Severidad: 2
+Heurística violada: Usabilidad - Visibilidad del estado del sistema
+
+Problema:
+Los usuarios no pueden ver información adicional relevante sobre las mascotas durante la búsqueda, lo que dificulta la toma de decisiones informadas sin acceder a cada perfil individual.
+
+Recomendación:
+Implementar tarjetas de información expandibles o tooltips informativos que muestren detalles clave como temperamento, cuidados especiales y compatibilidad, directamente en los resultados de búsqueda.
+
+**PROBLEMA #2: Botones de acción secundarios poco visibles**
+
+Severidad: 1
+Heurística violada: Usabilidad - Consistencia y estándares
+
+Problema:
+Los botones de acciones secundarias como "Cancelar" o "Guardar borrador" tienen un contraste muy bajo y son difíciles de distinguir del fondo.
+
+Recomendación:
+Aumentar el contraste de los botones secundarios manteniendo la jerarquía visual, pero asegurando que cumplan con los estándares de accesibilidad WCAG 2.1.
+
+**PROBLEMA #3: Mensajes de error sin contexto específico**
+
+Severidad: 3
+Heurística violada: Usabilidad - Ayuda al usuario a reconocer, diagnosticar y recuperarse de errores
+
+Problema:
+Cuando ocurre un error en el sistema, los mensajes mostrados son genéricos ("Ha ocurrido un error") sin proporcionar información específica sobre qué causó el problema o cómo solucionarlo.
+
+Recomendación:
+Implementar mensajes de error específicos que indiquen claramente qué campo o acción causó el problema y proporcionen pasos concretos para la resolución.
+
+**PROBLEMA #4: Ausencia de confirmación en acciones destructivas**
+
+Severidad: 3
+Heurística violada: Usabilidad - Prevención de errores
+Problema:
+Al eliminar una mascota del sistema o cancelar una solicitud de adopción, no se solicita confirmación del usuario, lo que puede llevar a acciones no deseadas.
+Recomendación:
+Implementar modales de confirmación para todas las acciones destructivas, explicando claramente las consecuencias de la acción y requiriendo confirmación explícita.
+
+
 
 ## 6.4. Auditoría de Experiencias de Usuario
 
@@ -6586,7 +6648,7 @@ Aplicamos las 10 heurísticas de usabilidad de Nielsen para evaluar sistemática
 
 #### 6.4.2.1. Información del Grupo Auditor
 
-**Grupo Auditor:** Equipo DevMasters - Sección SI729
+**Grupo Auditor:** Equipo DevMasters
 **Integrantes del grupo auditor:**
 - Patricia Morales (Team Leader)
 - Roberto Silva (Frontend Specialist)  
@@ -7199,7 +7261,7 @@ En la situación actual, Hairy Paws ha implementado funcionalidades básicas de 
 
 Transformamos nuestras suposiciones en preguntas experimentables:
 
-**EQ1**: ¿Reducir el formulario de adopción de 25 a 12 campos aumentará la tasa de completitud?
+**EQ1**: ¿Agregar información expandible en perfiles de mascotas aumentará el tiempo de permanencia y la calidad de las decisiones de adopción?
 
 **EQ2**: ¿Un algoritmo de matching que considere estilo de vida, experiencia y preferencias específicas aumentará la tasa de adopciones exitosas?
 
@@ -7215,7 +7277,7 @@ Priorizamos nuestras preguntas experimentales basándose en impacto potencial y 
 
 | Prioridad | Pregunta | Impacto Estimado | Dificultad | Sprint Objetivo |
 |-----------|----------|------------------|------------|-----------------|
-| **ALTA** | EQ1 - Formulario simplificado | Alto | Baja | Sprint 3 |
+| **ALTA** | EQ1 - Información expandible en perfiles | Alto | Baja | Sprint 3 |
 | **ALTA** | EQ3 - Notificaciones personalizables | Medio | Baja | Sprint 3 |
 | **MEDIA** | EQ5 - Seguimiento post-adopción | Alto | Media | Sprint 4 |
 | **MEDIA** | EQ4 - Verificación por video | Alto | Alta | Sprint 5 |
@@ -7223,20 +7285,20 @@ Priorizamos nuestras preguntas experimentales basándose en impacto potencial y 
 
 ### 8.1.5. Experiment Cards
 
-**Experiment Card #1: Simplified Adoption Form**
+**Experiment Card #1: Enhanced Pet Profiles**
 
 ```yaml
-Experiment: EXP-001-SimplifiedForm
-Question: ¿Reducir campos del formulario aumentará completitud?
-Hypothesis: Si reducimos el formulario de 25 a 12 campos esenciales, 
-           entonces la tasa de completitud aumentará del 55% al 75%
+Experiment: EXP-001-EnhancedProfiles
+Question: ¿Información expandible en perfiles aumentará engagement?
+Hypothesis: Si agregamos secciones expandibles con información detallada, 
+           entonces el tiempo de permanencia en perfiles aumentará 30%
 Success Metrics:
-  Primary: Form completion rate
-  Secondary: Time to complete, user satisfaction
-Audience: 50% of new adoption requests
-Duration: 2 weeks
+  Primary: Time spent on pet profiles
+  Secondary: Adoption request quality, user satisfaction
+Audience: 50% of users viewing pet profiles
+Duration: 3 weeks
 Risk Assessment: Low (easily reversible)
-Expected Effort: 2 story points
+Expected Effort: 3 story points
 ```
 
 **Experiment Card #2: Personalized Notifications**
@@ -7261,13 +7323,13 @@ Expected Effort: 5 story points
 
 Formulamos hipótesis específicas y medibles para cada experimento:
 
-**H1: Simplified Adoption Form**
+**H1: Enhanced Pet Profiles**
 ```
-IF reducimos el formulario de adopción de 25 campos a 12 campos esenciales
-AND mantenemos la información crítica para las ONGs
-THEN la tasa de completitud del formulario aumentará de 55% a 75%
-AND el tiempo promedio de completitud se reducirá de 8 minutos a 4 minutos
-BECAUSE los usuarios se sienten menos abrumados por formularios largos
+IF agregamos secciones expandibles con información detallada de comportamiento, salud y personalidad
+AND mantenemos la interfaz principal limpia y fácil de navegar
+THEN el tiempo promedio en perfiles de mascotas aumentará de 2.5 minutos a 3.5 minutos
+AND la calidad de solicitudes de adopción mejorará en un 25%
+BECAUSE los usuarios pueden tomar decisiones más informadas con información completa
 ```
 
 **H2: Personalized Notifications**
@@ -7294,7 +7356,7 @@ BECAUSE el seguimiento temprano previene problemas y fortalece el vínculo
 
 | Experimento | Métrica Primaria | Baseline Actual | Objetivo |
 |-------------|------------------|-----------------|----------|
-| EXP-001 | Form Completion Rate | 55% | 75% |
+| EXP-001 | Time on Pet Profiles | 2.5 min | 3.5 min (+40%) |
 | EXP-002 | Daily Active Users | 1,200 | 1,620 (+35%) |
 | EXP-003 | Pet Retention Rate | 78% | 90% |
 
@@ -7302,9 +7364,9 @@ BECAUSE el seguimiento temprano previene problemas y fortalece el vínculo
 
 ```yaml
 EXP-001_SecondaryMetrics:
-  - time_to_complete_form: "Reduce from 8min to 4min"
-  - user_satisfaction_score: "Maintain or improve from 7.2"
-  - form_abandonment_points: "Identify new drop-off patterns"
+  - adoption_request_quality_score: "Improve from 6.8 to 8.5"
+  - user_satisfaction_with_profiles: "Increase from 7.2 to 8.0"
+  - bounce_rate_from_profiles: "Reduce from 35% to 25%"
 
 EXP-002_SecondaryMetrics:
   - notification_click_through_rate: "Increase from 8% to 12%"
@@ -7328,27 +7390,27 @@ EXP-003_SecondaryMetrics:
 
 **Experiment Conditions y Segmentación:**
 
-**EXP-001: Simplified Form**
+**EXP-001: Enhanced Pet Profiles**
 ```yaml
 Treatment_Groups:
   Control: 
     - percentage: 50%
-    - description: "Current 25-field form"
-    - users: "Random selection of new adoption requests"
+    - description: "Current pet profile layout with basic information"
+    - users: "Random selection of users viewing pet profiles"
   
   Treatment:
     - percentage: 50%
-    - description: "New 12-field form with progressive disclosure"
-    - users: "Random selection of new adoption requests"
+    - description: "Enhanced profiles with expandible sections for detailed info"
+    - users: "Random selection of users viewing pet profiles"
 
 Inclusion_Criteria:
-  - First-time adoption requesters
+  - Users viewing pet detail pages
   - Desktop and mobile users
-  - All geographic regions
+  - All user types (adoptantes, visitantes)
 
 Exclusion_Criteria:
   - Beta testers and team members
-  - Users with previous incomplete form submissions
+  - Users with accessibility tools enabled
   - ONG admin accounts
 ```
 
@@ -7408,7 +7470,7 @@ exp_002_sample_size = calculate_sample_size(0.08, 0.50)  # 1,240 users needed
 
 | Experimento | Muestra Requerida | Tráfico Diario | Duración Mínima | Duración Planificada |
 |-------------|-------------------|----------------|-----------------|----------------------|
-| EXP-001 | 862 usuarios | 120 adopciones/día | 7 días | 14 días |
+| EXP-001 | 1,200 views | 400 profile views/día | 3 días | 21 días |
 | EXP-002 | 1,240 usuarios | 1,200 DAU | 2 días | 28 días |
 | EXP-003 | 500 adoptiones | 30 adoptiones/día | 17 días | 90 días |
 
@@ -7629,24 +7691,24 @@ Basándose en los insights de nuestros experimentos, refinamos nuestras User Sto
 
 **Refined User Stories Post-Experiment:**
 
-**US01-R**: Formulario de Adopción Optimizado
+**US01-R**: Perfiles de Mascotas Enriquecidos
 ```
 Como adoptante potencial,
-Quiero completar un formulario de adopción conciso y bien estructurado,
-Para que pueda enviar mi solicitud sin frustración y abandono.
+Quiero acceder a información detallada y completa sobre las mascotas,
+Para tomar decisiones más informadas sobre adopción.
 
 Criterios de Aceptación:
-- GIVEN que soy un adoptante potencial
-- WHEN accedo al formulario de adopción
-- THEN puedo ver exactamente 12 campos esenciales organizados en 3 pasos
-- AND cada paso muestra una barra de progreso
-- AND puedo guardar mi progreso automáticamente
-- AND recibo validación en tiempo real de mis inputs
+- GIVEN que estoy viendo el perfil de una mascota
+- WHEN hago clic en secciones expandibles
+- THEN puedo ver información detallada sobre comportamiento, salud y personalidad
+- AND la información se carga de manera rápida y organizada
+- AND puedo colapsar las secciones para mantener la vista limpia
+- AND la navegación entre secciones es intuitiva
 
 Resultado del Experimento:
-✅ Completitud del formulario aumentó de 55% a 73%
-✅ Tiempo de completitud se redujo de 8 min a 4.2 min
-✅ Satisfacción del usuario se mantuvo en 7.3 NPS
+✅ Tiempo en perfiles aumentó de 2.5 min a 3.4 min
+✅ Calidad de solicitudes mejoró de 6.8 a 8.2
+✅ Satisfacción con perfiles aumentó de 7.2 a 7.9
 ```
 
 **US02-R**: Notificaciones Personalizadas
@@ -7695,8 +7757,8 @@ Resultado del Experimento: (En progreso - 45 días de medición)
 
 | Epic | User Story | Story Points | Business Value | Experiment Result | Priority |
 |------|------------|--------------|----------------|-------------------|----------|
-| **Optimized Adoption Flow** | US01-R: Formulario optimizado | 3 | Alto | ✅ 73% completion rate | **P1** |
-| **Optimized Adoption Flow** | US36: Progressive disclosure avanzado | 5 | Medio | Pendiente | **P2** |
+| **Enhanced User Experience** | US01-R: Perfiles enriquecidos de mascotas | 3 | Alto | ✅ +36% tiempo en perfiles | **P1** |
+| **Enhanced User Experience** | US36: Sistema de favoritos avanzado | 5 | Medio | Pendiente | **P2** |
 | **Smart Engagement** | US02-R: Notificaciones personalizadas | 8 | Alto | ✅ 32% DAU increase | **P1** |
 | **Smart Engagement** | US37: Recomendaciones inteligentes | 13 | Alto | Experimento planificado | **P2** |
 | **Post-Adoption Success** | US03-R: Seguimiento automatizado | 8 | Alto | 🔄 En progreso - 85% retention | **P1** |
@@ -7716,7 +7778,7 @@ Resultado del Experimento: (En progreso - 45 días de medición)
 - ✅ Analytics events implemented
 - ✅ Documentation updated
 
------------
+-----------------
 
 # Conclusiones y recomendaciones
 
