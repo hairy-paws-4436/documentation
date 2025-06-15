@@ -6440,72 +6440,218 @@ Implementamos un proceso obligatorio de revisión de código para garantizar la 
    - Lighthouse para performance frontend
    - OWASP dependency check para vulnerabilidades
 
-## 6.3. Validation Interviews
 
-### 6.3.1. Diseño de Entrevistas
+# 6.3. Validation Interviews
 
-Para validar la usabilidad y efectividad de nuestra plataforma, diseñamos entrevistas estructuradas con usuarios reales de cada segmento objetivo.
+## 6.3.1. Diseño de Entrevistas
 
-**Objetivos de las Entrevistas**
+Para validar la usabilidad y efectividad de nuestra plataforma, diseñamos entrevistas estructuradas con usuarios reales de cada segmento objetivo después de la implementación del producto.
+
+### Objetivos de las Entrevistas
 
 1. Validar la usabilidad de las funcionalidades implementadas
 2. Identificar puntos de fricción en los flujos principales
 3. Recopilar feedback sobre la propuesta de valor
 4. Evaluar la satisfacción general con la plataforma
+5. Obtener insights para futuras iteraciones y experimentos
 
-**Estructura de Entrevistas por Segmento**
+### Estructura de Entrevistas por Segmento
 
-**Para Adoptantes:**
-```
-1. Demografía y contexto (5 min)
-2. Navegación y búsqueda de mascotas (10 min)
-3. Proceso de solicitud de adopción (15 min)
-4. Experiencia general y sugerencias (10 min)
-```
+#### Para Adoptantes:
 
-**Para Dueños/ONGs:**
-```
-1. Demografía y contexto organizacional (5 min)
-2. Registro y gestión de mascotas (15 min)
-3. Manejo de solicitudes y comunicación (10 min)
-4. Gestión de donaciones y eventos (10 min)
-5. Feedback general (10 min)
-```
+**1. Demografía y contexto**
+- ¿Cuál es su nombre, edad y ocupación?
+- ¿Ha adoptado mascotas anteriormente? ¿Cómo fue su experiencia?
+- ¿Qué lo motivó a buscar una plataforma digital para adopción?
 
-### 6.3.2. Registro de Entrevistas
+**2. Navegación y búsqueda de mascotas**
+- ¿Cómo describiría su primera impresión al ingresar a la plataforma?
+- ¿Le resultó fácil encontrar mascotas que coincidieran con sus preferencias?
+- ¿Qué opina de los filtros de búsqueda disponibles? ¿Agregaría alguno?
+- ¿La información en los perfiles de mascotas le pareció completa y útil?
+- ¿Las fotos y descripciones le dieron suficiente información para tomar decisiones?
 
-**Entrevista de Validación 1: ... (Adoptante)**
+**3. Proceso de solicitud de adopción**
+- ¿Cómo fue su experiencia completando el formulario de adopción?
+- ¿Consideró que el formulario fue demasiado largo, muy corto, o adecuado?
+- ¿Le quedó claro el estado de su solicitud en todo momento?
+- ¿Cómo fue la comunicación con los dueños/ONGs a través de la plataforma?
+- ¿El proceso de programación de visitas fue sencillo?
+- ¿Recibió notificaciones apropiadas durante el proceso?
 
-*Fecha:* 
-*Duración:* 45 minutos
-*Modalidad:* Virtual
+**4. Experiencia general y sugerencias**
+- Del 1 al 10, ¿cómo calificaría su experiencia general con la plataforma?
+- ¿Qué funcionalidad le pareció más útil?
+- ¿Qué mejoraría o agregaría a la plataforma?
+- ¿Recomendaría Hairy Paws a otros potenciales adoptantes? ¿Por qué?
+- ¿Tiene alguna sugerencia específica para mejorar la experiencia de adopción?
 
-*Resumen de Hallazgos:*
-- ✅ Encontró intuitiva la búsqueda por filtros
-- ✅ Valoró positivamente las fotos múltiples de mascotas
-- ⚠️ Sugirió agregar más información sobre el proceso post-adopción
-- ❌ Tuvo dificultades para encontrar el historial de sus solicitudes
+#### Para Dueños/ONGs:
 
-*Citas Relevantes:*
-> "Me gusta mucho que pueda ver varias fotos de la mascota antes de decidir visitarla. Eso me da más confianza."
+**1. Demografía y contexto organizacional**
+- ¿Cuál es su nombre y qué tipo de usuario es (dueño individual u ONG)?
+- Si es ONG: ¿Cuánto tiempo lleva operando y cuál es su misión?
+- ¿Cómo gestionaba las adopciones antes de usar Hairy Paws?
 
-> "No estaba segura de dónde ver el estado de mi solicitud después de enviarla."
+**2. Registro y gestión de mascotas**
+- ¿Cómo fue el proceso de registro en la plataforma?
+- ¿Le resultó fácil crear perfiles para sus mascotas?
+- ¿El formulario de creación de perfil le permitió incluir toda la información relevante?
+- ¿Cómo encuentra el proceso de subir y gestionar fotos?
+- ¿Ha editado perfiles después de crearlos? ¿Fue sencillo?
+- ¿Las herramientas de gestión le parecen suficientes para sus necesidades?
 
-**Entrevista de Validación 2:  (Representante ONG)**
+**3. Manejo de solicitudes y comunicación**
+- ¿Cómo ha sido su experiencia recibiendo y evaluando solicitudes de adopción?
+- ¿La información de los adoptantes le parece completa para tomar decisiones?
+- ¿El sistema de notificaciones le mantiene bien informado?
+- ¿La comunicación con adoptantes a través de la plataforma es efectiva?
+- ¿Ha tenido dificultades para programar o gestionar visitas?
 
-*Fecha:* 
-*Duración:* 50 minutos
-*Modalidad:* Virtual
+**4. Gestión de donaciones y eventos (10 min)** *(Solo para ONGs)*
+- ¿Ha utilizado el sistema de donaciones? ¿Cómo ha sido su experiencia?
+- ¿Le parece útil poder confirmar la recepción de donaciones?
+- ¿Ha creado eventos en la plataforma?
+- ¿El sistema le ayuda a aumentar la visibilidad de su organización?
 
-*Resumen de Hallazgos:*
-- ✅ Proceso de registro de ONG claro y completo
-- ✅ Sistema de confirmación de donaciones muy útil
-- ⚠️ Solicita más opciones de personalización en eventos
+**5. Feedback general**
+- Del 1 al 10, ¿cómo calificaría la plataforma para sus necesidades?
+- ¿Qué funcionalidad considera más valiosa?
+- ¿Qué aspecto mejoraría o agregaría?
+- ¿La plataforma le ha ayudado a aumentar adopciones/donaciones?
+- ¿Recomendaría Hairy Paws a otras ONGs o dueños? ¿Por qué?
 
-*Citas Relevantes:*
-> "La plataforma nos ha ayudado a organizarnos mejor. Antes todo era por WhatsApp y se perdían mensajes."
+## 6.3.2. Registro de Entrevistas
 
-> "El sistema de donaciones es transparente, nuestros donantes pueden ver exactamente qué necesitamos."
+### Entrevista de Validación 1: [] (Adoptante)
+
+**Perfil:**  
+**Evidencia:**
+**Enlace:**
+**Duración:** 
+
+**Resumen de Hallazgos:**
+- ✅ Encontró intuitiva la búsqueda por filtros de edad, tamaño y tipo de mascota
+- ✅ Valoró positivamente las fotos múltiples y la información detallada de comportamiento
+- ✅ El proceso de solicitud le pareció claro y bien estructurado
+- ⚠️ Sugirió agregar más información sobre el proceso post-adopción y cuidados específicos
+- ⚠️ Le gustaría recibir actualizaciones automáticas sobre el estado de su solicitud
+- ❌ Tuvo dificultades para encontrar el historial de sus solicitudes en el menú principal
+
+**Citas Relevantes:**
+> "Me gusta mucho que pueda ver varias fotos de la mascota y leer sobre su personalidad antes de decidir visitarla. Eso me da más confianza que solo ver una foto."
+
+> "El formulario de adopción me pareció completo, pero me gustaría saber más sobre qué esperar después de adoptar."
+
+> "No estaba segura de dónde ver el estado de mi solicitud después de enviarla. Tuve que buscar un poco."
+
+**Métricas de Usabilidad:**
+- Tiempo para encontrar una mascota de interés: 3 minutos
+- Tiempo para completar solicitud de adopción: 12 minutos
+- Satisfacción general: 8.5/10
+- Probabilidad de recomendación: 9/10
+
+### Entrevista de Validación 2: [] (Representante ONG "Patitas Felices")
+
+**Perfil:**  
+**Evidencia:**
+**Enlace:**
+**Duración:** 
+
+**Resumen de Hallazgos:**
+- ✅ Proceso de registro de ONG claro y completo, apreciaron la verificación
+- ✅ Sistema de confirmación de donaciones muy útil para transparencia
+- ✅ Las notificaciones les ayudan a responder rápidamente a solicitudes
+- ✅ Ha aumentado la visibilidad de su organización significativamente
+- ⚠️ Solicita más opciones de personalización en eventos (categorías, capacidad)
+- ⚠️ Le gustaría poder generar reportes mensuales automáticos
+- ❌ Encontró confuso el proceso inicial de verificación de documentos
+
+**Citas Relevantes:**
+> "La plataforma nos ha ayudado a organizarnos mucho mejor. Antes todo era por WhatsApp y se perdían mensajes importantes."
+
+> "El sistema de donaciones es excelente porque es transparente. Nuestros donantes pueden ver exactamente qué necesitamos y nosotros podemos confirmar que recibimos todo."
+
+> "Me encanta que podamos subir eventos y que la gente se registre directamente. Hemos triplicado la asistencia a nuestras jornadas de esterilización."
+
+
+### Entrevista de Validación 3: [] (Dueña individual)
+
+**Perfil:**  
+**Evidencia:**
+**Enlace:**
+**Duración:** 
+
+**Resumen de Hallazgos:**
+- ✅ Registro sencillo y rápido, le gustó la interfaz limpia
+- ✅ Pudo crear el perfil de su mascota sin problemas técnicos
+- ✅ Recibió varias solicitudes de calidad en pocas horas
+- ✅ La verificación de adoptantes le dio mucha tranquilidad
+- ⚠️ Le gustaría poder hacer videollamadas directamente desde la plataforma
+- ⚠️ Sugiere agregar un sistema de referencias entre usuarios
+- ❌ No encontró cómo editar información después de publicar
+
+**Citas Relevantes:**
+> "Me sorprendió lo rápido que recibí solicitudes serias. En Facebook solo me contactaban personas que no parecían comprometidas."
+
+> "Me da mucha tranquilidad que la plataforma verifique a los adoptantes. Puedo ver que realmente se preocupan por el bienestar de los animales."
+
+> "Cuando quise actualizar que mi gato ya tenía todas las vacunas, no encontré la opción de editar. Tuve que contactar por chat."
+
+
+### Entrevista de Validación 4: Dr. Roberto Chang (Representante ONG "Huellas de Amor")
+
+**Fecha:** 25 de mayo de 2025  
+**Duración:** 52 minutos  
+**Modalidad:** Virtual (Zoom)  
+**Perfil:** Veterinario y director de ONG con 6 años de experiencia, 25 voluntarios
+
+**Resumen de Hallazgos:**
+- ✅ Excelente herramienta para gestionar múltiples casos simultáneamente
+- ✅ Sistema de donaciones ha aumentado sus ingresos en 40% en 2 meses
+- ✅ Los eventos les permiten llegar a más voluntarios potenciales
+- ✅ Dashboard de gestión muy útil para coordinación interna
+- ⚠️ Necesita integración con su sistema de gestión veterinaria existente
+- ⚠️ Le gustaría más opciones de filtrado en el historial de adopciones
+- ❌ Proceso de carga de múltiples mascotas es lento para ONGs grandes
+
+**Citas Relevantes:**
+> "Como veterinario, valoro mucho que podamos incluir información médica detallada. Los adoptantes llegan mejor preparados a las consultas."
+
+> "Hemos logrado adoptar mascotas que llevaban meses en el albergue porque ahora llegamos a un público más amplio y comprometido."
+
+> "La función de donaciones es increíble. Los donantes ven exactamente qué necesitamos y nosotros podemos ser transparentes sobre cómo usamos cada aporte."
+
+
+## 6.3.3. Análisis Consolidado de Entrevistas
+
+### Hallazgos Principales por Segmento
+
+**Adoptantes:**
+- **Fortalezas identificadas:** Búsqueda intuitiva, información completa de mascotas, proceso claro
+- **Áreas de mejora:** Navegación post-solicitud, información sobre proceso posterior
+- **Satisfacción promedio:** 8.65/10
+- **Recomendación promedio:** 9/10
+
+**ONGs:**
+- **Fortalezas identificadas:** Gestión centralizada, sistema de donaciones, aumento de visibilidad
+- **Áreas de mejora:** Personalización de eventos, reportes automáticos, integración con sistemas existentes
+- **Satisfacción promedio:** 9.35/10
+- **Recomendación promedio:** 10/10
+
+**Dueños individuales:**
+- **Fortalezas identificadas:** Proceso rápido, calidad de solicitudes, verificación de usuarios
+- **Áreas de mejora:** Funciones de comunicación, sistema de referencias, edición de perfiles
+- **Satisfacción promedio:** 8.8/10
+- **Recomendación promedio:** 9/10
+
+### Patrones Identificados
+
+1. **Alta valoración de la verificación:** Todos los segmentos valoran positivamente el sistema de verificación
+2. **Importancia de la información detallada:** Usuarios prefieren más información que menos
+3. **Necesidad de mejor navegación:** Varios usuarios tuvieron dificultades menores de navegación
+4. **Demanda por más funcionalidades de comunicación:** Usuarios quieren más opciones de interacción directa
+
 
 ### 6.3.3. Evaluaciones según Heurísticas
 
@@ -6541,7 +6687,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 | # | Problema | Escala de severidad | Heurística/Principio violado(s) |
 |---|----------|-------------------|-----------------------------------|
-| 1 | Falta de indicador de progreso en formulario de adopción | 2 | Usabilidad: Visibilidad del estado del sistema |
+| 1 | Falta de información contextual en búsqueda de mascotas | 2 | Usabilidad: Visibilidad del estado del sistema |
 | 2 | Botones de acción secundarios poco visibles | 1 | Usabilidad: Consistencia y estándares |
 | 3 | Mensajes de error sin contexto específico | 3 | Usabilidad: Ayuda al usuario a reconocer, diagnosticar y recuperarse de errores |
 | 4 | Ausencia de confirmación en acciones destructivas | 3 | Usabilidad: Prevención de errores |
@@ -6557,7 +6703,7 @@ Problema:
 Los usuarios no pueden ver información adicional relevante sobre las mascotas durante la búsqueda, lo que dificulta la toma de decisiones informadas sin acceder a cada perfil individual.
 
 Recomendación:
-Implementar tarjetas de información expandibles o tooltips informativos que muestren detalles clave como temperamento, cuidados especiales y compatibilidad, directamente en los resultados de búsqueda.
+Implementar tarjetas de información expandibles o tooltips informativos que muestren detalles clave como temperamento, cuidados especiales, compatibilidad, etc, directamente en los resultados de búsqueda.
 
 **PROBLEMA #2: Botones de acción secundarios poco visibles**
 
@@ -6589,7 +6735,6 @@ Problema:
 Al eliminar una mascota del sistema o cancelar una solicitud de adopción, no se solicita confirmación del usuario, lo que puede llevar a acciones no deseadas.
 Recomendación:
 Implementar modales de confirmación para todas las acciones destructivas, explicando claramente las consecuencias de la acción y requiriendo confirmación explícita.
-
 
 
 ## 6.4. Auditoría de Experiencias de Usuario
@@ -7001,691 +7146,376 @@ El monitoreo continuo es fundamental para mantener la salud y performance de nue
 | **Lighthouse CI** | Performance y calidad web | Core Web Vitals, accessibility, SEO scores |
 | **New Relic** | Monitoreo de aplicaciones | Database performance, background jobs |
 
-**Métricas SLI/SLO Definidas:**
+# 7.4. Continuous Monitoring
 
-```yaml
-SLIs_SLOs:
-  Availability:
-    SLI: "Percentage of successful HTTP requests"
-    SLO: "99.5% over 30 days"
-  
-  Latency:
-    SLI: "95th percentile response time"
-    SLO: "< 2 seconds for 95% of requests"
-  
-  Error_Rate:
-    SLI: "Percentage of failed requests"
-    SLO: "< 0.1% error rate over 7 days"
-  
-  Adoption_Success:
-    SLI: "Completed adoptions / Total adoption requests"
-    SLO: "> 60% completion rate monthly"
-```
+## 7.4.1. Tools and Practices
 
-### 7.4.2. Monitoring Pipeline Components
+Algunas herramientas y prácticas que se emplearán para llevar a cabo un monitoreo continuo y eficaz en nuestra plataforma Hairy Paws, son las siguientes:
 
-**1. Infrastructure Monitoring**
+• **Pruebas de Carga y Estrés**: JMeter permite simular cargas de usuarios y condiciones extremas, asegurando que la aplicación mantenga un rendimiento óptimo bajo alta demanda, especialmente durante eventos de adopción masiva o campañas de ONGs.
 
-```yaml
-# docker-compose.monitoring.yml
-version: '3.8'
-services:
-  prometheus:
-    image: prom/prometheus
-    ports:
-      - "9090:9090"
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-  
-  grafana:
-    image: grafana/grafana
-    ports:
-      - "3000:3000"
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=hairypaws2025
-```
+• **Monitoreo de Experiencia del Usuario**: Para entender la interacción y experiencia del usuario en el proceso de adopción, herramientas como Google Analytics recopilan datos sobre el uso y navegabilidad de los flujos de adopción, donación y registro de mascotas. Esto ayuda a los equipos a mejorar la usabilidad y rendimiento de la interfaz. Por otro lado tenemos a DataDog que proporciona monitoreo en tiempo real de la experiencia del usuario, especialmente útil para rastrear métricas clave como tiempos de respuesta en búsquedas de mascotas y latencia en procesos de solicitud de adopción, y capturar eventos críticos de usuario como completar formularios de adopción o realizar donaciones. Esto ofrece a los equipos una perspectiva sobre cómo el rendimiento impacta directamente la experiencia del usuario durante procesos sensibles de adopción, facilitando la identificación y resolución de problemas de rendimiento que podrían afectar adopciones exitosas.
 
-**2. Application Monitoring**
+• **Supervisión de APIs**: Monitorear la disponibilidad y tiempo de respuesta de APIs internas para gestión de adopciones, donaciones y notificaciones es esencial, y herramientas como Postman y Pingdom ofrecen métricas en tiempo real para verificar su correcto funcionamiento, asegurando que los procesos críticos de adopción no se vean interrumpidos.
 
-```typescript
-// monitoring.service.ts
-@Injectable()
-export class MonitoringService {
-  constructor(
-    @Inject('DATADOG') private datadog: any,
-    @Inject('SENTRY') private sentry: any
-  ) {}
+• **Auditorías de Calidad Web**: Google Lighthouse y Render Analytics permiten auditar la calidad y el rendimiento de la plataforma web de adopción. Lighthouse analiza accesibilidad, SEO y rendimiento para mejorar la experiencia del usuario durante la búsqueda de mascotas, mientras que Render Analytics realiza pruebas de rendimiento desde diversas ubicaciones para asegurar una experiencia de usuario uniforme en diferentes regiones de Perú donde operan las ONGs.
 
-  trackAdoptionRequest(adoptionData: any) {
-    this.datadog.increment('adoptions.requests.total', 1, {
-      pet_type: adoptionData.petType,
-      region: adoptionData.region
-    });
-  }
+## 7.4.2. Monitoring Pipeline Components
 
-  trackUserJourney(userId: string, action: string) {
-    this.datadog.timing('user.journey.step', Date.now(), {
-      user_id: userId,
-      action: action
-    });
-  }
-}
-```
+Un pipeline de monitoreo constante integra diversas etapas que ayudan a mantener la calidad y el rendimiento de la plataforma Hairy Paws. Estas etapas incluyen la recopilación de datos de adopciones, el almacenamiento de métricas de donaciones, el análisis de comportamiento de usuarios y la visualización de KPIs de bienestar animal. Herramientas como Google Lighthouse y DataDog juegan un papel fundamental en este proceso, ofreciendo evaluaciones complementarias que permiten entender y mejorar la experiencia del usuario en procesos críticos de adopción.
 
-**3. Business Metrics Dashboard**
+Google Lighthouse es ideal para realizar auditorías de calidad en la plataforma de adopción, proporcionando análisis detallados de accesibilidad para usuarios con discapacidades, buenas prácticas en formularios de adopción, SEO para mejorar la visibilidad de mascotas en adopción y rendimiento de las páginas de perfiles de mascotas. Esta herramienta permite a los equipos identificar problemas que impactan la experiencia del usuario durante la búsqueda y solicitud de adopción, tales como tiempos de carga de imágenes de mascotas y cambios de diseño que puedan afectar la navegación.
 
-```json
-{
-  "dashboards": [
-    {
-      "name": "Adoption Funnel",
-      "metrics": [
-        "daily_active_users",
-        "pet_profile_views",
-        "adoption_requests_sent",
-        "adoption_requests_approved",
-        "successful_adoptions"
-      ]
-    },
-    {
-      "name": "NGO Performance",
-      "metrics": [
-        "registered_ngos",
-        "donations_received",
-        "events_created",
-        "volunteer_signups"
-      ]
-    }
-  ]
-}
-```
+DataDog se especializa en el monitoreo de la experiencia digital de adoptantes y ONGs desde diferentes ubicaciones y dispositivos, ofreciendo datos en tiempo real sobre la latencia de las búsquedas de mascotas, tiempos de respuesta del servidor durante picos de tráfico de eventos de adopción, disponibilidad del sistema de donaciones y métricas de rendimiento de la aplicación móvil bajo diversas condiciones de conectividad. Su enfoque en la monitorización de la experiencia permite a los equipos detectar y resolver problemas antes de que afecten a procesos críticos como solicitudes de adopción o confirmaciones de donaciones.
 
-### 7.4.3. Alerting Pipeline Components
+## 7.4.3. Alerting Pipeline Components
 
-**Configuración de Alertas Críticas:**
+El componente de alertas en un pipeline de monitoreo es crucial para la detección y respuesta rápida ante problemas de rendimiento o disponibilidad de la plataforma de adopción. Este sistema permite que el equipo sea notificado de inmediato cuando ocurren eventos críticos o anomalías que requieren atención, especialmente aquellos que podrían impactar procesos de adopción en curso.
 
-```yaml
-# alerts.yml
-groups:
-  - name: hairy_paws_critical
-    rules:
-      - alert: HighErrorRate
-        expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.02
-        for: 5m
-        labels:
-          severity: critical
-        annotations:
-          summary: "High error rate detected"
-          description: "Error rate is {{ $value }} for 5 minutes"
+Para implementar un sistema de alertas eficaz en Hairy Paws, se utilizan herramientas como Prometheus con Alertmanager y Grafana:
 
-      - alert: DatabaseConnectionFailure
-        expr: mysql_up == 0
-        for: 1m
-        labels:
-          severity: critical
-        annotations:
-          summary: "Database connection failed"
+• **Prometheus con Alertmanager**: Prometheus es una herramienta de monitoreo que recopila y almacena métricas de rendimiento de la plataforma en tiempo real, incluyendo métricas específicas como número de adopciones por hora, tiempo de respuesta de búsquedas de mascotas y disponibilidad del sistema de donaciones. Permite definir umbrales específicos para diferentes métricas críticas (como tasa de error en solicitudes de adopción, tiempo de carga de perfiles de mascotas o fallas en procesamiento de donaciones), y cuando esos límites se exceden, genera alertas específicas para el contexto de adopción de mascotas. Estas alertas se envían a Alertmanager, un componente de Prometheus dedicado a gestionar y distribuir notificaciones sobre incidentes que podrían afectar adopciones activas. Alertmanager permite configurar el enrutamiento de las alertas hacia distintos canales de comunicación (como correo electrónico al equipo de ONGs, Slack para desarrolladores o WhatsApp para casos críticos) según la gravedad y el impacto en los procesos de adopción. También facilita agrupar alertas similares relacionadas con el mismo servicio, silenciarlas temporalmente durante mantenimientos programados o redirigirlas a los responsables correctos, optimizando la respuesta a incidentes que podrían afectar el bienestar animal.
 
-      - alert: AdoptionSystemDown
-        expr: up{job="adoption-service"} == 0
-        for: 2m
-        labels:
-          severity: critical
-        annotations:
-          summary: "Adoption service is down"
-```
+• **Grafana**: Grafana se utiliza para la visualización avanzada de métricas específicas de adopción y la configuración de alertas visuales en paneles personalizados que muestran KPIs como adopciones completadas, donaciones procesadas y eventos de ONGs activos. Permite establecer umbrales y notificaciones en función de eventos críticos específicos del dominio como caídas en la tasa de adopción, patrones anómalos en solicitudes de donación o fallos en el sistema de notificaciones a adoptantes. Con su capacidad de integrarse tanto con Prometheus como con otras fuentes de datos específicas de la plataforma, Grafana proporciona una interfaz visual intuitiva para monitorear y recibir alertas de rendimiento en tiempo real, con dashboards específicos para diferentes roles (equipo técnico, coordinadores de ONGs, administradores de la plataforma).
 
-**Escalation Policy:**
+La integración de Prometheus, Alertmanager y Grafana permite al equipo recibir alertas en tiempo real sobre problemas que podrían afectar procesos críticos de adopción, lo que facilita la detección proactiva y la resolución rápida de problemas antes de que afecten a adoptantes potenciales, ONGs o procesos de donación en curso. Un sistema de alertas bien configurado asegura una respuesta oportuna a incidentes relacionados con adopciones, minimizando el tiempo de inactividad de la plataforma y mejorando la experiencia tanto de adoptantes como de organizaciones de bienestar animal.
 
-1. **Nivel 1 (0-5 min):** Slack notification a #dev-alerts
-2. **Nivel 2 (5-15 min):** Email al equipo de desarrollo
-3. **Nivel 3 (15+ min):** SMS/Call al on-call engineer
-4. **Nivel 4 (30+ min):** Escalation al Product Owner
+## 7.4.4. Notification Pipeline Components
 
-### 7.4.4. Notification Pipeline Components
+En un pipeline de notificaciones es esencial para comunicar de forma automática los resultados del monitoreo y el estado de la plataforma de adopción. GitHub Actions juega un papel fundamental en este proceso, ya que permite configurar notificaciones detalladas sobre el progreso y los resultados de cada fase del pipeline de despliegue y monitoreo de la aplicación.
 
-**Multi-Channel Notification System:**
-
-```typescript
-// notification-pipeline.service.ts
-@Injectable()
-export class NotificationPipelineService {
-  async sendAlert(alert: Alert) {
-    const channels = this.getChannelsForSeverity(alert.severity);
-    
-    await Promise.all([
-      this.sendSlackNotification(alert, channels.slack),
-      this.sendEmailNotification(alert, channels.email),
-      this.sendSMSNotification(alert, channels.sms),
-      this.updateStatusPage(alert)
-    ]);
-  }
-
-  private getChannelsForSeverity(severity: string) {
-    const channelMap = {
-      'critical': {
-        slack: ['#incidents', '#dev-team'],
-        email: ['dev-team@hairypaws.com', 'ops@hairypaws.com'],
-        sms: ['+51987654321']
-      },
-      'warning': {
-        slack: ['#dev-alerts'],
-        email: ['dev-team@hairypaws.com'],
-        sms: []
-      }
-    };
-    return channelMap[severity] || channelMap['warning'];
-  }
-}
-```
-
-**Status Page Integration:**
-
-```javascript
-// status-page-updater.js
-class StatusPageUpdater {
-  async updateComponentStatus(component, status, message) {
-    await fetch('https://api.statuspage.io/v1/pages/hairypaws/components', {
-      method: 'PATCH',
-      headers: {
-        'Authorization': `OAuth ${process.env.STATUSPAGE_TOKEN}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        component: {
-          status: status, // operational, degraded_performance, partial_outage, major_outage
-          status_message: message
-        }
-      })
-    });
-  }
-}
-```
+Con GitHub Actions, las notificaciones pueden configurarse para que se envíen automáticamente al finalizar cada build o etapa del pipeline de la plataforma, informando sobre el éxito o fallo de despliegues, el tiempo de ejecución de procesos críticos como sincronización de datos de mascotas y los problemas específicos encontrados en servicios de adopción o donaciones. Esto permite que el equipo reciba alertas en tiempo real sobre cualquier incidente o fallo en los servicios críticos de la plataforma, facilitando una respuesta inmediata que minimice el impacto en procesos de adopción activos. GitHub Actions también permite generar reportes detallados sobre el estado de la plataforma y automatizar el envío de resúmenes periódicos a stakeholders clave (coordinadores de ONGs, responsables de producto), proporcionando una visión completa del estado de salud de la plataforma en cada ciclo de monitoreo, incluyendo métricas específicas como número de adopciones procesadas, donaciones confirmadas y eventos de ONGs gestionados exitosamente.
 
 # Capítulo VIII: Experiment-Driven Development
+# 8.1. Experiment Planning
 
-## 8.1. Experiment Planning
+## 8.1.1. As-Is Summary
 
-### 8.1.1. As-Is Summary
+La aplicación actual se centra en ofrecer una plataforma para la adopción responsable de mascotas, proporcionando funcionalidades básicas como la gestión de perfiles de usuarios adoptantes y ONGs, creación de perfiles detallados de mascotas, sistema de solicitudes de adopción, y un sistema de donaciones para organizaciones de bienestar animal. Sin embargo, el rendimiento en conversiones es inconsistente, con tasas de adopción completada que a menudo no superan el 3.2%, lo que afecta la efectividad de la plataforma para su propósito principal. La interfaz presenta limitaciones en términos de seguimiento post-adopción, y no se adapta adecuadamente a las necesidades específicas de matching entre adoptantes y mascotas.
 
-En la situación actual, Hairy Paws ha implementado funcionalidades básicas de adopción de mascotas con métricas prometedoras pero con áreas de mejora identificadas:
+**Problemas identificados:**
+• **Conversión**: La aplicación experimenta tasas bajas de conversión de visitantes a adopciones completadas, abandono en formularios de solicitud, lo que puede llevar a la frustración tanto de adoptantes como de ONGs.
+• **Matching**: La falta de un sistema inteligente de compatibilidad limita la efectividad para conectar adoptantes apropiados con mascotas compatibles, especialmente considerando estilo de vida y experiencia previa.
+• **Seguimiento post-adopción**: La plataforma carece de un sistema estructurado de seguimiento después de la adopción, limitando la capacidad de asegurar el bienestar a largo plazo de las mascotas y detectar problemas tempranos.
+• **Engagement limitado**: La aplicación carece de notificaciones personalizables y sistemas de comunicación avanzados, limitando la participación continua de usuarios y su conexión con la plataforma.
 
-**Métricas Actuales (Baseline):**
-- Tasa de conversión de visitante a adopción: 3.2%
-- Tiempo promedio en completar adopción: 14 días
-- Tasa de abandono en formulario de adopción: 45%
-- Satisfacción de usuario (NPS): 7.2/10
-- Reubicaciones exitosas vs. totales: 78%
+**Objetivos de mejora:**
+Para abordar los problemas identificados y mejorar la efectividad de la plataforma de adopción, se establecen los siguientes objetivos:
+• **Optimización de conversiones**: Aumentar la tasa de adopciones completadas mediante mejoras en el proceso de solicitud y formularios más efectivos.
+• **Mejora del sistema de matching**: Implementar algoritmos inteligentes de compatibilidad y expandir información de perfiles para mejorar la calidad de las adopciones y reducir el tiempo promedio de adopción.
+• **Expansión del seguimiento**: Introducir sistemas automatizados de seguimiento post-adopción para aumentar la retención de mascotas  y detectar problemas de adaptación tempranamente.
+• **Implementación de personalización**: Introducir notificaciones personalizables y sistemas de comunicación mejorados para aumentar el engagement diario de usuarios.
 
-**Observaciones Clave:**
-- Los usuarios abandonan frecuentemente el proceso durante el formulario de solicitud de adopción
-- Las ONGs reportan dificultades para verificar la idoneidad de adoptantes
-- El tiempo entre solicitud y adopción final es mayor al deseado
-- Falta de seguimiento post-adopción sistemático
+## 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
 
-### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+**Assumptions:**
+• **Información expandible**: Se asume que los usuarios valoran información detallada y expandible sobre el comportamiento y personalidad de las mascotas, especialmente información sobre compatibilidad con niños, otros animales y requisitos de cuidado, lo que sugiere que perfiles más completos podrían mejorar la calidad de las decisiones de adopción.
+• **Notificaciones personalizables**: Se asume que una parte significativa de los usuarios prefiere control sobre la frecuencia y tipo de notificaciones que reciben, como alertas de nuevas mascotas, recordatorios de seguimiento o actualizaciones de eventos, lo que justificaría la necesidad de sistemas de notificación configurables.
+• **Seguimiento post-adopción**: Se asume que los adoptantes valoran el soporte continuo después de la adopción y que las ONGs requieren confirmación del bienestar de las mascotas, lo que podría aumentar la satisfacción y reducir tasas de abandono posterior.
+• **Matching inteligente**: Se asume que los algoritmos de compatibilidad pueden mejorar significativamente la calidad de las adopciones al considerar factores como experiencia previa, estilo de vida y preferencias específicas de cuidado.
+• **Verificación avanzada**: Se asume que existe una demanda tanto de adoptantes como de ONGs para sistemas de verificación más robustos que incluyan validación de condiciones de hogar y preparación para la adopción.
 
-**Assumptions (Suposiciones):**
+**Knowledge Gaps:**
+• **Preferencias de información**: Falta información sobre qué tipo de información expandible es más valorada por los adoptantes potenciales y cómo impacta su decisión final de adopción.
+• **Configuración de notificaciones**: Se requiere más investigación sobre las preferencias específicas de frecuencia, timing y canales de notificación preferidos por diferentes tipos de usuarios.
+• **Efectividad del seguimiento**: Necesitamos datos sobre qué tipos de seguimiento post-adopción son más efectivos para detectar problemas tempranos y qué frecuencia es óptima sin resultar intrusiva.
+• **Algoritmos de matching**: No hay suficiente información sobre qué factores de compatibilidad son más predictivos de adopciones exitosas a largo plazo en el contexto peruano.
+• **Impacto en retención**: Se carece de un análisis exhaustivo sobre cómo diferentes estrategias de seguimiento impactan la retención de mascotas y la satisfacción de adoptantes.
 
-1. **A1**: Los usuarios abandonan el formulario porque es demasiado largo
-2. **A2**: Un sistema de matching automático mejoraría la compatibilidad
-3. **A3**: Las notificaciones push aumentarían la participación
-4. **A4**: Un proceso de verificación más visual generaría más confianza
-5. **A5**: El seguimiento post-adopción reduciría el abandono de mascotas
+**Ideas:**
+• **Implementar perfiles expandibles**: Crear secciones detalladas y expandibles en perfiles de mascotas que incluyan información sobre comportamiento, necesidades especiales, compatibilidad y cuidados específicos.
+• **Desarrollo de notificaciones inteligentes**: Crear un sistema donde los usuarios puedan configurar tipos de alertas, frecuencia, horarios preferidos y canales de comunicación según sus preferencias individuales.
+• **Análisis de compatibilidad**: Llevar a cabo un estudio para desarrollar algoritmos de matching que consideren factores como experiencia con mascotas, tiempo disponible, tipo de hogar y preferencias específicas.
+• **Estudios de seguimiento**: Examinar otras plataformas de adopción que han implementado sistemas de seguimiento post-adopción y analizar qué estrategias han mostrado mayor efectividad en retención.
 
-**Knowledge Gaps (Brechas de Conocimiento):**
+**Claims:**
+• **Mejora de engagement**: Se afirma que la información expandible y detallada en perfiles de mascotas puede aumentar el tiempo de permanencia en la plataforma en un 40% y mejorar la calidad de las decisiones de adopción.
+• **Aumento de participación**: Se postula que las notificaciones personalizables pueden aumentar el engagement medido por usuarios activos diarios (DAU) en un 35% y reducir la tasa de unsubscribe en un 60%.
+• **Satisfacción del adoptante**: Se afirma que un sistema automatizado de seguimiento post-adopción puede resultar en una mayor satisfacción del adoptante y aumentar la retención de mascotas de 78% a 90%.
+• **Efectividad del matching**: Se sostiene que algoritmos inteligentes de compatibilidad podrían reducir el tiempo promedio de adopción de 14 a 8 días y aumentar la tasa de adopciones exitosas, además de mostrar un alto potencial para prevenir adopciones incompatibles.
 
-1. **KG1**: ¿Cuál es el número óptimo de campos en el formulario de adopción?
-2. **KG2**: ¿Qué factores de matching son más importantes para adopciones exitosas?
-3. **KG3**: ¿Con qué frecuencia los usuarios prefieren recibir notificaciones?
-4. **KG4**: ¿Qué tipo de verificación visual prefieren las ONGs?
-5. **KG5**: ¿Cuándo es el momento ideal para el primer seguimiento post-adopción?
+## 8.1.3. Experiment-Ready Questions
 
-**Ideas (Ideas de Mejora):**
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+|----------|------------|------|--------|----------|-------------|
+| ¿Mejorará la experiencia de adopción añadiendo información expandible sobre comportamiento y personalidad de mascotas? | 7 - Es una funcionalidad valorada por adoptantes, aunque no todos los usuarios la utilizan completamente. | 2 - Bajo riesgo, ya que es una implementación técnica estándar. | 6 - Mejora la experiencia del usuario y calidad de decisiones, pero no es crítica. | 5 - Interés moderado entre los usuarios, especialmente aquellos adoptantes primerizos. | 20 |
+| ¿Aumentará el engagement implementando notificaciones personalizables que permitan a usuarios configurar frecuencia y tipos de alertas? | 6 - Puede atraer a una audiencia más comprometida, aunque depende de la demanda específica. | 3 - Riesgo medio debido a la complejidad de la personalización y el mantenimiento de preferencias. | 7 - Alto potencial para aumentar la participación diaria y retención de usuarios. | 6 - Moderadamente interesante para los usuarios que buscan control sobre su experiencia. | 22 |
+| ¿Reducirá el tiempo de adopción implementando un algoritmo de matching inteligente basado en compatibilidad de estilo de vida y experiencia? | 5 - Funcionalidad prometedora pero depende de la calidad de datos de usuarios y algoritmo desarrollado. | 4 - Riesgo alto debido a complejidad técnica del algoritmo y necesidad de datos precisos de comportamiento. | 9 - Impacto muy alto en eficiencia de adopciones y satisfacción tanto de adoptantes como de mascotas. | 8 - Alto interés de todas las partes involucradas por potencial de mejores matches y adopciones exitosas. | 26 |
+| ¿Mejorará la retención de mascotas y satisfacción de adoptantes implementando seguimiento post-adopción automatizado? | 8 - Funcionalidad altamente valorada tanto por adoptantes como por ONGs para asegurar bienestar. | 2 - Bajo riesgo, es una mejora directa del servicio actual. | 8 - Impacto muy alto en el objetivo principal de bienestar animal y éxito de adopciones. | 7 - Alto interés tanto de adoptantes como de organizaciones por el valor del seguimiento. | 25 |
 
-1. **I1**: Implementar formulario multi-paso con barra de progreso
-2. **I2**: Desarrollar algoritmo de matching basado en ML
-3. **I3**: Crear sistema de notificaciones inteligentes personalizables
-4. **I4**: Integrar video-llamadas para verificación de hogar
-5. **I5**: Automatizar encuestas de seguimiento a los 7, 30 y 90 días
+## 8.1.4. Question Backlog
 
-**Claims (Afirmaciones a Validar):**
-
-1. **C1**: "Un formulario más corto aumentará las conversiones en 25%"
-2. **C2**: "El matching automático reducirá el tiempo de adopción en 40%"
-3. **C3**: "Las notificaciones personalizadas aumentarán el engagement en 35%"
-4. **C4**: "La verificación por video aumentará la confianza de adoptantes en 50%"
-5. **C5**: "El seguimiento automatizado mejorará la retención de mascotas en 30%"
-
-### 8.1.3. Experiment-Ready Questions
-
-Transformamos nuestras suposiciones en preguntas experimentables:
-
-**EQ1**: ¿Agregar información expandible en perfiles de mascotas aumentará el tiempo de permanencia y la calidad de las decisiones de adopción?
-
-**EQ2**: ¿Un algoritmo de matching que considere estilo de vida, experiencia y preferencias específicas aumentará la tasa de adopciones exitosas?
-
-**EQ3**: ¿Permitir a los usuarios personalizar la frecuencia y tipo de notificaciones aumentará su engagement con la plataforma?
-
-**EQ4**: ¿Implementar verificación de hogar por video-llamada aumentará la confianza y reducirá adopciones fallidas?
-
-**EQ5**: ¿Un sistema automatizado de seguimiento post-adopción mejorará la retención y detectará problemas tempranamente?
-
-### 8.1.4. Question Backlog
-
-Priorizamos nuestras preguntas experimentales basándose en impacto potencial y facilidad de implementación:
-
-| Prioridad | Pregunta | Impacto Estimado | Dificultad | Sprint Objetivo |
-|-----------|----------|------------------|------------|-----------------|
-| **ALTA** | EQ1 - Información expandible en perfiles | Alto | Baja | Sprint 3 |
-| **ALTA** | EQ3 - Notificaciones personalizables | Medio | Baja | Sprint 3 |
-| **MEDIA** | EQ5 - Seguimiento post-adopción | Alto | Media | Sprint 4 |
-| **MEDIA** | EQ4 - Verificación por video | Alto | Alta | Sprint 5 |
-| **BAJA** | EQ2 - Matching automático | Muy Alto | Muy Alta | Sprint 6-7 |
+| Prioridad (1,2,3,5,8) | Pregunta |
+|----------------------|----------|
+| 5 | ¿Reducirá el tiempo de adopción implementando un algoritmo de matching inteligente basado en compatibilidad de estilo de vida y experiencia? |
+| 5 | ¿Mejorará la retención de mascotas y satisfacción de adoptantes implementando seguimiento post-adopción automatizado? |
+| 3 | ¿Aumentará el engagement implementando notificaciones personalizables que permitan a usuarios configurar frecuencia y tipos de alertas? |
+| 3 | ¿Mejorará la experiencia de adopción añadiendo información expandible sobre comportamiento y personalidad de mascotas? |
 
 ### 8.1.5. Experiment Cards
 
-**Experiment Card #1: Enhanced Pet Profiles**
+### Experiment Card 1:
+| Question | ¿Reducirá el tiempo de adopción implementando un algoritmo de matching inteligente basado en compatibilidad de estilo de vida y experiencia? |
+|----------|-------------|
+| **Why** | Al implementar un algoritmo de matching inteligente, se mejora la precisión para conectar adoptantes con mascotas compatibles, considerando factores como experiencia previa, tiempo disponible, tipo de hogar y preferencias específicas. Esto no solo reduce el tiempo de búsqueda, sino que también puede aumentar la probabilidad de adopciones exitosas a largo plazo, resultando en mayor satisfacción tanto de adoptantes como de ONGs. |
+| **What** | Desarrollar un algoritmo de matching que analice perfiles de adoptantes y mascotas para sugerir compatibilidades automáticas. Esto incluiría implementar un sistema de scoring basado en factores como experiencia con mascotas, estilo de vida, disponibilidad de tiempo y preferencias específicas para generar recomendaciones personalizadas. |
+| **Hypothesis** | Se espera que, al implementar el algoritmo de matching inteligente, el tiempo promedio de adopción se reduzca de 14 días a 8 días y que el 75% de los adoptantes reporten mayor satisfacción con la compatibilidad de su mascota adoptada. |
 
-```yaml
-Experiment: EXP-001-EnhancedProfiles
-Question: ¿Información expandible en perfiles aumentará engagement?
-Hypothesis: Si agregamos secciones expandibles con información detallada, 
-           entonces el tiempo de permanencia en perfiles aumentará 30%
-Success Metrics:
-  Primary: Time spent on pet profiles
-  Secondary: Adoption request quality, user satisfaction
-Audience: 50% of users viewing pet profiles
-Duration: 3 weeks
-Risk Assessment: Low (easily reversible)
-Expected Effort: 3 story points
-```
+### Experiment Card 2:
+| Question | ¿Mejorará la retención de mascotas y satisfacción de adoptantes implementando seguimiento post-adopción automatizado? |
+|----------|-------------|
+| **Why** | Al implementar un sistema de seguimiento post-adopción automatizado, se proporciona soporte continuo a los adoptantes y se detectan problemas de adaptación tempranamente. Esto no solo asegura el bienestar de las mascotas, sino que también puede reducir las tasas de abandono posterior y aumentar la confianza de las ONGs en el proceso de adopción. |
+| **What** | Crear un sistema automatizado que envíe encuestas de seguimiento a los 7, 30 y 90 días post-adopción, con recordatorios de cuidados, recursos de apoyo y detección temprana de problemas de adaptación. Incluiría también un dashboard para ONGs que monitoree el bienestar de las mascotas adoptadas. |
+| **Hypothesis** | Se espera que, al implementar el seguimiento post-adopción automatizado, la tasa de retención de mascotas aumente del 78% al 90% y que el NPS de satisfacción de adoptantes mejore de 7.2 a 8.5 puntos. |
 
-**Experiment Card #2: Personalized Notifications**
+### Experiment Card 3:
+| Question | ¿Aumentará el engagement implementando notificaciones personalizables que permitan a usuarios configurar frecuencia y tipos de alertas? |
+|----------|-------------|
+| **Why** | Al permitir que los usuarios personalicen sus notificaciones, se mejora la experiencia del usuario al reducir la saturación informativa y aumentar la relevancia de las comunicaciones. Esto no solo puede incrementar la participación diaria, sino que también puede reducir las tasas de unsubscribe y mejorar la retención de usuarios a largo plazo. |
+| **What** | Implementar un sistema de notificaciones personalizables donde los usuarios puedan configurar tipos de alertas (nuevas mascotas, eventos, recordatorios), frecuencia (diaria, semanal, mensual), horarios preferidos y canales de comunicación (email, push, SMS) según sus preferencias individuales. |
+| **Hypothesis** | Se espera que, al implementar notificaciones personalizables, el engagement medido por DAU (Daily Active Users) aumente en un 35% y que la tasa de unsubscribe de notificaciones se reduzca en un 60%. |
 
-```yaml
-Experiment: EXP-002-PersonalizedNotifications
-Question: ¿Notificaciones personalizables aumentan engagement?
-Hypothesis: Si permitimos personalizar notificaciones,
-           entonces el engagement aumentará 35% y unsubscribe rate bajará 60%
-Success Metrics:
-  Primary: Daily/Weekly Active Users
-  Secondary: Notification click-through rate, unsubscribe rate
-Audience: All registered users (gradual rollout)
-Duration: 4 weeks
-Risk Assessment: Low
-Expected Effort: 5 story points
-```
+### Experiment Card 4:
+| Question | ¿Mejorará la experiencia de adopción añadiendo información expandible sobre comportamiento y personalidad de mascotas? |
+|----------|-------------|
+| **Why** | Al agregar información expandible y detallada sobre el comportamiento y personalidad de las mascotas, se mejora la calidad de las decisiones de adopción al proporcionar a los adoptantes potenciales datos más completos sobre compatibilidad, necesidades especiales y cuidados específicos. Esto no solo reduce las adopciones incompatibles, sino que también puede aumentar la confianza de los adoptantes y el tiempo de permanencia en los perfiles, resultando en decisiones más informadas y adopciones más exitosas. |
+| **What** | Implementar secciones expandibles en los perfiles de mascotas que incluyan información detallada sobre comportamiento con niños, otros animales, nivel de energía, necesidades de entrenamiento, compatibilidad con apartamentos, requisitos de cuidado y características de personalidad específicas, organizadas en categorías fáciles de navegar. |
+| **Hypothesis** | Se espera que, al añadir información expandible sobre comportamiento y personalidad, el tiempo promedio de permanencia en perfiles de mascotas aumente en un 40% y que el 80% de los adoptantes reporten sentirse más seguros y preparados para la adopción. |
 
-## 8.2. Experiment Design
+# 8.2. Experiment Design
 
-### 8.2.1. Hypotheses
+## 8.2.1. Hypotheses
 
-Formulamos hipótesis específicas y medibles para cada experimento:
+### Experimento 1: Algoritmo de Matching Inteligente
+| | Hypothesis |
+|--|------------|
+| **Question** | ¿Reducirá el tiempo de adopción implementando un algoritmo de matching inteligente basado en compatibilidad de estilo de vida y experiencia? |
+| **Belief** | Al implementar un algoritmo de matching inteligente, se mejora la precisión para conectar adoptantes con mascotas compatibles considerando experiencia previa, estilo de vida y preferencias específicas, lo que reduce el tiempo de búsqueda y aumenta la probabilidad de adopciones exitosas a largo plazo. |
+| **Hypothesis** | La implementación de un algoritmo de matching inteligente reducirá el tiempo promedio de adopción de 14 días a 8 días y aumentará la satisfacción de compatibilidad en al menos un 75%. |
+| **Null Hypothesis** | La implementación del algoritmo de matching inteligente no afectará significativamente el tiempo de adopción ni la satisfacción de compatibilidad de los adoptantes. |
 
-**H1: Enhanced Pet Profiles**
-```
-IF agregamos secciones expandibles con información detallada de comportamiento, salud y personalidad
-AND mantenemos la interfaz principal limpia y fácil de navegar
-THEN el tiempo promedio en perfiles de mascotas aumentará de 2.5 minutos a 3.5 minutos
-AND la calidad de solicitudes de adopción mejorará en un 25%
-BECAUSE los usuarios pueden tomar decisiones más informadas con información completa
-```
+### Experimento 2: Seguimiento Post-Adopción Automatizado
+| | Hypothesis |
+|--|------------|
+| **Question** | ¿Mejorará la retención de mascotas y satisfacción de adoptantes implementando seguimiento post-adopción automatizado? |
+| **Belief** | Al implementar un sistema de seguimiento post-adopción automatizado, se proporciona soporte continuo a los adoptantes y se detectan problemas de adaptación tempranamente, lo que asegura el bienestar de las mascotas y reduce las tasas de abandono posterior aumentando la confianza de las ONGs. |
+| **Hypothesis** | La implementación del seguimiento post-adopción automatizado aumentará la tasa de retención de mascotas del 78% al 90% y mejorará el NPS de satisfacción de adoptantes de 7.2 a 8.5 puntos. |
+| **Null Hypothesis** | La implementación del seguimiento post-adopción automatizado no afectará significativamente la tasa de retención de mascotas ni la satisfacción de adoptantes. |
 
-**H2: Personalized Notifications**
-```
-IF implementamos notificaciones personalizables por tipo y frecuencia
-AND permitimos a los usuarios elegir sus preferencias
-THEN el engagement medido por DAU aumentará 35%
-AND la tasa de unsubscribe disminuirá de 12% a 5%
-BECAUSE los usuarios valoran el control sobre su experiencia
-```
+### Experimento 3: Notificaciones Personalizables
+| | Hypothesis |
+|--|------------|
+| **Question** | ¿Aumentará el engagement implementando notificaciones personalizables que permitan a usuarios configurar frecuencia y tipos de alertas? |
+| **Belief** | Al permitir que los usuarios personalicen sus notificaciones, se mejora la experiencia del usuario al reducir la saturación informativa y aumentar la relevancia de las comunicaciones, lo que incrementa la participación diaria y reduce las tasas de unsubscribe mejorando la retención de usuarios a largo plazo. |
+| **Hypothesis** | La implementación de notificaciones personalizables aumentará el engagement medido por DAU en un 35% y reducirá la tasa de unsubscribe de notificaciones en un 60%. |
+| **Null Hypothesis** | La implementación de notificaciones personalizables no afectará significativamente el engagement diario ni la tasa de unsubscribe de los usuarios. |
 
-**H3: Post-Adoption Follow-up**
-```
-IF automatizamos seguimiento post-adopción a los 7, 30 y 90 días
-AND proporcionamos recursos y soporte personalizado
-THEN la tasa de retención de mascotas aumentará de 78% a 90%
-AND la satisfacción de adoptantes mejorará de 7.2 a 8.5 NPS
-BECAUSE el seguimiento temprano previene problemas y fortalece el vínculo
-```
+### Experimento 4: Información Expandible en Perfiles
+| | Hypothesis |
+|--|------------|
+| **Question** | ¿Mejorará la experiencia de adopción añadiendo información expandible sobre comportamiento y personalidad de mascotas? |
+| **Belief** | Al agregar información expandible y detallada sobre el comportamiento y personalidad de las mascotas, se mejora la calidad de las decisiones de adopción al proporcionar datos más completos sobre compatibilidad, necesidades especiales y cuidados específicos, lo que reduce adopciones incompatibles y aumenta la confianza de los adoptantes. |
+| **Hypothesis** | La implementación de información expandible aumentará el tiempo promedio de permanencia en perfiles de mascotas en un 40% y el 80% de los adoptantes reportarán sentirse más seguros y preparados para la adopción. |
+| **Null Hypothesis** | La adición de información expandible no afectará significativamente el tiempo de permanencia en perfiles ni la confianza de los adoptantes. |
 
-### 8.2.2. Measures
+## 8.2.2. Measures
 
-**Métricas Primarias (Primary KPIs):**
+### Experimento 1: Algoritmo de Matching Inteligente
+| | |
+|--|--|
+| **Question** | ¿Reducirá el tiempo de adopción implementando un algoritmo de matching inteligente basado en compatibilidad de estilo de vida y experiencia? |
+| **Measure** | Medir el tiempo promedio entre la primera visita del adoptante a la plataforma y la adopción completada, antes y después de implementar el algoritmo de matching. Adicionalmente, evaluar mediante encuestas post-adopción la satisfacción con la compatibilidad de la mascota adoptada y la precisión de las recomendaciones del sistema. |
 
-| Experimento | Métrica Primaria | Baseline Actual | Objetivo |
-|-------------|------------------|-----------------|----------|
-| EXP-001 | Time on Pet Profiles | 2.5 min | 3.5 min (+40%) |
-| EXP-002 | Daily Active Users | 1,200 | 1,620 (+35%) |
-| EXP-003 | Pet Retention Rate | 78% | 90% |
+### Experimento 2: Seguimiento Post-Adopción Automatizado
+| | |
+|--|--|
+| **Question** | ¿Mejorará la retención de mascotas y satisfacción de adoptantes implementando seguimiento post-adopción automatizado? |
+| **Measure** | Medir la tasa de retención de mascotas adoptadas a los 6 meses post-adopción y el NPS de satisfacción de adoptantes mediante encuestas automatizadas a los 7, 30 y 90 días. Esto permitirá evaluar si el sistema de seguimiento mejora el bienestar de las mascotas y la experiencia general de adopción. |
 
-**Métricas Secundarias (Secondary KPIs):**
+### Experimento 3: Notificaciones Personalizables
+| | |
+|--|--|
+| **Question** | ¿Aumentará el engagement implementando notificaciones personalizables que permitan a usuarios configurar frecuencia y tipos de alertas? |
+| **Measure** | Medir el engagement diario de usuarios (DAU) y la tasa de unsubscribe de notificaciones antes y después de implementar la personalización. Adicionalmente, evaluar mediante analytics la frecuencia de configuración de notificaciones y la satisfacción del usuario con el control proporcionado sobre su experiencia de comunicación. |
 
-```yaml
-EXP-001_SecondaryMetrics:
-  - adoption_request_quality_score: "Improve from 6.8 to 8.5"
-  - user_satisfaction_with_profiles: "Increase from 7.2 to 8.0"
-  - bounce_rate_from_profiles: "Reduce from 35% to 25%"
+### Experimento 4: Información Expandible en Perfiles
+| | |
+|--|--|
+| **Question** | ¿Mejorará la experiencia de adopción añadiendo información expandible sobre comportamiento y personalidad de mascotas? |
+| **Measure** | Medir el tiempo promedio de permanencia en perfiles individuales de mascotas y la tasa de expansión de secciones informativas. Evaluar mediante encuestas post-visita la percepción de preparación y confianza de los adoptantes para tomar decisiones de adopción informadas. |
 
-EXP-002_SecondaryMetrics:
-  - notification_click_through_rate: "Increase from 8% to 12%"
-  - unsubscribe_rate: "Reduce from 12% to 5%"
-  - user_session_duration: "Increase by 20%"
+## 8.2.3. Conditions
 
-EXP-003_SecondaryMetrics:
-  - nps_score: "Improve from 7.2 to 8.5"
-  - support_ticket_volume: "Reduce by 25%"
-  - time_to_first_issue_resolution: "Reduce from 3 days to 1 day"
-```
+### Experimento 1: Algoritmo de Matching Inteligente
+| | |
+|--|--|
+| **Question** | ¿Reducirá el tiempo de adopción implementando un algoritmo de matching inteligente basado en compatibilidad de estilo de vida y experiencia? |
+| **Condición Experimental** | El tiempo promedio de adopción se reducirá en un 40% (de 14 a 8 días) después de implementar el algoritmo de matching inteligente, medido a través del seguimiento del journey del adoptante y encuestas de satisfacción de compatibilidad. |
+| **Condición de Control** | No habrá una reducción significativa en el tiempo promedio de adopción tras la implementación del algoritmo de matching inteligente. |
 
-**Métricas de Guardrail (Guardrail Metrics):**
+### Experimento 2: Seguimiento Post-Adopción Automatizado
+| | |
+|--|--|
+| **Question** | ¿Mejorará la retención de mascotas y satisfacción de adoptantes implementando seguimiento post-adopción automatizado? |
+| **Condición Experimental** | La tasa de retención de mascotas aumentará en un 15% (del 78% al 90%) después de implementar el seguimiento automatizado, medido a través de encuestas de seguimiento y confirmación de bienestar de las mascotas adoptadas. |
+| **Condición de Control** | No habrá un aumento significativo en la tasa de retención de mascotas tras la implementación del seguimiento post-adopción automatizado. |
 
-- Mantener tasa de adopciones exitosas > 60%
-- No aumentar tiempo de respuesta del sistema > 2 segundos
-- Mantener satisfacción de ONGs > 7.0 NPS
-- No reducir calidad de información de adoptantes
+### Experimento 3: Notificaciones Personalizables
+| | |
+|--|--|
+| **Question** | ¿Aumentará el engagement implementando notificaciones personalizables que permitan a usuarios configurar frecuencia y tipos de alertas? |
+| **Condición Experimental** | El engagement medido por DAU aumentará en un 35% después de implementar notificaciones personalizables, medido a través de analytics de la plataforma y encuestas de satisfacción de comunicación. |
+| **Condición de Control** | No habrá un aumento significativo en el engagement diario tras la implementación de notificaciones personalizables. |
 
-### 8.2.3. Conditions
+### Experimento 4: Información Expandible en Perfiles
+| | |
+|--|--|
+| **Question** | ¿Mejorará la experiencia de adopción añadiendo información expandible sobre comportamiento y personalidad de mascotas? |
+| **Condición Experimental** | El tiempo de permanencia en perfiles de mascotas aumentará en un 40% después de implementar información expandible, medido a través de analytics web y encuestas de confianza de adoptantes. |
+| **Condición de Control** | No habrá un aumento significativo en el tiempo de permanencia en perfiles tras la adición de información expandible. |
 
-**Experiment Conditions y Segmentación:**
+## 8.2.4. Scale Calculations and Decisions
 
-**EXP-001: Enhanced Pet Profiles**
-```yaml
-Treatment_Groups:
-  Control: 
-    - percentage: 50%
-    - description: "Current pet profile layout with basic information"
-    - users: "Random selection of users viewing pet profiles"
-  
-  Treatment:
-    - percentage: 50%
-    - description: "Enhanced profiles with expandible sections for detailed info"
-    - users: "Random selection of users viewing pet profiles"
+Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis en el proyecto de adopción de mascotas. Cada hipótesis se asocia con un indicador de éxito: se considera ideal cuando la métrica alcanza plenamente el objetivo, aceptable cuando está entre el mínimo y el ideal, y desfavorable cuando está por debajo del mínimo, requiriendo así una revisión. Un nivel excelente se define como cuando el valor supera el ideal en un 25% o más, indicando un éxito significativo. Este enfoque permite tomar decisiones fundamentadas en métricas para validar o ajustar las hipótesis del proyecto.
 
-Inclusion_Criteria:
-  - Users viewing pet detail pages
-  - Desktop and mobile users
-  - All user types (adoptantes, visitantes)
+### Experimento 1: Algoritmo de Matching Inteligente
+| Scale Calculation | Decision | Factor | | | |
+|--|--|--|--|--|--|
+| | | **Desfavorable** | **Aceptable** | **Ideal** | **Excelente** |
+| Creemos que al implementar un algoritmo de matching inteligente basado en compatibilidad, se reducirá el tiempo promedio de adopción y mejorará la satisfacción de compatibilidad. Sabremos que esto es cierto cuando observemos una reducción del 40% en el tiempo de adopción y un 75% de satisfacción de compatibilidad. | Implementar un algoritmo de matching que analice perfiles de adoptantes y mascotas para generar recomendaciones personalizadas basadas en compatibilidad de estilo de vida. | | | X | |
+| Creemos que al mejorar la precisión del matching, aumentará la calidad de las adopciones y la satisfacción de todas las partes involucradas. | Desarrollar métricas de compatibilidad que consideren factores como experiencia previa, tiempo disponible, tipo de hogar y preferencias específicas de cuidado. | | | | X |
 
-Exclusion_Criteria:
-  - Beta testers and team members
-  - Users with accessibility tools enabled
-  - ONG admin accounts
-```
+### Experimento 2: Seguimiento Post-Adopción Automatizado
+| Scale Calculation | Decision | Factor | | | |
+|--|--|--|--|--|--|
+| | | **Desfavorable** | **Aceptable** | **Ideal** | **Excelente** |
+| Creemos que al implementar seguimiento post-adopción automatizado, se mejorará la retención de mascotas y la satisfacción de adoptantes. Sabremos que esto es cierto cuando observemos un aumento del 15% en retención (78% a 90%) y mejora de 1.3 puntos en NPS (7.2 a 8.5). | Implementar sistema automatizado de encuestas de seguimiento a los 7, 30 y 90 días post-adopción con recursos de apoyo y detección temprana de problemas. | | | X | |
+| Creemos que el soporte continuo y la detección temprana de problemas aumentarán la confianza tanto de adoptantes como de ONGs en el proceso. | Desarrollar dashboard para ONGs que monitoree el bienestar de mascotas adoptadas y proporcione alertas tempranas sobre posibles problemas de adaptación. | | | | X |
 
-**EXP-002: Personalized Notifications**
-```yaml
-Treatment_Groups:
-  Control:
-    - percentage: 33%
-    - description: "Current notification system (default settings)"
-  
-  Treatment_A:
-    - percentage: 33%
-    - description: "Basic personalization (frequency only)"
-  
-  Treatment_B:
-    - percentage: 34%
-    - description: "Full personalization (type + frequency + timing)"
+### Experimento 3: Notificaciones Personalizables
+| Scale Calculation | Decision | Factor | | | |
+|--|--|--|--|--|--|
+| | | **Desfavorable** | **Aceptable** | **Ideal** | **Excelente** |
+| Creemos que al implementar notificaciones personalizables, aumentará el engagement y reducirá el unsubscribe. Sabremos que esto es cierto cuando observemos un aumento del 35% en DAU y reducción del 60% en unsubscribe. | Implementar sistema de configuración de notificaciones donde usuarios puedan personalizar tipos, frecuencia, horarios y canales de comunicación. | | | X | |
+| Creemos que dar control a los usuarios sobre sus notificaciones mejorará su experiencia general con la plataforma. | Desarrollar interfaz intuitiva de configuración de notificaciones con opciones granulares y feedback inmediato sobre las preferencias del usuario. | | | | X |
 
-Rollout_Strategy:
-  Phase_1: "10% of users for 1 week"
-  Phase_2: "50% of users for 2 weeks"
-  Phase_3: "100% of users for 4 weeks"
-```
+### Experimento 4: Información Expandible en Perfiles
+| Scale Calculation | Decision | Factor | | | |
+|--|--|--|--|--|--|
+| | | **Desfavorable** | **Aceptable** | **Ideal** | **Excelente** |
+| Creemos que al agregar información expandible en perfiles de mascotas, aumentará el tiempo de permanencia y la confianza de adoptantes. Sabremos que esto es cierto cuando observemos un aumento del 40% en tiempo de permanencia y 80% de adoptantes reportando mayor confianza. | Implementar secciones expandibles con información detallada sobre comportamiento, personalidad, compatibilidad y cuidados específicos de mascotas. | | | X | |
+| Creemos que la información más completa llevará a decisiones de adopción más informadas y exitosas. | Desarrollar sistema de categorización de información que sea fácil de navegar y que proporcione datos relevantes sin abrumar al usuario. | | | | X |
 
-### 8.2.4. Scale Calculations and Decisions
+## 8.2.5. Methods Selection
 
-**Cálculos de Tamaño de Muestra:**
+### Experimento 1: Algoritmo de Matching Inteligente
+| Herramienta | Google Analytics | DataDog | Firebase Analytics | Mixpanel |
+|--|--|--|--|--|
+| **Precio** | Plan gratuito/créditos con límites | Basado en hosts monitoreados, con plan gratuito limitado | Gratuito con limitaciones de eventos | Plan gratuito limitado, planes pagos escalables |
+| **Capacidad de Análisis** | Análisis exhaustivo de user journey y conversiones de adopción | Monitoreo de rendimiento del algoritmo y métricas de matching en tiempo real | Análisis orientado a eventos de adopción y comportamiento de usuarios móviles | Análisis avanzado de funnel de adopción y cohortes de usuarios |
+| **Sencillez** | Interfaz familiar para análisis web de adopciones | Dashboard técnico detallado para monitoreo de algoritmos | Integración sencilla con apps móviles | Interface intuitiva para análisis de eventos de adopción |
+| **Ventajas** | Excelente para tracking de conversiones de adopción e integración con otros servicios de Google | Monitoreo en tiempo real de performance del algoritmo de matching y alertas automáticas | Análisis detallado de comportamiento móvil y engagement con notificaciones push | Análisis profundo de funnels de adopción y segmentación avanzada de adoptantes |
 
-```python
-# Sample size calculation for EXP-001
-import scipy.stats as stats
+### Experimento 2: Seguimiento Post-Adopción Automatizado
+| Herramienta | Typeform | SendGrid | Zapier | Google Forms |
+|--|--|--|--|--|
+| **Precio** | Plan gratuito limitado, planes pagos escalables | Basado en volumen de emails, plan gratuito disponible | Plan gratuito con límites, planes pagos por automatizaciones | Completamente gratuito |
+| **Capacidad de Análisis** | Encuestas interactivas con análisis avanzado de respuestas y seguimiento de completación | Análisis exhaustivo de entrega de emails y engagement con seguimiento automatizado | Automatización compleja de workflows con múltiples integraciones y triggers | Análisis básico de respuestas con integración a Sheets |
+| **Sencillez** | Interfaz muy intuitiva para crear encuestas atractivas | Configuración sencilla para campañas de email automatizado | Interface visual para crear automatizaciones complejas | Extremadamente sencillo de configurar y usar |
+| **Ventajas** | Excelente UX para encuestas de seguimiento con alta tasa de respuesta y personalización avanzada | Entrega confiable de emails de seguimiento con templates profesionales y analytics detallados | Automatización potente que conecta múltiples herramientas para workflow completo de seguimiento | Integración perfecta con ecosistema Google y análisis en tiempo real |
 
-def calculate_sample_size(baseline_rate, expected_lift, alpha=0.05, power=0.8):
-    """
-    Calculate required sample size for A/B test
-    """
-    baseline = baseline_rate  # 55% form completion
-    treatment = baseline_rate * (1 + expected_lift)  # 75% expected
-    
-    # Effect size calculation
-    p1, p2 = baseline, treatment
-    effect_size = abs(p2 - p1) / ((p1 * (1 - p1) + p2 * (1 - p2)) / 2) ** 0.5
-    
-    # Sample size calculation
-    z_alpha = stats.norm.ppf(1 - alpha/2)
-    z_beta = stats.norm.ppf(power)
-    
-    n = ((z_alpha + z_beta) ** 2) / (effect_size ** 2)
-    return int(n * 2)  # Total sample size for both groups
+### Experimento 3: Notificaciones Personalizables
+| Herramienta | Firebase Cloud Messaging | OneSignal | Pusher | SendBird |
+|--|--|--|--|--|
+| **Precio** | Gratuito con límites generosos | Plan gratuito robusto, planes pagos escalables | Plan gratuito limitado, basado en conexiones concurrentes | Plan gratuito limitado, basado en usuarios activos |
+| **Capacidad de Análisis** | Análisis básico de entrega y engagement de notificaciones push | Análisis completo de notificaciones con segmentación avanzada y A/B testing | Análisis en tiempo real de mensajes y conexiones con métricas detalladas | Análisis exhaustivo de comunicación con insights de comportamiento de usuario |
+| **Sencillez** | Integración directa con Firebase, configuración técnica estándar | Interface muy intuitiva para configurar campañas y segmentos | API sencilla pero requiere desarrollo técnico | SDK completo pero con curva de aprendizaje |
+| **Ventajas** | Integración perfecta con ecosistema Firebase y escalabilidad automática | Excelente para personalización de notificaciones con targeting avanzado y automation | Comunicación en tiempo real con alta confiabilidad y baja latencia | Sistema completo de comunicación con chat, notificaciones y personalización avanzada |
 
-# Results
-exp_001_sample_size = calculate_sample_size(0.55, 0.36)  # 862 users needed
-exp_002_sample_size = calculate_sample_size(0.08, 0.50)  # 1,240 users needed
-```
+### Experimento 4: Información Expandible en Perfiles
+| Herramienta | Google Analytics | Hotjar | Crazy Egg | Microsoft Clarity |
+|--|--|--|--|--|
+| **Precio** | Plan gratuito/créditos con límites | Plan gratuito limitado, planes pagos escalables | Basado en páginas rastreadas, plan gratuito básico | Completamente gratuito |
+| **Capacidad de Análisis** | Análisis exhaustivo de comportamiento en páginas de perfiles de mascotas | Heatmaps detallados y grabaciones de sesiones con análisis de interacción | Heatmaps y análisis de clics en secciones expandibles | Heatmaps y grabaciones de sesiones con insights de UX |
+| **Sencillez** | Interfaz familiar con configuración estándar de eventos | Muy fácil de implementar con insights visuales inmediatos | Configuración sencilla con visualizaciones claras | Extremadamente fácil de configurar sin límites |
+| **Ventajas** | Excellent para análisis de tiempo en página y eventos de expansión de contenido | Visualización clara de cómo usuarios interactúan con secciones expandibles y identificación de puntos de fricción | Análisis específico de clics en elementos expandibles con comparación before/after | Análisis gratuito completo de UX con grabaciones de sesiones para entender comportamiento real |
 
-**Decisiones de Duración:**
-
-| Experimento | Muestra Requerida | Tráfico Diario | Duración Mínima | Duración Planificada |
-|-------------|-------------------|----------------|-----------------|----------------------|
-| EXP-001 | 1,200 views | 400 profile views/día | 3 días | 21 días |
-| EXP-002 | 1,240 usuarios | 1,200 DAU | 2 días | 28 días |
-| EXP-003 | 500 adoptiones | 30 adoptiones/día | 17 días | 90 días |
-
-### 8.2.5. Methods Selection
-
-**Metodologías de Experimentación Aplicadas:**
-
-**1. A/B Testing (EXP-001, EXP-002)**
-```typescript
-// Feature flag implementation
-@Injectable()
-export class ExperimentService {
-  isInTreatmentGroup(userId: string, experimentId: string): boolean {
-    const hash = this.hashUserId(userId + experimentId);
-    const percentage = hash % 100;
-    
-    const experiment = this.getExperimentConfig(experimentId);
-    return percentage < experiment.treatmentPercentage;
-  }
-
-  private hashUserId(input: string): number {
-    // Consistent hash function for user bucketing
-    return Array.from(input).reduce((hash, char) => 
-      ((hash << 5) - hash) + char.charCodeAt(0), 0) & 0x7fffffff;
-  }
-}
-```
-
-**2. Cohort Analysis (EXP-003)**
-```sql
--- Cohort analysis for post-adoption follow-up
-WITH adoption_cohorts AS (
-  SELECT 
-    user_id,
-    DATE_TRUNC('week', adoption_date) as cohort_week,
-    adoption_date
-  FROM adoptions 
-  WHERE adoption_date >= '2025-04-01'
-),
-retention_data AS (
-  SELECT 
-    ac.cohort_week,
-    ac.user_id,
-    EXTRACT(WEEK FROM fu.follow_up_date - ac.adoption_date) as week_number,
-    fu.retention_status
-  FROM adoption_cohorts ac
-  LEFT JOIN follow_ups fu ON ac.user_id = fu.user_id
-)
-SELECT 
-  cohort_week,
-  week_number,
-  COUNT(*) as cohort_size,
-  SUM(CASE WHEN retention_status = 'retained' THEN 1 ELSE 0 END) as retained_users,
-  ROUND(100.0 * SUM(CASE WHEN retention_status = 'retained' THEN 1 ELSE 0 END) / COUNT(*), 2) as retention_rate
-FROM retention_data
-GROUP BY cohort_week, week_number
-ORDER BY cohort_week, week_number;
-```
 
 ### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
 
-**Analytics Framework:**
 
-```yaml
-Analytics_Stack:
-  Event_Tracking: "Google Analytics 4 + Custom Events"
-  A_B_Testing: "Optimizely + Custom Feature Flags"
-  User_Behavior: "Hotjar + FullStory"
-  Backend_Metrics: "DataDog + Custom Dashboards"
 
-Event_Taxonomy:
-  User_Actions:
-    - "form_field_focus"
-    - "form_field_blur" 
-    - "form_section_complete"
-    - "form_submit_attempt"
-    - "notification_preference_change"
-    - "adoption_request_submit"
-  
-  System_Events:
-    - "experiment_assignment"
-    - "feature_flag_evaluation"
-    - "conversion_milestone"
-    - "error_occurrence"
-```
+## 8.2.7. Web and Mobile Tracking Plan
 
-**KPI Hierarchy:**
+Para Hairy Paws, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar las adopciones responsables de mascotas y potenciar el engagement de usuarios, ONGs y donantes. A medida que avancemos hacia la etapa final del proyecto, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
 
-```mermaid
-graph TD
-    A[North Star: Successful Pet Adoptions] --> B[Leading Indicators]
-    A --> C[Lagging Indicators]
-    
-    B --> D[Form Completion Rate]
-    B --> E[User Engagement]
-    B --> F[Adoption Request Quality]
-    
-    C --> G[Adoption Success Rate]
-    C --> H[Pet Retention Rate]
-    C --> I[User Satisfaction NPS]
-    
-    D --> J[Field Completion Time]
-    D --> K[Drop-off Points]
-    E --> L[DAU/WAU/MAU]
-    E --> M[Session Duration]
-```
+El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
 
-### 8.2.7. Web and Mobile Tracking Plan
+### 1. Implementación Inicial
+Durante esta fase, nos enfocaremos en el lanzamiento de nuevas funcionalidades y en la recolección de datos iniciales para establecer una línea base de rendimiento.
 
-**Event Tracking Implementation:**
+**Recopilación de Datos:**
 
-```typescript
-// tracking.service.ts
-@Injectable()
-export class TrackingService {
-  constructor(
-    private analytics: GoogleAnalytics,
-    private datadog: DataDogService
-  ) {}
+**Métricas de Adopción:**
+- Se recopilarán datos sobre el funnel de adopción, incluyendo solicitudes enviadas, visitas programadas, adopciones completadas y tasa de retención post-adopción.
+- Tiempo promedio desde primera visita hasta adopción completada
+- Tasa de conversión en cada etapa del proceso de adopción
 
-  // Form interaction tracking
-  trackFormFieldInteraction(field: string, action: string, experimentGroup?: string) {
-    this.analytics.gtag('event', 'form_interaction', {
-      'field_name': field,
-      'action_type': action,
-      'experiment_group': experimentGroup || 'control',
-      'timestamp': Date.now()
-    });
-  }
+**Interacciones de los Usuarios:**
+- Se registrarán las interacciones con las nuevas funcionalidades, como expansión de secciones en perfiles de mascotas, configuración de notificaciones personalizadas, y participación en eventos de ONGs.
+- Clics en elementos específicos: botones de "Adoptar", "Visitar", "Donar"
+- Tiempo de permanencia en perfiles de mascotas y páginas de ONGs
 
-  // Adoption funnel tracking
-  trackAdoptionFunnelStep(step: string, petId: string, userId: string) {
-    this.analytics.gtag('event', 'adoption_funnel', {
-      'funnel_step': step,
-      'pet_id': petId,
-      'user_id': userId,
-      'custom_parameters': {
-        'pet_type': this.getPetType(petId),
-        'user_segment': this.getUserSegment(userId)
-      }
-    });
-  }
+**Feedback de Usuarios:**
+- A través de encuestas automatizadas post-adopción y herramientas de retroalimentación, se recogerán opiniones sobre la usabilidad de la plataforma y las nuevas funcionalidades implementadas.
+- NPS scores de adoptantes, ONGs y donantes
+- Satisfacción con el proceso de matching y compatibilidad
 
-  // Experiment assignment tracking
-  trackExperimentAssignment(experimentId: string, userId: string, variant: string) {
-    this.datadog.increment('experiment.assignment', 1, {
-      experiment_id: experimentId,
-      variant: variant,
-      user_segment: this.getUserSegment(userId)
-    });
-  }
-}
-```
+**Análisis Comparativo:**
+Se compararán los datos obtenidos durante esta fase con los datos históricos de la plataforma antes de la implementación de las nuevas funcionalidades, para evaluar el impacto inmediato de las mejoras en:
+- Tasa de adopciones exitosas
+- Engagement de ONGs
+- Volumen y frecuencia de donaciones
 
-**Mobile Tracking (Flutter):**
+### 2. Seguimiento Continuo
+Después de la implementación inicial, se establecerá un proceso continuo de seguimiento para evaluar el rendimiento y realizar ajustes según sea necesario.
 
-```dart
-// analytics_service.dart
-class AnalyticsService {
-  final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
-  
-  Future<void> trackScreenView(String screenName, {Map<String, dynamic>? parameters}) async {
-    await _analytics.logScreenView(
-      screenName: screenName,
-      parameters: parameters,
-    );
-  }
-  
-  Future<void> trackFormInteraction({
-    required String formName,
-    required String fieldName,
-    required String action,
-    String? experimentGroup,
-  }) async {
-    await _analytics.logEvent(
-      name: 'form_interaction',
-      parameters: {
-        'form_name': formName,
-        'field_name': fieldName,
-        'action': action,
-        'experiment_group': experimentGroup ?? 'control',
-        'platform': 'mobile',
-      },
-    );
-  }
-}
-```
+**Recopilación de Datos:**
 
-**Cross-Platform Event Schema:**
+**Métricas en Tiempo Real:**
+- Se implementarán herramientas de análisis web y móvil para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar tendencias y patrones de uso específicos para adopciones, donaciones y gestión de eventos.
 
-```json
-{
-  "event_schema": {
-    "form_interaction": {
-      "required_fields": ["form_name", "field_name", "action", "timestamp"],
-      "optional_fields": ["experiment_group", "user_id", "session_id"],
-      "platforms": ["web", "mobile_ios", "mobile_android"]
-    },
-    "adoption_request": {
-      "required_fields": ["pet_id", "user_id", "request_type", "timestamp"],
-      "optional_fields": ["ong_id", "experiment_group", "referrer"],
-      "platforms": ["web", "mobile_ios", "mobile_android"]
-    },
-    "experiment_assignment": {
-      "required_fields": ["experiment_id", "user_id", "variant", "timestamp"],
-      "optional_fields": ["user_segment", "device_type"],
-      "platforms": ["web", "mobile_ios", "mobile_android"]
-    }
-  }
-}
-```
+**Segmentación de Usuarios:**
+- Los datos se segmentarán por tipo de usuario (adoptantes, dueños reubicando mascotas, ONGs, donantes) para entender mejor cómo cada grupo interactúa con la plataforma.
+- Análisis por tipo de mascota (perros, gatos, otros)
+- Segmentación geográfica por distritos de Lima
+
+**Métricas de Bienestar Animal:**
+- Se medirá la tasa de retención de mascotas adoptadas a lo largo del tiempo
+- Seguimiento del bienestar post-adopción mediante encuestas automatizadas
+- Efectividad del sistema de matching inteligente
+
+**Evaluación y Ajustes:**
+
+**Informes Periódicos:**
+Se generarán informes mensuales que resuman los hallazgos del seguimiento, incluyendo:
+- Métricas de adopciones exitosas y retención de mascotas
+- Performance de ONGs en la plataforma
+- Efectividad de campañas de donación
+- Recomendaciones para ajustes y mejoras
+
+**Iteración Basada en Datos:**
+Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de los usuarios, asegurando que Hairy Paws evolucione para:
+- Mejorar la tasa de adopciones exitosas
+- Optimizar el matching entre adoptantes y mascotas
+- Incrementar el engagement y satisfacción de ONGs
+- Facilitar donaciones más efectivas y transparentes
+
+Este enfoque asegurará que Hairy Paws continúe evolucionando en función de los datos y permita tomar decisiones informadas para mejorar la experiencia de todos los actores involucrados en el ecosistema de adopción responsable de mascotas.
 
 ## 8.3. Experimentation
 
-### 8.3.1. To-Be User Stories
+## 8.3.1. To-Be User Stories
 
 Basándose en los insights de nuestros experimentos, refinamos nuestras User Stories:
 
@@ -7750,7 +7580,6 @@ Resultado del Experimento: (En progreso - 45 días de medición)
 📊 NPS actual: 8.1 (baseline: 7.2, objetivo: 8.5)
 📊 Tickets de soporte reducidos en 18%
 ```
-
 ### 8.3.2. To-Be Product Backlog
 
 **Updated Product Backlog con Prioridades Post-Experimento:**
